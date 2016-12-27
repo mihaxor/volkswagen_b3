@@ -15,4 +15,5 @@ public interface language {
     final String sub1_txt2 = "CO level";
     final String sub1_txt3 = "Throttle initial position";
 
+    public void showScroll(String scroll);
 }

@@ -6,11 +6,16 @@
 package emct.frames;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JScrollPane;
 import javax.swing.UnsupportedLookAndFeelException;
 
 /**
@@ -25,50 +30,73 @@ public class emct extends javax.swing.JFrame implements language {
     public emct() {
         initComponents();
         super.setLocationRelativeTo(null);
-        
+        showScroll("idle_speed");
+
     }
-    
-    private void submenu_service(String set){
-        if(set.equals("ADD")){
-        service_sub1 = new JButton(sub1_txt1);
-        service_sub1.setFont(setFont);
-        service_sub1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        service_sub1.setBackground(Color.LIGHT_GRAY);
-        service_sub1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
-        service_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        service_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        
-        service_sub2 = new JButton(sub1_txt2);
-        service_sub2.setFont(setFont);
-        service_sub2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        service_sub2.setBackground(Color.LIGHT_GRAY);
-        service_sub2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
-        service_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        service_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        
-        service_sub3 = new JButton(sub1_txt3);
-        service_sub3.setFont(setFont);
-        service_sub3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        service_sub3.setBackground(Color.LIGHT_GRAY);
-        service_sub3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
-        service_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        service_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        
-        panel1.add(service_sub1);
-        panel1.add(service_sub2);
-        panel1.add(service_sub3);
+
+    private void submenu_service(String set) {
+        if (set.equals("ADD")) {
+            service_sub1 = new JButton(sub1_txt1);
+            service_sub1.setFont(setFont);
+            service_sub1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+            service_sub1.setBackground(setColor3);
+            service_sub1.setFocusable(false);
+            service_sub1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
+            service_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            service_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+            service_sub1.setPreferredSize(setDim);
+            service_sub1.addActionListener(new EVENT("idle_speed", this));
+
+            service_sub2 = new JButton(sub1_txt2);
+            service_sub2.setFont(setFont);
+            service_sub2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+            service_sub2.setBackground(setColor3);
+            service_sub2.setFocusable(false);
+            service_sub2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
+            service_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            service_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+            service_sub2.setPreferredSize(setDim);
+            service_sub2.addActionListener(new EVENT("co_level", this));
+
+            service_sub3 = new JButton(sub1_txt3);
+            service_sub3.setFont(setFont);
+            service_sub3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+            service_sub3.setBackground(setColor3);
+            service_sub3.setFocusable(false);
+            service_sub3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png")));
+            service_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            service_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+            service_sub3.setPreferredSize(setDim);
+            service_sub3.addActionListener(new EVENT("throttle", this));
+
+            panel1.add(service_sub1);
+            panel1.add(service_sub2);
+            panel1.add(service_sub3);
         }
-        if(set.equals("REMOVE")){
+        if (set.equals("REMOVE")) {
             panel1.remove(service_sub1);
             panel1.remove(service_sub2);
             panel1.remove(service_sub3);
         }
-        if(set.equals("NULL")){
-            
+        if (set.equals("NULL")) {
+
         }
     }
-    
-    private void refreshFrame(){
+
+    @Override
+    public void showScroll(String scroll) {
+        HashMap<String, JScrollPane> hashMap = new HashMap<>();
+        hashMap.put("idle_speed", idle_speed);
+        hashMap.put("co_level", co_level);
+        hashMap.put("throttle", throttle);
+        idle_speed.setVisible(false);
+        co_level.setVisible(false);
+        throttle.setVisible(false);
+        hashMap.get(scroll).setVisible(true);
+        refreshFrame();
+    }
+
+    private void refreshFrame() {
         super.invalidate();
         super.validate();
         super.repaint();
@@ -101,9 +129,11 @@ public class emct extends javax.swing.JFrame implements language {
         emission = new javax.swing.JButton();
         panel7 = new javax.swing.JPanel();
         control = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        scroll = new javax.swing.JScrollPane();
-        idle = new javax.swing.JPanel();
+        panel8 = new javax.swing.JPanel();
+        BACK = new javax.swing.JButton();
+        panel_right = new javax.swing.JPanel();
+        idle_speed = new javax.swing.JScrollPane();
+        p = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -128,21 +158,75 @@ public class emct extends javax.swing.JFrame implements language {
         jTable3 = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        co_level = new javax.swing.JScrollPane();
+        p1 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        jButton7 = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jButton8 = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        throttle = new javax.swing.JScrollPane();
+        p2 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jButton14 = new javax.swing.JButton();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jSplitPane1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jSplitPane1PropertyChange(evt);
+            }
+        });
 
         panel_menu.setBackground(Color.BLACK);
         panel_menu.setLayout(new javax.swing.BoxLayout(panel_menu, javax.swing.BoxLayout.PAGE_AXIS));
 
         panel1.setLayout(new java.awt.GridLayout(0, 1));
 
+        service.setFocusable(false);
         service.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        service.setBackground(Color.ORANGE);
         service.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         service.setText("Service adjustments");
         service.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         service.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        service.setPreferredSize(new java.awt.Dimension(157, 50));
+        service.setPreferredSize(new java.awt.Dimension(157, 55));
         service.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         service.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -160,13 +244,19 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel2.setLayout(new java.awt.GridLayout(0, 1));
 
+        fuel.setFocusable(false);
         fuel.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         fuel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         fuel.setText("Fuel system");
         fuel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         fuel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        fuel.setPreferredSize(new java.awt.Dimension(106, 50));
+        fuel.setPreferredSize(new java.awt.Dimension(157, 55));
         fuel.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        fuel.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                fuelItemStateChanged(evt);
+            }
+        });
         fuel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fuelActionPerformed(evt);
@@ -178,12 +268,13 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel3.setLayout(new java.awt.GridLayout(0, 1));
 
+        intake.setFocusable(false);
         intake.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         intake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         intake.setText("Intake system");
         intake.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         intake.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        intake.setPreferredSize(new java.awt.Dimension(116, 50));
+        intake.setPreferredSize(new java.awt.Dimension(157, 55));
         intake.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         panel3.add(intake);
 
@@ -191,12 +282,13 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel4.setLayout(new java.awt.GridLayout(0, 1));
 
+        ignition.setFocusable(false);
         ignition.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         ignition.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         ignition.setText("Ignition system");
         ignition.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ignition.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        ignition.setPreferredSize(new java.awt.Dimension(123, 50));
+        ignition.setPreferredSize(new java.awt.Dimension(157, 55));
         ignition.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         ignition.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,12 +301,13 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel5.setLayout(new java.awt.GridLayout(0, 1));
 
+        engine.setFocusable(false);
         engine.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         engine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         engine.setText("Engine sensors");
         engine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         engine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        engine.setPreferredSize(new java.awt.Dimension(128, 50));
+        engine.setPreferredSize(new java.awt.Dimension(157, 55));
         engine.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         panel5.add(engine);
 
@@ -222,12 +315,13 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel6.setLayout(new java.awt.GridLayout(0, 1));
 
+        emission.setFocusable(false);
         emission.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         emission.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         emission.setText("Emission control system");
         emission.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         emission.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        emission.setPreferredSize(new java.awt.Dimension(181, 50));
+        emission.setPreferredSize(new java.awt.Dimension(157, 55));
         emission.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         emission.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,12 +334,13 @@ public class emct extends javax.swing.JFrame implements language {
 
         panel7.setLayout(new java.awt.GridLayout(0, 1));
 
+        control.setFocusable(false);
         control.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         control.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Services_48px.png"))); // NOI18N
         control.setText("Control system");
         control.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         control.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        control.setPreferredSize(new java.awt.Dimension(124, 50));
+        control.setPreferredSize(new java.awt.Dimension(157, 55));
         control.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         control.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,6 +350,18 @@ public class emct extends javax.swing.JFrame implements language {
         panel7.add(control);
 
         panel_menu.add(panel7);
+
+        panel8.setLayout(new java.awt.GridLayout(0, 1));
+
+        BACK.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        BACK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emct/images/Return_48px.png"))); // NOI18N
+        BACK.setText("BACK");
+        BACK.setFocusable(false);
+        BACK.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BACK.setPreferredSize(new java.awt.Dimension(157, 55));
+        panel8.add(BACK);
+
+        panel_menu.add(panel8);
 
         javax.swing.GroupLayout panel_leftLayout = new javax.swing.GroupLayout(panel_left);
         panel_left.setLayout(panel_leftLayout);
@@ -267,13 +374,17 @@ public class emct extends javax.swing.JFrame implements language {
             .addGroup(panel_leftLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(405, Short.MAX_VALUE))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(panel_left);
 
-        idle.setBackground(Color.LIGHT_GRAY);
-        idle.setVisible(true);
+        idle_speed.getVerticalScrollBar().setUnitIncrement(15);
+        idle_speed.getHorizontalScrollBar().setUnitIncrement(15);
+        idle_speed.setMinimumSize(new java.awt.Dimension(0, 0));
+        idle_speed.setName(""); // NOI18N
+
+        p.setBackground(Color.LIGHT_GRAY);
 
         jLabel3.setForeground(setColor2);
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -282,6 +393,9 @@ public class emct extends javax.swing.JFrame implements language {
         jLabel4.setForeground(setColor2);
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel4.setText("Adjustment - except Passat");
+
+        jScrollPane1.setVerifyInputWhenFocusTarget(false);
+        jScrollPane1.setWheelScrollingEnabled(false);
 
         jTable1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -307,7 +421,9 @@ public class emct extends javax.swing.JFrame implements language {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.setAutoscrolls(false);
         jScrollPane1.setViewportView(jTable1);
+        jTable1.getAccessibleContext().setAccessibleParent(idle_speed);
 
         jLabel1.setText("• Idle speed electronically controlled.");
 
@@ -319,6 +435,7 @@ public class emct extends javax.swing.JFrame implements language {
         jLabel6.setForeground(setColor2);
         jLabel6.setText("Adjustment  -  Passat  -");
 
+        jLabel7.setForeground(setColor2);
         jLabel7.setText("&");
 
         jButton1.setBackground(Color.ORANGE);
@@ -353,6 +470,8 @@ public class emct extends javax.swing.JFrame implements language {
 
         jLabel15.setText("• Adjust idle speed with idle speed screw.");
 
+        jScrollPane3.setWheelScrollingEnabled(false);
+
         jTable3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -385,19 +504,19 @@ public class emct extends javax.swing.JFrame implements language {
         jButton4.setBackground(Color.ORANGE);
         jButton4.setText("FIG 2");
 
-        javax.swing.GroupLayout idleLayout = new javax.swing.GroupLayout(idle);
-        idle.setLayout(idleLayout);
-        idleLayout.setHorizontalGroup(
-            idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(idleLayout.createSequentialGroup()
+        javax.swing.GroupLayout pLayout = new javax.swing.GroupLayout(p);
+        p.setLayout(pLayout);
+        pLayout.setHorizontalGroup(
+            pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pLayout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(idleLayout.createSequentialGroup()
-                        .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pLayout.createSequentialGroup()
+                        .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)
                             .addComponent(jLabel5)
-                            .addGroup(idleLayout.createSequentialGroup()
+                            .addGroup(pLayout.createSequentialGroup()
                                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton1)
@@ -405,41 +524,40 @@ public class emct extends javax.swing.JFrame implements language {
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton2)))
-                        .addGap(0, 46, Short.MAX_VALUE))
-                    .addGroup(idleLayout.createSequentialGroup()
-                        .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(pLayout.createSequentialGroup()
+                        .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
                             .addComponent(jLabel3))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(idleLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addGroup(idleLayout.createSequentialGroup()
-                        .addComponent(jLabel15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4))
-                    .addComponent(jLabel10)
-                    .addGroup(idleLayout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3))
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel9))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(idleLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3)
+            .addGroup(pLayout.createSequentialGroup()
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addGroup(pLayout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton4))
+                            .addComponent(jLabel10)
+                            .addGroup(pLayout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton3))
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel9))
+                        .addGap(0, 372, Short.MAX_VALUE))
                     .addComponent(jScrollPane1)
-                    .addComponent(jSeparator1))
+                    .addComponent(jSeparator1)
+                    .addComponent(jScrollPane3))
                 .addContainerGap())
         );
-        idleLayout.setVerticalGroup(
-            idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(idleLayout.createSequentialGroup()
+        pLayout.setVerticalGroup(
+            pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pLayout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
@@ -455,7 +573,7 @@ public class emct extends javax.swing.JFrame implements language {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addGap(60, 60, 60)
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7)
                     .addComponent(jButton1)
@@ -469,7 +587,7 @@ public class emct extends javax.swing.JFrame implements language {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jButton3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -479,34 +597,412 @@ public class emct extends javax.swing.JFrame implements language {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(idleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(jButton4))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        scroll.setViewportView(idle);
+        jScrollPane1.getAccessibleContext().setAccessibleParent(idle_speed);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 719, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(scroll)))
+        idle_speed.setViewportView(p);
+
+        co_level.getVerticalScrollBar().setUnitIncrement(15);
+        co_level.getHorizontalScrollBar().setUnitIncrement(15);
+
+        p1.setBackground(Color.LIGHT_GRAY);
+
+        jLabel16.setForeground(setColor2);
+        jLabel16.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel16.setText("CO level");
+
+        jLabel17.setForeground(setColor2);
+        jLabel17.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel17.setText("Adjustment - except Passat");
+
+        jTable2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"All models", "0,2-1,2% - at sample pipe"}
+            },
+            new String [] {
+                "Technical Data", ""
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(jTable2);
+
+        jLabel18.setText("• CO level electronically controlled .");
+
+        jLabel19.setText("• No adjustment possible.");
+
+        jLabel20.setText("• If CO level not as specified: Check for air leaks in intake and exhaust systems. Carry out component and electrical tests.");
+
+        jLabel21.setForeground(setColor2);
+        jLabel21.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel21.setText("Adjustment  -  Passat  -");
+
+        jLabel22.setForeground(setColor2);
+        jLabel22.setText("&");
+
+        jButton6.setBackground(Color.ORANGE);
+        jButton6.setText("FIG 1");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setBackground(Color.ORANGE);
+        jButton7.setText("FIG 2");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jLabel23.setText("• Can only be adjusted using suitable diagnostic equipment.");
+
+        jLabel24.setText("• Ensure ignition switched OFF.");
+
+        jLabel25.setText("• Disconnect crankcase breather hose from pressure regulating valve.");
+
+        jLabel26.setText("• Plug crankcase breather hose.");
+
+        jLabel27.setText("• Start engine.");
+
+        jLabel28.setText("• Initiate basic setting using suitable diagnostic equipment.");
+
+        jLabel29.setText("• Allow to idle for 2 minutes.");
+
+        jLabel30.setText("• Check CO level.");
+
+        jTable4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"All models", "0,3-1, 1 % - at sample pipe"}
+            },
+            new String [] {
+                "Technical Data", ""
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(jTable4);
+
+        jButton8.setBackground(Color.ORANGE);
+        jButton8.setText("FIG 1");
+
+        jLabel31.setText("• If CO level not as specified: Remove CO adjustment resistor tamperproof plug.");
+
+        jLabel32.setText("• Adjust CO level by turning CO adjustment resistor.");
+
+        jLabel33.setText("• Check that idle speed remains within specification.");
+
+        jButton10.setBackground(Color.ORANGE);
+        jButton10.setText("FIG 3");
+
+        javax.swing.GroupLayout p1Layout = new javax.swing.GroupLayout(p1);
+        p1.setLayout(p1Layout);
+        p1Layout.setHorizontalGroup(
+            p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(p1Layout.createSequentialGroup()
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(p1Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton7))
+                    .addGroup(p1Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel20))))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(p1Layout.createSequentialGroup()
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(p1Layout.createSequentialGroup()
+                        .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(p1Layout.createSequentialGroup()
+                                .addGap(43, 43, 43)
+                                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel16)))
+                            .addGroup(p1Layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel33)
+                                    .addComponent(jLabel32)
+                                    .addGroup(p1Layout.createSequentialGroup()
+                                        .addComponent(jLabel31)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton10))
+                                    .addComponent(jLabel23)
+                                    .addComponent(jLabel30)
+                                    .addComponent(jLabel25)
+                                    .addGroup(p1Layout.createSequentialGroup()
+                                        .addComponent(jLabel26)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton8))
+                                    .addComponent(jLabel27)
+                                    .addComponent(jLabel28)
+                                    .addComponent(jLabel29)
+                                    .addComponent(jLabel24))))
+                        .addGap(0, 263, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 761, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 755, Short.MAX_VALUE)))
+        p1Layout.setVerticalGroup(
+            p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(p1Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(jLabel16)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel17)
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel20)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel22)
+                    .addComponent(jButton6)
+                    .addComponent(jButton7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel23)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(jButton8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(jButton10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel33)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jSplitPane1.setRightComponent(jPanel1);
+        co_level.setViewportView(p1);
+
+        throttle.getVerticalScrollBar().setUnitIncrement(15);
+        throttle.getHorizontalScrollBar().setUnitIncrement(15);
+
+        p2.setBackground(Color.LIGHT_GRAY);
+
+        jLabel34.setForeground(setColor2);
+        jLabel34.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel34.setText("Throttle initial position");
+
+        jLabel35.setForeground(setColor2);
+        jLabel35.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel35.setText("Adjustment -");
+
+        jButton14.setBackground(Color.ORANGE);
+        jButton14.setText("FIG 4");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+
+        jLabel52.setText("• Thro ttle initial position set by manufacturer.");
+
+        jLabel53.setText("• If adjustment is inadvertently altered, adjust as follows:");
+
+        jLabel54.setText("• Ensure accelerator cable has adequate free play.");
+
+        jLabel55.setText("• Turn throttle lever stop screw");
+
+        jLabel56.setText("• Ensure throttle valve is closed.");
+
+        jLabel57.setText("• Turn stop screw clockwise until it just contacts throttle lever. ");
+
+        jLabel58.setText("• Turn stop screw clockwise further 180°. ");
+
+        jLabel59.setText("• Adjust accelerator cable,if necessary. ");
+
+        jLabel60.setText(" • Check idle speed and throttle position (TP) sensor adjustment. ");
+
+        jLabel61.setText(" • Check that throttle valve opens fully when accelerator pedal is fully depressed. ");
+
+        jLabel36.setText("anti-clockwise until clearance exists between stop screw and throttle lever. ");
+
+        jButton9.setBackground(Color.ORANGE);
+        jButton9.setText("FIG 4");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jButton11.setBackground(Color.ORANGE);
+        jButton11.setText("FIG 4");
+
+        javax.swing.GroupLayout p2Layout = new javax.swing.GroupLayout(p2);
+        p2.setLayout(p2Layout);
+        p2Layout.setHorizontalGroup(
+            p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(p2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator3)
+                .addContainerGap())
+            .addGroup(p2Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel61)
+                    .addComponent(jLabel60)
+                    .addComponent(jLabel59)
+                    .addComponent(jLabel58)
+                    .addComponent(jLabel57)
+                    .addComponent(jLabel56)
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel52)
+                    .addGroup(p2Layout.createSequentialGroup()
+                        .addComponent(jLabel35)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton14))
+                    .addComponent(jLabel34)
+                    .addGroup(p2Layout.createSequentialGroup()
+                        .addComponent(jLabel55)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel36)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton11))
+                    .addComponent(jLabel54))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        p2Layout.setVerticalGroup(
+            p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(p2Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(jLabel34)
+                .addGap(13, 13, 13)
+                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(jButton14))
+                .addGap(55, 55, 55)
+                .addComponent(jLabel52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel53)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(jButton9)
+                    .addComponent(jLabel36)
+                    .addComponent(jButton11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel56)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel57)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel60)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel61)
+                .addGap(20, 20, 20)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        throttle.setViewportView(p2);
+
+        javax.swing.GroupLayout panel_rightLayout = new javax.swing.GroupLayout(panel_right);
+        panel_right.setLayout(panel_rightLayout);
+        panel_rightLayout.setHorizontalGroup(
+            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_rightLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(throttle, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE))
+            .addGroup(panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_rightLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(idle_speed, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_rightLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(co_level)))
+        );
+        panel_rightLayout.setVerticalGroup(
+            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_rightLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(throttle, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE))
+            .addGroup(panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_rightLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(idle_speed, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)))
+            .addGroup(panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_rightLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(co_level, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)))
+        );
+
+        jSplitPane1.setRightComponent(panel_right);
 
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
@@ -539,21 +1035,22 @@ public class emct extends javax.swing.JFrame implements language {
     }// </editor-fold>//GEN-END:initComponents
 
     private void serviceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serviceActionPerformed
-        if(!service.isSelected()){
-        service.setSelected(true);
-        service.setBackground(setColor);
-        submenu_service("ADD");
-        refreshFrame();
+        if (!service.isSelected()) {
+            service.setSelected(true);
+            service.setBackground(setColor);
+            submenu_service("ADD");
+            refreshFrame();
         } else {
             service.setSelected(false);
         }
     }//GEN-LAST:event_serviceActionPerformed
 
     private void serviceItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_serviceItemStateChanged
-        if(evt.getStateChange()==ItemEvent.DESELECTED){
+        if (evt.getStateChange() == ItemEvent.DESELECTED) {
             submenu_service("REMOVE");
             refreshFrame();
-            service.setBackground(Color.ORANGE);
+            service.setBackground(Color.WHITE);
+            showScroll("idle_speed");
         }
     }//GEN-LAST:event_serviceItemStateChanged
 
@@ -574,16 +1071,49 @@ public class emct extends javax.swing.JFrame implements language {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void fuelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fuelActionPerformed
-        // TODO add your handling code here:
+        if (!fuel.isSelected()) {
+            fuel.setSelected(true);
+            fuel.setBackground(setColor);
+            submenu_service("ADD");
+            refreshFrame();
+        } else {
+            fuel.setSelected(false);
+        }
     }//GEN-LAST:event_fuelActionPerformed
 
     private void ignitionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ignitionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ignitionActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void fuelItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_fuelItemStateChanged
+        if (evt.getStateChange() == ItemEvent.DESELECTED) {
+            submenu_service("REMOVE");
+            refreshFrame();
+            fuel.setBackground(Color.WHITE);
+            showScroll("idle_speed");
+        }
+    }//GEN-LAST:event_fuelItemStateChanged
+
+    private void jSplitPane1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jSplitPane1PropertyChange
+
+    }//GEN-LAST:event_jSplitPane1PropertyChange
+
     public static void main(String args[]) {
         try {
             javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
@@ -601,21 +1131,34 @@ public class emct extends javax.swing.JFrame implements language {
     private final Font setFont = new Font("Dialog", Font.BOLD, 11);
     private final Color setColor = new Color(255, 204, 0);
     private final Color setColor2 = new Color(15, 89, 193);
+    private final Color setColor3 = new Color(242, 227, 196);
+    private final Dimension setDim = new Dimension(157, 55);
     private static JButton service_sub1;
     private static JButton service_sub2;
     private static JButton service_sub3;
+
+//<editor-fold defaultstate="collapsed" desc="Generated Variables">
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BACK;
+    private javax.swing.JScrollPane co_level;
     private javax.swing.JButton control;
     private javax.swing.JButton emission;
     private javax.swing.JButton engine;
     private javax.swing.JButton fuel;
-    private javax.swing.JPanel idle;
+    private javax.swing.JScrollPane idle_speed;
     private javax.swing.JButton ignition;
     private javax.swing.JButton intake;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -623,21 +1166,60 @@ public class emct extends javax.swing.JFrame implements language {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JPanel p;
+    private javax.swing.JPanel p1;
+    private javax.swing.JPanel p2;
     private javax.swing.JPanel panel;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel2;
@@ -646,9 +1228,28 @@ public class emct extends javax.swing.JFrame implements language {
     private javax.swing.JPanel panel5;
     private javax.swing.JPanel panel6;
     private javax.swing.JPanel panel7;
+    private javax.swing.JPanel panel8;
     private javax.swing.JPanel panel_left;
     private javax.swing.JPanel panel_menu;
-    private javax.swing.JScrollPane scroll;
+    private javax.swing.JPanel panel_right;
     private javax.swing.JButton service;
+    private javax.swing.JScrollPane throttle;
     // End of variables declaration//GEN-END:variables
+//</editor-fold>
+
+    private static class EVENT implements ActionListener {
+
+        private String scroll;
+        private language lg;
+
+        public EVENT(String sc, language g) {
+            this.scroll = sc;
+            this.lg = g;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            lg.showScroll(scroll);
+        }
+    }
 }
