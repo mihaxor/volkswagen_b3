@@ -1,11 +1,10 @@
-package emct.frames;
+package source;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -452,7 +451,7 @@ public class emct extends javax.swing.JFrame implements language {
 //        cold_start.setVisible(false);
 //        fuel_pump.setVisible(false);
 
-        hashMap.get(scroll).setVisible(true);
+        
         refreshFrame();
         if (super.getSize().getWidth() < 1300) {
             super.pack();
