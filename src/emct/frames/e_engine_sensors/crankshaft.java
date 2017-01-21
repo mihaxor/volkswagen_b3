@@ -49,6 +49,8 @@ public class crankshaft extends javax.swing.JPanel {
         jLabel101 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel91.setText("• Do not disconnect multi-plug.Access CKP sensor multi-plug terminals.");
 
         jLabel90.setText("• Ensure ignition switched OFF. ");
@@ -197,7 +199,7 @@ public class crankshaft extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(38, 38, 38)
                                 .addComponent(jLabel101)))
-                        .addGap(0, 316, Short.MAX_VALUE)))
+                        .addGap(0, 199, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -241,7 +243,7 @@ public class crankshaft extends javax.swing.JPanel {
                 .addComponent(jLabel94)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

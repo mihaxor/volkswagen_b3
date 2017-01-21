@@ -41,6 +41,8 @@ public class engine_coolant extends javax.swing.JPanel {
         jLabel94 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jButton21.setBackground(java.awt.Color.orange);
         jButton21.setText("FIG 30");
         jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -69,17 +71,17 @@ public class engine_coolant extends javax.swing.JPanel {
         jTable10.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"1 & 3", "0\u2103 C ", "5000-6500 \u2126"},
-                {"1 & 3", "10\u2103 C ", "3250-4500 \u2126 "},
-                {"1 & 3", "20\u2103 C ", "2200-3000 \u2126"},
-                {"1 & 3", "30\u2103 C ", "1500-2000 \u2126"},
-                {"1 & 3", "40\u2103 C ", "1000-1400 \u2126"},
-                {"1 & 3", "50\u2103 C ", "725-925 \u2126"},
-                {"1 & 3", "60\u2103 C ", "535-675 \u2126"},
-                {"1 & 3", "70\u2103 C ", "400-500 \u2126"},
-                {"1 & 3", "80\u2103 C ", "275-375 \u2126"},
-                {"1 & 3", "90\u2103 C ", "200-285 \u2126"},
-                {"1 & 3", "100\u2103 C ", "160-225 \u2126"}
+                {"1 & 3", "0\u2103", "5000-6500 \u2126"},
+                {"1 & 3", "10\u2103", "3250-4500 \u2126 "},
+                {"1 & 3", "20\u2103", "2200-3000 \u2126"},
+                {"1 & 3", "30\u2103", "1500-2000 \u2126"},
+                {"1 & 3", "40\u2103", "1000-1400 \u2126"},
+                {"1 & 3", "50\u2103", "725-925 \u2126"},
+                {"1 & 3", "60\u2103", "535-675 \u2126"},
+                {"1 & 3", "70\u2103", "400-500 \u2126"},
+                {"1 & 3", "80\u2103", "275-375 \u2126"},
+                {"1 & 3", "90\u2103", "200-285 \u2126"},
+                {"1 & 3", "100\u2103", "160-225 \u2126"}
             },
             new String [] {
                 "Terminals", "Temperature", "Resistance"
@@ -114,32 +116,31 @@ public class engine_coolant extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel80)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(34, 34, 34)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel80)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel81)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel93)
-                                    .addComponent(jLabel85)
-                                    .addComponent(jLabel87)
-                                    .addComponent(jLabel86)
-                                    .addComponent(jLabel94)
-                                    .addComponent(jLabel97)
-                                    .addComponent(jLabel88))))
-                        .addGap(0, 252, Short.MAX_VALUE))
+                                .addComponent(jLabel81)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton21)))
+                        .addGap(0, 521, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane10)
                             .addComponent(jSeparator6))))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel93)
+                    .addComponent(jLabel85)
+                    .addComponent(jLabel87)
+                    .addComponent(jLabel86)
+                    .addComponent(jLabel94)
+                    .addComponent(jLabel97)
+                    .addComponent(jLabel88))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,8 +152,8 @@ public class engine_coolant extends javax.swing.JPanel {
                     .addComponent(jLabel81)
                     .addComponent(jButton21))
                 .addGap(38, 38, 38)
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel85)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel86)
@@ -166,7 +167,7 @@ public class engine_coolant extends javax.swing.JPanel {
                 .addComponent(jLabel94)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel97)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

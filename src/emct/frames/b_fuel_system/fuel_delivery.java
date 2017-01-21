@@ -54,6 +54,8 @@ public class fuel_delivery extends javax.swing.JPanel {
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel78.setText("• Operate switch to run fuel pump.");
 
         jLabel62.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -150,12 +152,12 @@ public class fuel_delivery extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 807, Short.MAX_VALUE)
+            .addGap(0, 773, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 795, Short.MAX_VALUE)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE)
                         .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

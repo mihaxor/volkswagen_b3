@@ -47,6 +47,8 @@ public class fuel_presure extends javax.swing.JPanel {
         jLabel44 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel41.setText("• Connect pressure gauge to fuel supply pipe.");
 
         jButton12.setBackground(java.awt.Color.orange);
@@ -127,7 +129,7 @@ public class fuel_presure extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 814, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
                     .addComponent(jSeparator4)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(24, 24, 24)

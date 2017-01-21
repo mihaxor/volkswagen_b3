@@ -1,5 +1,7 @@
 package source;
 
+import javax.swing.JPanel;
+
 
 
 /*
@@ -47,5 +49,5 @@ public interface language {
     final String control_txt2 = "• Fuel pump relay";
     final String control_txt3 = "• Engine control module (ECM)";
 
-    public void showScroll(String scroll);
+    public void showPanel(JPanel component_panel);
 }

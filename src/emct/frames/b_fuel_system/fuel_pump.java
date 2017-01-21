@@ -49,6 +49,8 @@ public class fuel_pump extends javax.swing.JPanel {
         jTable14 = new javax.swing.JTable();
         jButton33 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel124.setText("• Switch ignition ON. ");
 
         jButton52.setBackground(java.awt.Color.orange);
@@ -139,7 +141,7 @@ public class fuel_pump extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
+                    .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 835, Short.MAX_VALUE)
                     .addComponent(jSeparator8, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
@@ -187,8 +189,8 @@ public class fuel_pump extends javax.swing.JPanel {
                     .addComponent(jLabel146)
                     .addComponent(jButton50))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel124)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel147)
@@ -216,7 +218,7 @@ public class fuel_pump extends javax.swing.JPanel {
                 .addComponent(jLabel156)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -55,6 +55,8 @@ public class intake_air extends javax.swing.JPanel {
         jButton22 = new javax.swing.JButton();
         jButton32 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel96.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel96.setForeground(new java.awt.Color(15, 89, 193));
         jLabel96.setText("&");
@@ -157,15 +159,15 @@ public class intake_air extends javax.swing.JPanel {
         jTable10.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"1 & 4 ", "0\u2103 C ", "5000-6500 \u2126"},
-                {"1 & 4", "10\u2103 C ", "3250-4500 \u2126 "},
-                {"1 & 4", "20\u2103 C ", "2200-3000 \u2126"},
-                {"1 & 4", "30\u2103 C ", "1500-2000 \u2126"},
-                {"1 & 4", "40\u2103 C ", "1000-1400 \u2126"},
-                {"1 & 4", "50\u2103 C ", "725-925 \u2126"},
-                {"1 & 4", "60\u2103 C ", "535-675 \u2126"},
-                {"1 & 4", "70\u2103 C ", "400-500 \u2126"},
-                {"1 & 4", "80\u2103 C ", "275-375 \u2126"}
+                {"1 & 4 ", "0\u2103", "5000-6500 \u2126"},
+                {"1 & 4", "10\u2103 ", "3250-4500 \u2126 "},
+                {"1 & 4", "20\u2103", "2200-3000 \u2126"},
+                {"1 & 4", "30\u2103 ", "1500-2000 \u2126"},
+                {"1 & 4", "40\u2103 ", "1000-1400 \u2126"},
+                {"1 & 4", "50\u2103 ", "725-925 \u2126"},
+                {"1 & 4", "60\u2103", "535-675 \u2126"},
+                {"1 & 4", "70\u2103", "400-500 \u2126"},
+                {"1 & 4", "80\u2103 ", "275-375 \u2126"}
             },
             new String [] {
                 "Terminals", "Temperature", "Resistance"
@@ -204,39 +206,40 @@ public class intake_air extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel90)
-                    .addComponent(jLabel92)
+                    .addComponent(jLabel80)
+                    .addComponent(jLabel100)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel91)
+                        .addComponent(jLabel81)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton25))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel93)
+                        .addComponent(jButton21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton26)))
+                        .addComponent(jLabel108)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton31)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane10)
+                    .addComponent(jSeparator6)
+                    .addComponent(jScrollPane9)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel80)
-                            .addComponent(jLabel100)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel81)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel108)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton31)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 870, Short.MAX_VALUE)
+                                .addGap(22, 22, 22)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel90)
+                                    .addComponent(jLabel92)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel91)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton25))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel93)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton26))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(26, 26, 26)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,13 +261,8 @@ public class intake_air extends javax.swing.JPanel {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel96)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton24))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSeparator6)))
+                                        .addComponent(jButton24)))))
+                        .addGap(460, 460, 460)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -281,8 +279,8 @@ public class intake_air extends javax.swing.JPanel {
                     .addComponent(jLabel108)
                     .addComponent(jButton31))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel85)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -294,7 +292,7 @@ public class intake_air extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel88)
                     .addComponent(jButton32))
-                .addGap(38, 38, 38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
                     .addComponent(jButton23)
@@ -314,9 +312,9 @@ public class intake_air extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel93)
                     .addComponent(jButton26))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

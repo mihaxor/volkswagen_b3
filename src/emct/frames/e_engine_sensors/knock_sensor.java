@@ -39,6 +39,8 @@ public class knock_sensor extends javax.swing.JPanel {
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel91.setText("• Tighten fixing to specified torque.");
 
         jLabel90.setText("• Refit KS.");
@@ -102,7 +104,7 @@ public class knock_sensor extends javax.swing.JPanel {
                         .addComponent(jLabel87, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel86, javax.swing.GroupLayout.Alignment.LEADING))
                     .addComponent(jLabel91))
-                .addContainerGap(290, Short.MAX_VALUE))
+                .addContainerGap(324, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -142,7 +144,7 @@ public class knock_sensor extends javax.swing.JPanel {
                 .addComponent(jLabel91)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(221, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

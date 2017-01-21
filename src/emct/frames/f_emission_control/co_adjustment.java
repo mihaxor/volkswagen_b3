@@ -39,6 +39,8 @@ public class co_adjustment extends javax.swing.JPanel {
         jTable10 = new javax.swing.JTable();
         jButton21 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel90.setText("• Resistance change should be smooth.");
 
         jLabel86.setText("• Disconnect CO adjustment resistor multi-plug .");
@@ -118,7 +120,7 @@ public class co_adjustment extends javax.swing.JPanel {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 749, Short.MAX_VALUE))
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jSeparator6)))
@@ -147,7 +149,7 @@ public class co_adjustment extends javax.swing.JPanel {
                 .addComponent(jLabel90)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

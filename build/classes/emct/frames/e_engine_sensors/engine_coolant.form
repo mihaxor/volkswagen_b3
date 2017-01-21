@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="d3" green="e0" red="e2" type="rgb"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -19,32 +24,16 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel80" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel81" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton21" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
+                          <Component id="jLabel80" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel93" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel85" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel87" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel86" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel94" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel97" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel88" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLabel81" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButton21" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="252" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="521" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -55,6 +44,19 @@
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel93" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel85" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel87" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel86" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel94" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel97" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel88" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,8 +71,8 @@
                   <Component id="jButton21" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-              <Component id="jScrollPane10" min="-2" pref="224" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane10" min="-2" pref="295" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel85" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel86" min="-2" max="-2" attributes="0"/>
@@ -84,7 +86,7 @@
               <Component id="jLabel94" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel97" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="107" max="32767" attributes="0"/>
+              <EmptySpace pref="42" max="32767" attributes="0"/>
               <Component id="jSeparator6" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -188,17 +190,17 @@
                   <Data value="1 &amp; 3"/>
                 </Column>
                 <Column editable="false" title="Temperature" type="java.lang.String">
-                  <Data value="0\u2103 C "/>
-                  <Data value="10\u2103 C "/>
-                  <Data value="20\u2103 C "/>
-                  <Data value="30\u2103 C "/>
-                  <Data value="40\u2103 C "/>
-                  <Data value="50\u2103 C "/>
-                  <Data value="60\u2103 C "/>
-                  <Data value="70\u2103 C "/>
-                  <Data value="80\u2103 C "/>
-                  <Data value="90\u2103 C "/>
-                  <Data value="100\u2103 C "/>
+                  <Data value="0\u2103"/>
+                  <Data value="10\u2103"/>
+                  <Data value="20\u2103"/>
+                  <Data value="30\u2103"/>
+                  <Data value="40\u2103"/>
+                  <Data value="50\u2103"/>
+                  <Data value="60\u2103"/>
+                  <Data value="70\u2103"/>
+                  <Data value="80\u2103"/>
+                  <Data value="90\u2103"/>
+                  <Data value="100\u2103"/>
                 </Column>
                 <Column editable="false" title="Resistance" type="java.lang.String">
                   <Data value="5000-6500 \u2126"/>

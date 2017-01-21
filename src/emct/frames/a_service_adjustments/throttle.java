@@ -45,6 +45,8 @@ public class throttle extends javax.swing.JPanel {
         jLabel57 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(226, 224, 211));
+
         jLabel52.setText("• Thro ttle initial position set by manufacturer.");
 
         jLabel36.setText("anti-clockwise until clearance exists between stop screw and throttle lever. ");
@@ -117,7 +119,8 @@ public class throttle extends javax.swing.JPanel {
                         .addComponent(jButton11))
                     .addComponent(jLabel54))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jSeparator3)
                 .addContainerGap())
         );

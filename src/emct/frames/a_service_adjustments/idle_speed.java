@@ -5,6 +5,9 @@
  */
 package emct.frames.a_service_adjustments;
 
+import javax.swing.JScrollBar;
+import source.emct;
+
 /**
  *
  * @author Catalin Glavan
@@ -51,6 +54,8 @@ public class idle_speed extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
         jLabel15 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(226, 224, 211));
 
         jScrollPane3.setWheelScrollingEnabled(false);
 
@@ -167,7 +172,7 @@ public class idle_speed extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 692, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(3, 3, 3)
@@ -207,14 +212,14 @@ public class idle_speed extends javax.swing.JPanel {
                                     .addComponent(jLabel14)
                                     .addComponent(jLabel9))
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 686, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator1)))
                     .addGap(3, 3, 3)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 774, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(31, 31, 31)
@@ -259,7 +264,7 @@ public class idle_speed extends javax.swing.JPanel {
                         .addComponent(jButton4))
                     .addGap(18, 18, 18)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(32, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
