@@ -5,8 +5,8 @@
  */
 package emct.frames.a_service_adjustments;
 
-import javax.swing.JScrollBar;
-import emct.forms.emct;
+import emct.forms.default_images;
+import java.awt.Point;
 
 /**
  *
@@ -16,8 +16,10 @@ public class idle_speed extends javax.swing.JPanel {
 
     /**
      * Creates new form idle_speed
+     * @param setPoint
      */
-    public idle_speed() {
+    public idle_speed(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -32,21 +34,21 @@ public class idle_speed extends javax.swing.JPanel {
 
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        fig1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        fig2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        fig2_2 = new javax.swing.JButton();
+        fig1_1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -85,9 +87,14 @@ public class idle_speed extends javax.swing.JPanel {
         });
         jScrollPane3.setViewportView(jTable3);
 
-        jButton1.setBackground(java.awt.Color.orange);
-        jButton1.setText("FIG 1");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1.setBackground(java.awt.Color.orange);
+        fig1.setText("FIG 1");
+        fig1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig1ActionPerformed(evt);
+            }
+        });
 
         jLabel7.setForeground(new java.awt.Color(15, 89, 193));
         jLabel7.setText("&");
@@ -98,9 +105,14 @@ public class idle_speed extends javax.swing.JPanel {
 
         jLabel1.setText("• Idle speed electronically controlled.");
 
-        jButton2.setBackground(java.awt.Color.orange);
-        jButton2.setText("FIG 2");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2.setBackground(java.awt.Color.orange);
+        fig2.setText("FIG 2");
+        fig2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig2ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("• No adjustment possible.");
 
@@ -118,13 +130,23 @@ public class idle_speed extends javax.swing.JPanel {
         jLabel3.setForeground(new java.awt.Color(15, 89, 193));
         jLabel3.setText("Idle speed");
 
-        jButton4.setBackground(java.awt.Color.orange);
-        jButton4.setText("FIG 2");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2_2.setBackground(java.awt.Color.orange);
+        fig2_2.setText("FIG 2");
+        fig2_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig2_2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(java.awt.Color.orange);
-        jButton3.setText("FIG 1");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1_1.setBackground(java.awt.Color.orange);
+        fig1_1.setText("FIG 1");
+        fig1_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig1_1ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(15, 89, 193));
@@ -172,8 +194,12 @@ public class idle_speed extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 664, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane1)
+                    .addContainerGap())
                 .addGroup(layout.createSequentialGroup()
                     .addGap(3, 3, 3)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,11 +212,11 @@ public class idle_speed extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton1)
+                                    .addComponent(fig1)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jLabel7)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton2))
+                                    .addComponent(fig2))
                                 .addComponent(jLabel4)
                                 .addComponent(jLabel3)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,21 +227,23 @@ public class idle_speed extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel15)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton4))
+                                        .addComponent(fig2_2))
                                     .addComponent(jLabel10)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel11)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton3))
+                                        .addComponent(fig1_1))
                                     .addComponent(jLabel12)
                                     .addComponent(jLabel13)
                                     .addComponent(jLabel14)
                                     .addComponent(jLabel9))
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator1)))
-                    .addGap(3, 3, 3)))
+                    .addGap(3, 3, 3))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane3)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,8 +266,8 @@ public class idle_speed extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel6)
                         .addComponent(jLabel7)
-                        .addComponent(jButton1)
-                        .addComponent(jButton2))
+                        .addComponent(fig1)
+                        .addComponent(fig2))
                     .addGap(43, 43, 43)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -251,7 +279,7 @@ public class idle_speed extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel11)
-                        .addComponent(jButton3))
+                        .addComponent(fig1_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel12)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -261,19 +289,43 @@ public class idle_speed extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel15)
-                        .addComponent(jButton4))
+                        .addComponent(fig2_2))
                     .addGap(18, 18, 18)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig1ActionPerformed
+        if (evt.getSource() == fig1) {
+            new default_images("FIG 1", "/emct/images/figures/fig1.jpg", point);
+        }
+    }//GEN-LAST:event_fig1ActionPerformed
 
+    private void fig2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig2ActionPerformed
+        if (evt.getSource() == fig2) {
+            new default_images("FIG 2", "/emct/images/figures/fig2.jpg", point);
+        }
+    }//GEN-LAST:event_fig2ActionPerformed
+
+    private void fig1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig1_1ActionPerformed
+        if (evt.getSource() == fig1_1) {
+            new default_images("FIG 1", "/emct/images/figures/fig1.jpg", point);
+        }
+    }//GEN-LAST:event_fig1_1ActionPerformed
+
+    private void fig2_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig2_2ActionPerformed
+        if (evt.getSource() == fig2_2) {
+            new default_images("FIG 2", "/emct/images/figures/fig2.jpg", point);
+        }
+    }//GEN-LAST:event_fig2_2ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton fig1;
+    private javax.swing.JButton fig1_1;
+    private javax.swing.JButton fig2;
+    private javax.swing.JButton fig2_2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

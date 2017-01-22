@@ -13,15 +13,16 @@ import javax.swing.JPanel;
 public class default_panel extends JPanel {
 
     private Image mainImage = null;
-    private Image scaledImage = null;
+    private final Image scaledImage = null;
 
     public default_panel() {
 
         super.setPreferredSize(new Dimension(1541, 991));
         mainImage = new ImageIcon(getClass().getResource("/emct/images/default_panel.jpg")).getImage();
-        mainImage = mainImage.getScaledInstance(this.getPreferredSize().width, this.getPreferredSize().height, Image.SCALE_DEFAULT);
+        mainImage = mainImage.getScaledInstance(super.getPreferredSize().width, super.getPreferredSize().height, Image.SCALE_DEFAULT);
     }
 
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;

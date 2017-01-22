@@ -1,14 +1,13 @@
 package emct.frames.a_service_adjustments;
 
-
+import emct.forms.default_images;
+import java.awt.Point;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 /**
  *
  * @author Catalin Glavan
@@ -17,8 +16,11 @@ public class co_level extends javax.swing.JPanel {
 
     /**
      * Creates new form co_level
+     *
+     * @param setPoint
      */
-    public co_level() {
+    public co_level(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -38,7 +40,7 @@ public class co_level extends javax.swing.JPanel {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         jLabel17 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        fig1 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
@@ -123,9 +125,14 @@ public class co_level extends javax.swing.JPanel {
         jLabel17.setForeground(new java.awt.Color(15, 89, 193));
         jLabel17.setText("Adjustment - except Passat");
 
-        jButton6.setBackground(java.awt.Color.orange);
-        jButton6.setText("FIG 1");
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1.setBackground(java.awt.Color.orange);
+        fig1.setText("FIG 1");
+        fig1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig1ActionPerformed(evt);
+            }
+        });
 
         jLabel23.setText("• Can only be adjusted using suitable diagnostic equipment.");
 
@@ -176,8 +183,12 @@ public class co_level extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 736, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane2)
+                    .addContainerGap())
                 .addGroup(layout.createSequentialGroup()
                     .addGap(3, 3, 3)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,7 +196,7 @@ public class co_level extends javax.swing.JPanel {
                             .addGap(36, 36, 36)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton6)
+                            .addComponent(fig1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel22)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -225,10 +236,12 @@ public class co_level extends javax.swing.JPanel {
                                             .addComponent(jLabel29)
                                             .addComponent(jLabel24))))
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane2)
-                            .addComponent(jScrollPane4)
                             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.LEADING)))
-                    .addGap(3, 3, 3)))
+                    .addGap(3, 3, 3))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane4)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,7 +264,7 @@ public class co_level extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel21)
                         .addComponent(jLabel22)
-                        .addComponent(jButton6)
+                        .addComponent(fig1)
                         .addComponent(jButton7))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -287,10 +300,16 @@ public class co_level extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig1ActionPerformed
+        if (evt.getSource() == fig1) {
+            new default_images("FIG 1", "/emct/images/default_panel.jpg", point);
+        }
+    }//GEN-LAST:event_fig1ActionPerformed
 
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton fig1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel16;

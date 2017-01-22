@@ -1,5 +1,6 @@
 package emct.forms;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 
@@ -50,4 +51,5 @@ public interface language {
     final String control_txt3 = "• Engine control module (ECM)";
 
     public void showPanel(JPanel component_panel);
+    public void buttonState(JButton button);
 }
