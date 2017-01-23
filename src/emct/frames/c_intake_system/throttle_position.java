@@ -5,6 +5,9 @@
  */
 package emct.frames.c_intake_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class throttle_position extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public throttle_position() {
+    public throttle_position(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -30,14 +34,14 @@ public class throttle_position extends javax.swing.JPanel {
         jLabel84 = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable8 = new javax.swing.JTable();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        fig17 = new javax.swing.JButton();
+        fig16 = new javax.swing.JButton();
         jLabel83 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel81 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
+        fig16_1 = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
         jLabel86 = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
@@ -90,15 +94,25 @@ public class throttle_position extends javax.swing.JPanel {
         jTable8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jScrollPane8.setViewportView(jTable8);
 
-        jButton20.setBackground(java.awt.Color.orange);
-        jButton20.setText("FIG 17");
-        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton20.setFocusable(false);
+        fig17.setBackground(java.awt.Color.orange);
+        fig17.setText("FIG 17");
+        fig17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig17.setFocusable(false);
+        fig17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig17ActionPerformed(evt);
+            }
+        });
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 16");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig16.setBackground(java.awt.Color.orange);
+        fig16.setText("FIG 16");
+        fig16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig16.setFocusable(false);
+        fig16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig16ActionPerformed(evt);
+            }
+        });
 
         jLabel83.setText("• Disconnect TP sensor multi-plug. ");
 
@@ -112,10 +126,15 @@ public class throttle_position extends javax.swing.JPanel {
 
         jLabel82.setText("• Ensure ignition switched OFF. ");
 
-        jButton19.setBackground(java.awt.Color.orange);
-        jButton19.setText("FIG 16");
-        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton19.setFocusable(false);
+        fig16_1.setBackground(java.awt.Color.orange);
+        fig16_1.setText("FIG 16");
+        fig16_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig16_1.setFocusable(false);
+        fig16_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig16_1ActionPerformed(evt);
+            }
+        });
 
         jLabel85.setText("• If resistance not as specified:Check wiring. ");
 
@@ -227,12 +246,12 @@ public class throttle_position extends javax.swing.JPanel {
                                         .addGap(11, 11, 11)
                                         .addComponent(jLabel91)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton19))
+                                        .addComponent(fig16_1))
                                     .addComponent(jLabel80)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))))
+                                        .addComponent(fig16))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +262,7 @@ public class throttle_position extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel86)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton20))))
+                                        .addComponent(fig17))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,7 +291,7 @@ public class throttle_position extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig16))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
@@ -286,7 +305,7 @@ public class throttle_position extends javax.swing.JPanel {
                 .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel91)
-                    .addComponent(jButton19))
+                    .addComponent(fig16_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -300,7 +319,7 @@ public class throttle_position extends javax.swing.JPanel {
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel86)
-                    .addComponent(jButton20))
+                    .addComponent(fig17))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -321,11 +340,29 @@ public class throttle_position extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig16ActionPerformed
+        if (evt.getSource() == fig16) {
+            new default_images("FIG 16", "/emct/images/figures/fig16.jpg", point);
+        }
+    }//GEN-LAST:event_fig16ActionPerformed
 
+    private void fig16_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig16_1ActionPerformed
+        if (evt.getSource() == fig16_1) {
+            new default_images("FIG 16", "/emct/images/figures/fig16.jpg", point);
+        }
+    }//GEN-LAST:event_fig16_1ActionPerformed
+
+    private void fig17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig17ActionPerformed
+        if (evt.getSource() == fig17) {
+            new default_images("FIG 17", "/emct/images/figures/fig17.jpg", point);
+        }
+    }//GEN-LAST:event_fig17ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
+    private javax.swing.JButton fig16;
+    private javax.swing.JButton fig16_1;
+    private javax.swing.JButton fig17;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;

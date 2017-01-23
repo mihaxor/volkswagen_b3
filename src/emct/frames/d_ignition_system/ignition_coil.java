@@ -5,6 +5,9 @@
  */
 package emct.frames.d_ignition_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class ignition_coil extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public ignition_coil() {
+    public ignition_coil(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -29,12 +33,12 @@ public class ignition_coil extends javax.swing.JPanel {
 
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        fig25 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        fig26 = new javax.swing.JButton();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
         jLabel80 = new javax.swing.JLabel();
@@ -55,10 +59,15 @@ public class ignition_coil extends javax.swing.JPanel {
 
         jLabel90.setText("• Disconnect ignition coil high-tension lead.");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 25");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig25.setBackground(java.awt.Color.orange);
+        fig25.setText("FIG 25");
+        fig25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig25.setFocusable(false);
+        fig25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig25ActionPerformed(evt);
+            }
+        });
 
         jLabel92.setText("• Check resistance between ignition coil low-tension terminals.");
 
@@ -70,10 +79,15 @@ public class ignition_coil extends javax.swing.JPanel {
         jLabel95.setForeground(new java.awt.Color(15, 89, 193));
         jLabel95.setText("Checking secondary resistance -");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 26");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig26.setBackground(java.awt.Color.orange);
+        fig26.setText("FIG 26");
+        fig26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig26.setFocusable(false);
+        fig26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig26ActionPerformed(evt);
+            }
+        });
 
         jScrollPane9.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -173,7 +187,7 @@ public class ignition_coil extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))
+                                        .addComponent(fig25))
                                     .addComponent(jLabel108)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(26, 26, 26)
@@ -195,7 +209,7 @@ public class ignition_coil extends javax.swing.JPanel {
                                 .addGap(13, 13, 13)
                                 .addComponent(jLabel95)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton23)))
+                                .addComponent(fig26)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -209,7 +223,7 @@ public class ignition_coil extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig25))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -225,7 +239,7 @@ public class ignition_coil extends javax.swing.JPanel {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
-                    .addComponent(jButton23))
+                    .addComponent(fig26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -243,10 +257,23 @@ public class ignition_coil extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig25ActionPerformed
+        if (evt.getSource() == fig25) {
+            new default_images("FIG 25", "/emct/images/figures/fig25.jpg", point);
+        } 
+    }//GEN-LAST:event_fig25ActionPerformed
 
+    private void fig26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig26ActionPerformed
+        if (evt.getSource() == fig26) {
+            new default_images("FIG 26", "/emct/images/figures/fig26.jpg", point);
+        } 
+    }//GEN-LAST:event_fig26ActionPerformed
+
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton23;
+    private javax.swing.JButton fig25;
+    private javax.swing.JButton fig26;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;

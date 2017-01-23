@@ -5,6 +5,9 @@
  */
 package emct.frames.f_emission_control;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class co_adjustment extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public co_adjustment() {
+    public co_adjustment(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -37,7 +41,7 @@ public class co_adjustment extends javax.swing.JPanel {
         jLabel87 = new javax.swing.JLabel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
-        jButton21 = new javax.swing.JButton();
+        fig33 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
@@ -88,10 +92,15 @@ public class co_adjustment extends javax.swing.JPanel {
         jTable10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jScrollPane10.setViewportView(jTable10);
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 33");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig33.setBackground(java.awt.Color.orange);
+        fig33.setText("FIG 33");
+        fig33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig33.setFocusable(false);
+        fig33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig33ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -116,7 +125,7 @@ public class co_adjustment extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel81)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton21)))
+                                .addComponent(fig33)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -134,7 +143,7 @@ public class co_adjustment extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig33))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
@@ -153,9 +162,15 @@ public class co_adjustment extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig33ActionPerformed
+        if (evt.getSource() == fig33) {
+            new default_images("FIG 33", "/emct/images/figures/fig33.jpg", point);
+        }
+    }//GEN-LAST:event_fig33ActionPerformed
 
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
+    private javax.swing.JButton fig33;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel85;

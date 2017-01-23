@@ -5,6 +5,9 @@
  */
 package emct.frames.e_engine_sensors;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class engine_coolant extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public engine_coolant() {
+    public engine_coolant(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -27,7 +31,7 @@ public class engine_coolant extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton21 = new javax.swing.JButton();
+        fig30 = new javax.swing.JButton();
         jLabel86 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel88 = new javax.swing.JLabel();
@@ -43,10 +47,15 @@ public class engine_coolant extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(226, 224, 211));
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 30");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig30.setBackground(java.awt.Color.orange);
+        fig30.setText("FIG 30");
+        fig30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig30.setFocusable(false);
+        fig30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig30ActionPerformed(evt);
+            }
+        });
 
         jLabel86.setText("• Disconnect ECT sensor multi-plug.");
 
@@ -122,7 +131,7 @@ public class engine_coolant extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel81)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton21)))
+                                .addComponent(fig30)))
                         .addGap(0, 521, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -150,7 +159,7 @@ public class engine_coolant extends javax.swing.JPanel {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig30))
                 .addGap(38, 38, 38)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -173,9 +182,15 @@ public class engine_coolant extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig30ActionPerformed
+        if (evt.getSource() == fig30) {
+            new default_images("FIG 30", "/emct/images/figures/fig30.jpg", point);
+        }
+    }//GEN-LAST:event_fig30ActionPerformed
 
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
+    private javax.swing.JButton fig30;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel85;

@@ -5,6 +5,9 @@
  */
 package emct.frames.b_fuel_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class cold_start extends javax.swing.JPanel {
     /**
      * Creates new form cold_start
      */
-    public cold_start() {
+    public cold_start(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -28,13 +32,13 @@ public class cold_start extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel114 = new javax.swing.JLabel();
-        jButton49 = new javax.swing.JButton();
+        fig12_3 = new javax.swing.JButton();
         jLabel138 = new javax.swing.JLabel();
-        jButton46 = new javax.swing.JButton();
+        fig12_2 = new javax.swing.JButton();
         jScrollPane13 = new javax.swing.JScrollPane();
         jTable13 = new javax.swing.JTable();
         jLabel111 = new javax.swing.JLabel();
-        jButton48 = new javax.swing.JButton();
+        fig14_1 = new javax.swing.JButton();
         jLabel119 = new javax.swing.JLabel();
         jLabel118 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
@@ -48,37 +52,47 @@ public class cold_start extends javax.swing.JPanel {
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable12 = new javax.swing.JTable();
         jLabel113 = new javax.swing.JLabel();
-        jButton32 = new javax.swing.JButton();
+        fig12 = new javax.swing.JButton();
         jLabel137 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
-        jButton43 = new javax.swing.JButton();
+        fig13 = new javax.swing.JButton();
         jLabel141 = new javax.swing.JLabel();
         jLabel140 = new javax.swing.JLabel();
-        jButton47 = new javax.swing.JButton();
+        fig14 = new javax.swing.JButton();
         jLabel142 = new javax.swing.JLabel();
         jLabel116 = new javax.swing.JLabel();
         jLabel115 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jLabel108 = new javax.swing.JLabel();
         jLabel139 = new javax.swing.JLabel();
-        jButton45 = new javax.swing.JButton();
-        jButton44 = new javax.swing.JButton();
+        fig13_1 = new javax.swing.JButton();
+        fig12_1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
         jLabel114.setText("• Ensure ignition switched OFF. ");
 
-        jButton49.setBackground(java.awt.Color.orange);
-        jButton49.setText("FIG 12");
-        jButton49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton49.setFocusable(false);
+        fig12_3.setBackground(java.awt.Color.orange);
+        fig12_3.setText("FIG 12");
+        fig12_3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig12_3.setFocusable(false);
+        fig12_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig12_3ActionPerformed(evt);
+            }
+        });
 
         jLabel138.setText("• Disconnect engine coolant temperature (ECT) sensor multi-plug. ");
 
-        jButton46.setBackground(java.awt.Color.orange);
-        jButton46.setText("FIG 12");
-        jButton46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton46.setFocusable(false);
+        fig12_2.setBackground(java.awt.Color.orange);
+        fig12_2.setText("FIG 12");
+        fig12_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig12_2.setFocusable(false);
+        fig12_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig12_2ActionPerformed(evt);
+            }
+        });
 
         jScrollPane13.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -112,10 +126,15 @@ public class cold_start extends javax.swing.JPanel {
 
         jLabel111.setText("• Do not disconnect multi-plug. Remove cold start injector. ");
 
-        jButton48.setBackground(java.awt.Color.orange);
-        jButton48.setText("FIG 14");
-        jButton48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton48.setFocusable(false);
+        fig14_1.setBackground(java.awt.Color.orange);
+        fig14_1.setText("FIG 14");
+        fig14_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig14_1.setFocusable(false);
+        fig14_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig14_1ActionPerformed(evt);
+            }
+        });
 
         jLabel119.setText("• Dry nozzle of cold start injector. ");
 
@@ -176,26 +195,41 @@ public class cold_start extends javax.swing.JPanel {
         jLabel113.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         jLabel113.setText("NOTE: Disconnect injector harness multi-plug before cranking tests,to prevent engine from starting. ");
 
-        jButton32.setBackground(java.awt.Color.orange);
-        jButton32.setText("FIG 12");
-        jButton32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton32.setFocusable(false);
+        fig12.setBackground(java.awt.Color.orange);
+        fig12.setText("FIG 12");
+        fig12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig12.setFocusable(false);
+        fig12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig12ActionPerformed(evt);
+            }
+        });
 
         jLabel137.setText("• Disconnect cold start injector multi-plug. ");
 
-        jButton43.setBackground(java.awt.Color.orange);
-        jButton43.setText("FIG 13");
-        jButton43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton43.setFocusable(false);
+        fig13.setBackground(java.awt.Color.orange);
+        fig13.setText("FIG 13");
+        fig13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig13.setFocusable(false);
+        fig13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig13ActionPerformed(evt);
+            }
+        });
 
         jLabel141.setText("• Briefly crank engine. ");
 
         jLabel140.setText("• Connect LEO test lamp between cold start injector harness multi-plug terminals ");
 
-        jButton47.setBackground(java.awt.Color.orange);
-        jButton47.setText("FIG 14");
-        jButton47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton47.setFocusable(false);
+        fig14.setBackground(java.awt.Color.orange);
+        fig14.setText("FIG 14");
+        fig14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig14.setFocusable(false);
+        fig14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig14ActionPerformed(evt);
+            }
+        });
 
         jLabel142.setText("• Check that LEO flashes.");
 
@@ -213,15 +247,25 @@ public class cold_start extends javax.swing.JPanel {
 
         jLabel139.setText("• Connect resistor between ECT sensor harness multi-plug terminals ");
 
-        jButton45.setBackground(java.awt.Color.orange);
-        jButton45.setText("FIG 13");
-        jButton45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton45.setFocusable(false);
+        fig13_1.setBackground(java.awt.Color.orange);
+        fig13_1.setText("FIG 13");
+        fig13_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig13_1.setFocusable(false);
+        fig13_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig13_1ActionPerformed(evt);
+            }
+        });
 
-        jButton44.setBackground(java.awt.Color.orange);
-        jButton44.setText("FIG 12");
-        jButton44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton44.setFocusable(false);
+        fig12_1.setBackground(java.awt.Color.orange);
+        fig12_1.setText("FIG 12");
+        fig12_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig12_1.setFocusable(false);
+        fig12_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig12_1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -241,11 +285,11 @@ public class cold_start extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel136)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton32)
+                                            .addComponent(fig12)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel109)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton43))))
+                                            .addComponent(fig13))))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(39, 39, 39)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,25 +299,25 @@ public class cold_start extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel139)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton44))
+                                            .addComponent(fig12_1))
                                         .addComponent(jLabel141)
                                         .addComponent(jLabel142)
                                         .addComponent(jLabel143)
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel140)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton45))))
+                                            .addComponent(fig13_1))))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(19, 19, 19)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel144)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton46)
+                                            .addComponent(fig12_2)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel145)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton47))
+                                            .addComponent(fig14))
                                         .addComponent(jLabel113))))
                             .addGap(0, 0, Short.MAX_VALUE))
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -286,7 +330,7 @@ public class cold_start extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel112)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton48))
+                                    .addComponent(fig14_1))
                                 .addComponent(jLabel111)
                                 .addComponent(jLabel117)
                                 .addComponent(jLabel118)
@@ -296,7 +340,7 @@ public class cold_start extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel116)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton49)))
+                                    .addComponent(fig12_3)))
                             .addGap(346, 346, 346)))
                     .addContainerGap()))
         );
@@ -310,9 +354,9 @@ public class cold_start extends javax.swing.JPanel {
                     .addGap(18, 18, 18)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel109)
-                        .addComponent(jButton32)
+                        .addComponent(fig12)
                         .addComponent(jLabel136)
-                        .addComponent(jButton43))
+                        .addComponent(fig13))
                     .addGap(18, 18, 18)
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -326,11 +370,11 @@ public class cold_start extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel139)
-                        .addComponent(jButton44))
+                        .addComponent(fig12_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel140)
-                        .addComponent(jButton45))
+                        .addComponent(fig13_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel141)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -340,9 +384,9 @@ public class cold_start extends javax.swing.JPanel {
                     .addGap(34, 34, 34)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel144)
-                        .addComponent(jButton46)
+                        .addComponent(fig12_2)
                         .addComponent(jLabel145)
-                        .addComponent(jButton47))
+                        .addComponent(fig14))
                     .addGap(18, 18, 18)
                     .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -352,13 +396,13 @@ public class cold_start extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel112)
-                        .addComponent(jButton48))
+                        .addComponent(fig14_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel115)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel116)
-                        .addComponent(jButton49))
+                        .addComponent(fig12_3))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel117)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -373,16 +417,63 @@ public class cold_start extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig12ActionPerformed
+        if (evt.getSource() == fig12) {
+            new default_images("FIG 12", "/emct/images/figures/fig12.jpg", point);
+        }
+    }//GEN-LAST:event_fig12ActionPerformed
 
+    private void fig13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig13ActionPerformed
+        if (evt.getSource() == fig13) {
+            new default_images("FIG 13", "/emct/images/figures/fig13.jpg", point);
+        }
+    }//GEN-LAST:event_fig13ActionPerformed
+
+    private void fig12_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig12_1ActionPerformed
+        if (evt.getSource() == fig12_1) {
+            new default_images("FIG 12", "/emct/images/figures/fig12.jpg", point);
+        }
+     }//GEN-LAST:event_fig12_1ActionPerformed
+
+    private void fig13_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig13_1ActionPerformed
+        if (evt.getSource() == fig13_1) {
+            new default_images("FIG 13", "/emct/images/figures/fig13.jpg", point);
+        }
+     }//GEN-LAST:event_fig13_1ActionPerformed
+
+    private void fig12_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig12_2ActionPerformed
+        if (evt.getSource() == fig12_2) {
+            new default_images("FIG 12", "/emct/images/figures/fig12.jpg", point);
+        }     }//GEN-LAST:event_fig12_2ActionPerformed
+
+    private void fig14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig14ActionPerformed
+        if (evt.getSource() == fig14) {
+            new default_images("FIG 14", "/emct/images/figures/fig14.jpg", point);
+        }
+    }//GEN-LAST:event_fig14ActionPerformed
+
+    private void fig14_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig14_1ActionPerformed
+        if (evt.getSource() == fig14_1) {
+            new default_images("FIG 14", "/emct/images/figures/fig14.jpg", point);
+        }
+     }//GEN-LAST:event_fig14_1ActionPerformed
+
+    private void fig12_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig12_3ActionPerformed
+        if (evt.getSource() == fig12_3) {
+            new default_images("FIG 12", "/emct/images/figures/fig12.jpg", point);
+        }
+     }//GEN-LAST:event_fig12_3ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton43;
-    private javax.swing.JButton jButton44;
-    private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton47;
-    private javax.swing.JButton jButton48;
-    private javax.swing.JButton jButton49;
+    private javax.swing.JButton fig12;
+    private javax.swing.JButton fig12_1;
+    private javax.swing.JButton fig12_2;
+    private javax.swing.JButton fig12_3;
+    private javax.swing.JButton fig13;
+    private javax.swing.JButton fig13_1;
+    private javax.swing.JButton fig14;
+    private javax.swing.JButton fig14_1;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel110;

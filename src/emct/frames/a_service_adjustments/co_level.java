@@ -45,18 +45,18 @@ public class co_level extends javax.swing.JPanel {
         jLabel28 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        fig1_1 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jButton7 = new javax.swing.JButton();
+        fig2 = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        fig3 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -142,9 +142,14 @@ public class co_level extends javax.swing.JPanel {
 
         jLabel20.setText("• If CO level not as specified: Check for air leaks in intake and exhaust systems. Carry out component and electrical tests.");
 
-        jButton8.setBackground(java.awt.Color.orange);
-        jButton8.setText("FIG 1");
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1_1.setBackground(java.awt.Color.orange);
+        fig1_1.setText("FIG 1");
+        fig1_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig1_1ActionPerformed(evt);
+            }
+        });
 
         jLabel26.setText("• Plug crankcase breather hose.");
 
@@ -155,9 +160,14 @@ public class co_level extends javax.swing.JPanel {
 
         jLabel33.setText("• Check that idle speed remains within specification.");
 
-        jButton7.setBackground(java.awt.Color.orange);
-        jButton7.setText("FIG 2");
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2.setBackground(java.awt.Color.orange);
+        fig2.setText("FIG 2");
+        fig2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig2ActionPerformed(evt);
+            }
+        });
 
         jLabel32.setText("• Adjust CO level by turning CO adjustment resistor.");
 
@@ -169,9 +179,14 @@ public class co_level extends javax.swing.JPanel {
         jLabel21.setForeground(new java.awt.Color(15, 89, 193));
         jLabel21.setText("Adjustment  -  Passat  -");
 
-        jButton10.setBackground(java.awt.Color.orange);
-        jButton10.setText("FIG 3");
-        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig3.setBackground(java.awt.Color.orange);
+        fig3.setText("FIG 3");
+        fig3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig3ActionPerformed(evt);
+            }
+        });
 
         jLabel18.setText("• CO level electronically controlled .");
 
@@ -200,7 +215,7 @@ public class co_level extends javax.swing.JPanel {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel22)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton7))
+                            .addComponent(fig2))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(41, 41, 41)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,14 +238,14 @@ public class co_level extends javax.swing.JPanel {
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel31)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jButton10))
+                                                .addComponent(fig3))
                                             .addComponent(jLabel23)
                                             .addComponent(jLabel30)
                                             .addComponent(jLabel25)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel26)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jButton8))
+                                                .addComponent(fig1_1))
                                             .addComponent(jLabel27)
                                             .addComponent(jLabel28)
                                             .addComponent(jLabel29)
@@ -265,7 +280,7 @@ public class co_level extends javax.swing.JPanel {
                         .addComponent(jLabel21)
                         .addComponent(jLabel22)
                         .addComponent(fig1)
-                        .addComponent(jButton7))
+                        .addComponent(fig2))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
@@ -277,7 +292,7 @@ public class co_level extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel26)
-                        .addComponent(jButton8))
+                        .addComponent(fig1_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel27)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -289,7 +304,7 @@ public class co_level extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel31)
-                        .addComponent(jButton10))
+                        .addComponent(fig3))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel32)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -302,16 +317,34 @@ public class co_level extends javax.swing.JPanel {
 
     private void fig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig1ActionPerformed
         if (evt.getSource() == fig1) {
-            new default_images("FIG 1", "/emct/images/default_panel.jpg", point);
+            new default_images("FIG 1", "/emct/images/figures/fig1.jpg", point);
         }
     }//GEN-LAST:event_fig1ActionPerformed
+
+    private void fig2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig2ActionPerformed
+        if (evt.getSource() == fig2) {
+            new default_images("FIG 2", "/emct/images/figures/fig2.jpg", point);
+        }
+    }//GEN-LAST:event_fig2ActionPerformed
+
+    private void fig1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig1_1ActionPerformed
+        if (evt.getSource() == fig1_1) {
+            new default_images("FIG 1", "/emct/images/figures/fig1.jpg", point);
+        }
+    }//GEN-LAST:event_fig1_1ActionPerformed
+
+    private void fig3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig3ActionPerformed
+        if (evt.getSource() == fig3) {
+            new default_images("FIG 3", "/emct/images/figures/fig3.jpg", point);
+        }
+    }//GEN-LAST:event_fig3ActionPerformed
 
     private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton fig1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton fig1_1;
+    private javax.swing.JButton fig2;
+    private javax.swing.JButton fig3;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;

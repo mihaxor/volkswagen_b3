@@ -5,6 +5,9 @@
  */
 package emct.frames.d_ignition_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class ignition_timing extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public ignition_timing() {
+    public ignition_timing(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -29,12 +33,12 @@ public class ignition_timing extends javax.swing.JPanel {
 
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        fig23 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        fig23_1 = new javax.swing.JButton();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
         jLabel80 = new javax.swing.JLabel();
@@ -43,8 +47,8 @@ public class ignition_timing extends javax.swing.JPanel {
         jLabel109 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
-        jButton22 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
+        fig24 = new javax.swing.JButton();
+        fig24_1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
@@ -52,10 +56,15 @@ public class ignition_timing extends javax.swing.JPanel {
 
         jLabel90.setText("• Start engine. Allow to idle.");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 23");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig23.setBackground(java.awt.Color.orange);
+        fig23.setText("FIG 23");
+        fig23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig23.setFocusable(false);
+        fig23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig23ActionPerformed(evt);
+            }
+        });
 
         jLabel92.setText("• Increase rpm to specified value.");
 
@@ -65,10 +74,15 @@ public class ignition_timing extends javax.swing.JPanel {
 
         jLabel93.setText("• Check basic ignition timing");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 23");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig23_1.setBackground(java.awt.Color.orange);
+        fig23_1.setText("FIG 23");
+        fig23_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig23_1.setFocusable(false);
+        fig23_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig23_1ActionPerformed(evt);
+            }
+        });
 
         jScrollPane9.setBorder(null);
 
@@ -116,15 +130,25 @@ public class ignition_timing extends javax.swing.JPanel {
         jLabel82.setForeground(new java.awt.Color(15, 89, 193));
         jLabel82.setText("&");
 
-        jButton22.setBackground(java.awt.Color.orange);
-        jButton22.setText("FIG 24");
-        jButton22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton22.setFocusable(false);
+        fig24.setBackground(java.awt.Color.orange);
+        fig24.setText("FIG 24");
+        fig24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig24.setFocusable(false);
+        fig24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig24ActionPerformed(evt);
+            }
+        });
 
-        jButton24.setBackground(java.awt.Color.orange);
-        jButton24.setText("FIG 24");
-        jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton24.setFocusable(false);
+        fig24_1.setBackground(java.awt.Color.orange);
+        fig24_1.setText("FIG 24");
+        fig24_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig24_1.setFocusable(false);
+        fig24_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig24_1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -139,11 +163,11 @@ public class ignition_timing extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel81)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton21)
+                                .addComponent(fig23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel82)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton22)))
+                                .addComponent(fig24)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -161,7 +185,7 @@ public class ignition_timing extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel93)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton24)))
+                                .addComponent(fig24_1)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,7 +193,7 @@ public class ignition_timing extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel108)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton23))
+                                .addComponent(fig23_1))
                             .addComponent(jLabel110)
                             .addComponent(jLabel109)
                             .addComponent(jLabel90)
@@ -184,15 +208,15 @@ public class ignition_timing extends javax.swing.JPanel {
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21)
+                    .addComponent(fig23)
                     .addComponent(jLabel82)
-                    .addComponent(jButton22))
+                    .addComponent(fig24))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel108)
-                    .addComponent(jButton23))
+                    .addComponent(fig23_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel109)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -206,7 +230,7 @@ public class ignition_timing extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel93)
-                    .addComponent(jButton24))
+                    .addComponent(fig24_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel97)
                 .addGap(18, 18, 18)
@@ -215,12 +239,36 @@ public class ignition_timing extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig23ActionPerformed
+        if (evt.getSource() == fig23) {
+            new default_images("FIG 23", "/emct/images/figures/fig23.jpg", point);
+        }
+    }//GEN-LAST:event_fig23ActionPerformed
 
+    private void fig24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig24ActionPerformed
+        if (evt.getSource() == fig24) {
+            new default_images("FIG 24", "/emct/images/figures/fig24.jpg", point);
+        }
+    }//GEN-LAST:event_fig24ActionPerformed
+
+    private void fig23_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig23_1ActionPerformed
+        if (evt.getSource() == fig23_1) {
+            new default_images("FIG 23", "/emct/images/figures/fig23.jpg", point);
+        }
+    }//GEN-LAST:event_fig23_1ActionPerformed
+
+    private void fig24_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig24_1ActionPerformed
+        if (evt.getSource() == fig24_1) {
+            new default_images("FIG 24", "/emct/images/figures/fig24.jpg", point);
+        }
+    }//GEN-LAST:event_fig24_1ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
+    private javax.swing.JButton fig23;
+    private javax.swing.JButton fig23_1;
+    private javax.swing.JButton fig24;
+    private javax.swing.JButton fig24_1;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel110;

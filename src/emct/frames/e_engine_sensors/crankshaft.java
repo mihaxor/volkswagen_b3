@@ -5,6 +5,9 @@
  */
 package emct.frames.e_engine_sensors;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class crankshaft extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public crankshaft() {
+    public crankshaft(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -30,7 +34,7 @@ public class crankshaft extends javax.swing.JPanel {
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
         jLabel100 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        fig31 = new javax.swing.JButton();
         jLabel86 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
@@ -38,7 +42,7 @@ public class crankshaft extends javax.swing.JPanel {
         jLabel81 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        fig32 = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
@@ -57,10 +61,15 @@ public class crankshaft extends javax.swing.JPanel {
 
         jLabel100.setText("NOTE: Incorporated in distributor. ");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 31");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig31.setBackground(java.awt.Color.orange);
+        fig31.setText("FIG 31");
+        fig31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig31.setFocusable(false);
+        fig31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig31ActionPerformed(evt);
+            }
+        });
 
         jLabel86.setText("• Disconnect CKP sensor multi-plug. ");
 
@@ -78,10 +87,15 @@ public class crankshaft extends javax.swing.JPanel {
         jLabel95.setForeground(new java.awt.Color(15, 89, 193));
         jLabel95.setText("Checking signal - ");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 32");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig32.setBackground(java.awt.Color.orange);
+        fig32.setText("FIG 32");
+        fig32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig32.setFocusable(false);
+        fig32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig32ActionPerformed(evt);
+            }
+        });
 
         jLabel85.setText("• Ensure ignition switched OFF. ");
 
@@ -175,7 +189,7 @@ public class crankshaft extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))))
+                                        .addComponent(fig31))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(62, 62, 62)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -187,7 +201,7 @@ public class crankshaft extends javax.swing.JPanel {
                                 .addGap(37, 37, 37)
                                 .addComponent(jLabel95)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton23))
+                                .addComponent(fig32))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(66, 66, 66)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,7 +226,7 @@ public class crankshaft extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig31))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -226,7 +240,7 @@ public class crankshaft extends javax.swing.JPanel {
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
-                    .addComponent(jButton23))
+                    .addComponent(fig32))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -247,10 +261,22 @@ public class crankshaft extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig31ActionPerformed
+        if (evt.getSource() == fig31) {
+            new default_images("FIG 31", "/emct/images/figures/fig31.jpg", point);
+        }
+    }//GEN-LAST:event_fig31ActionPerformed
 
+    private void fig32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig32ActionPerformed
+        if (evt.getSource() == fig32) {
+            new default_images("FIG 32", "/emct/images/figures/fig32.jpg", point);
+        }
+    }//GEN-LAST:event_fig32ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton23;
+    private javax.swing.JButton fig31;
+    private javax.swing.JButton fig32;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel80;

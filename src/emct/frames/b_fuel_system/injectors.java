@@ -5,6 +5,9 @@
  */
 package emct.frames.b_fuel_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class injectors extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public injectors() {
+    public injectors(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -30,7 +34,7 @@ public class injectors extends javax.swing.JPanel {
         jLabel96 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
-        jButton30 = new javax.swing.JButton();
+        fig11_1 = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
@@ -38,10 +42,10 @@ public class injectors extends javax.swing.JPanel {
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable8 = new javax.swing.JTable();
         jLabel101 = new javax.swing.JLabel();
-        jButton20 = new javax.swing.JButton();
+        fig8_2 = new javax.swing.JButton();
         jLabel89 = new javax.swing.JLabel();
-        jButton28 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        fig11 = new javax.swing.JButton();
+        fig8 = new javax.swing.JButton();
         jLabel86 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
@@ -51,29 +55,29 @@ public class injectors extends javax.swing.JPanel {
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
         jLabel105 = new javax.swing.JLabel();
-        jButton25 = new javax.swing.JButton();
+        fig8_4 = new javax.swing.JButton();
         jLabel88 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
-        jButton24 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
+        fig10 = new javax.swing.JButton();
+        fig10_1 = new javax.swing.JButton();
+        fig9 = new javax.swing.JButton();
         jLabel95 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
+        fig8_5 = new javax.swing.JButton();
+        fig8_6 = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
         jLabel107 = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
         jLabel80 = new javax.swing.JLabel();
-        jButton29 = new javax.swing.JButton();
+        fig8_7 = new javax.swing.JButton();
         jLabel104 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTable7 = new javax.swing.JTable();
         jLabel97 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
+        fig8_1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
@@ -87,10 +91,15 @@ public class injectors extends javax.swing.JPanel {
         jLabel94.setForeground(new java.awt.Color(15, 89, 193));
         jLabel94.setText("Checking resistance .individually -");
 
-        jButton30.setBackground(java.awt.Color.orange);
-        jButton30.setText("FIG 11");
-        jButton30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton30.setFocusable(false);
+        fig11_1.setBackground(java.awt.Color.orange);
+        fig11_1.setText("FIG 11");
+        fig11_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig11_1.setFocusable(false);
+        fig11_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig11_1ActionPerformed(evt);
+            }
+        });
 
         jLabel91.setText("• Disconnect injector harness multi-plug");
 
@@ -133,22 +142,37 @@ public class injectors extends javax.swing.JPanel {
         jLabel101.setForeground(new java.awt.Color(15, 89, 193));
         jLabel101.setText("&");
 
-        jButton20.setBackground(java.awt.Color.orange);
-        jButton20.setText("FIG 8");
-        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton20.setFocusable(false);
+        fig8_2.setBackground(java.awt.Color.orange);
+        fig8_2.setText("FIG 8");
+        fig8_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_2.setFocusable(false);
+        fig8_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_2ActionPerformed(evt);
+            }
+        });
 
         jLabel89.setText("• Repeat test for each injector. ");
 
-        jButton28.setBackground(java.awt.Color.orange);
-        jButton28.setText("FIG 11");
-        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton28.setFocusable(false);
+        fig11.setBackground(java.awt.Color.orange);
+        fig11.setText("FIG 11");
+        fig11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig11.setFocusable(false);
+        fig11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig11ActionPerformed(evt);
+            }
+        });
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 8");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig8.setBackground(java.awt.Color.orange);
+        fig8.setText("FIG 8");
+        fig8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8.setFocusable(false);
+        fig8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8ActionPerformed(evt);
+            }
+        });
 
         jLabel86.setText("• Remove fuel railwith injectors . ");
 
@@ -168,10 +192,15 @@ public class injectors extends javax.swing.JPanel {
 
         jLabel105.setText("• Briefly crank engine. ");
 
-        jButton25.setBackground(java.awt.Color.orange);
-        jButton25.setText("FIG 8");
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton25.setFocusable(false);
+        fig8_4.setBackground(java.awt.Color.orange);
+        fig8_4.setText("FIG 8");
+        fig8_4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_4.setFocusable(false);
+        fig8_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_4ActionPerformed(evt);
+            }
+        });
 
         jLabel88.setText("• Check resistance between injector terminals. ");
 
@@ -181,34 +210,59 @@ public class injectors extends javax.swing.JPanel {
 
         jLabel93.setText("• Check voltage between harness multi-plug terminal and earth ");
 
-        jButton24.setBackground(java.awt.Color.orange);
-        jButton24.setText("FIG 10");
-        jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton24.setFocusable(false);
+        fig10.setBackground(java.awt.Color.orange);
+        fig10.setText("FIG 10");
+        fig10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig10.setFocusable(false);
+        fig10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig10ActionPerformed(evt);
+            }
+        });
 
-        jButton26.setBackground(java.awt.Color.orange);
-        jButton26.setText("FIG 10");
-        jButton26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton26.setFocusable(false);
+        fig10_1.setBackground(java.awt.Color.orange);
+        fig10_1.setText("FIG 10");
+        fig10_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig10_1.setFocusable(false);
+        fig10_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig10_1ActionPerformed(evt);
+            }
+        });
 
-        jButton22.setBackground(java.awt.Color.orange);
-        jButton22.setText("FIG 9");
-        jButton22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton22.setFocusable(false);
+        fig9.setBackground(java.awt.Color.orange);
+        fig9.setText("FIG 9");
+        fig9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig9.setFocusable(false);
+        fig9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig9ActionPerformed(evt);
+            }
+        });
 
         jLabel95.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel95.setForeground(new java.awt.Color(15, 89, 193));
         jLabel95.setText("Checking supply voltage -");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 8");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig8_5.setBackground(java.awt.Color.orange);
+        fig8_5.setText("FIG 8");
+        fig8_5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_5.setFocusable(false);
+        fig8_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_5ActionPerformed(evt);
+            }
+        });
 
-        jButton27.setBackground(java.awt.Color.orange);
-        jButton27.setText("FIG 8");
-        jButton27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton27.setFocusable(false);
+        fig8_6.setBackground(java.awt.Color.orange);
+        fig8_6.setText("FIG 8");
+        fig8_6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_6.setFocusable(false);
+        fig8_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_6ActionPerformed(evt);
+            }
+        });
 
         jLabel85.setText("• Ensure ignition switched OFF.");
 
@@ -247,10 +301,15 @@ public class injectors extends javax.swing.JPanel {
         jLabel80.setForeground(new java.awt.Color(15, 89, 193));
         jLabel80.setText("Injectors ");
 
-        jButton29.setBackground(java.awt.Color.orange);
-        jButton29.setText("FIG 8");
-        jButton29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton29.setFocusable(false);
+        fig8_7.setBackground(java.awt.Color.orange);
+        fig8_7.setText("FIG 8");
+        fig8_7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_7.setFocusable(false);
+        fig8_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_7ActionPerformed(evt);
+            }
+        });
 
         jLabel104.setText("• Connect LEO test lamp between harness multi-plug terminals");
 
@@ -289,10 +348,15 @@ public class injectors extends javax.swing.JPanel {
 
         jLabel97.setText("• If voltage not as specified:Check wiring and fuel pump relay.");
 
-        jButton19.setBackground(java.awt.Color.orange);
-        jButton19.setText("FIG 8");
-        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton19.setFocusable(false);
+        fig8_1.setBackground(java.awt.Color.orange);
+        fig8_1.setText("FIG 8");
+        fig8_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig8_1.setFocusable(false);
+        fig8_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig8_1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -309,16 +373,16 @@ public class injectors extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel94)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton22))
+                                    .addComponent(fig9))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel83)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton19))
+                                    .addComponent(fig8_1))
                                 .addComponent(jLabel82)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel84)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton20))))
+                                    .addComponent(fig8_2))))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(24, 24, 24)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -327,7 +391,7 @@ public class injectors extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel81)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton21))
+                                    .addComponent(fig8))
                                 .addComponent(jLabel80)))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(24, 24, 24)
@@ -335,11 +399,11 @@ public class injectors extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel95)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton23)
+                                    .addComponent(fig8_5)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jLabel96)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton24))
+                                    .addComponent(fig10))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel88)
                                     .addComponent(jLabel85, javax.swing.GroupLayout.Alignment.LEADING)
@@ -354,21 +418,21 @@ public class injectors extends javax.swing.JPanel {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel91)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton25))
+                                    .addComponent(fig8_4))
                                 .addComponent(jLabel97)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel93)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton26))
+                                    .addComponent(fig10_1))
                                 .addComponent(jLabel102)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel103)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton29))
+                                    .addComponent(fig8_7))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel104)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton30))
+                                    .addComponent(fig11_1))
                                 .addComponent(jLabel106)
                                 .addComponent(jLabel107)
                                 .addGroup(layout.createSequentialGroup()
@@ -376,12 +440,12 @@ public class injectors extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel98)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton27)
+                                            .addComponent(fig8_6)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel101))
                                         .addComponent(jLabel105))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton28))))
+                                    .addComponent(fig11))))
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jScrollPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 821, Short.MAX_VALUE)
                         .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -402,7 +466,7 @@ public class injectors extends javax.swing.JPanel {
                     .addGap(3, 3, 3)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel81)
-                        .addComponent(jButton21))
+                        .addComponent(fig8))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
@@ -410,15 +474,15 @@ public class injectors extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel83)
-                        .addComponent(jButton19))
+                        .addComponent(fig8_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel84)
-                        .addComponent(jButton20))
+                        .addComponent(fig8_2))
                     .addGap(50, 50, 50)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel94)
-                        .addComponent(jButton22))
+                        .addComponent(fig9))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
@@ -434,9 +498,9 @@ public class injectors extends javax.swing.JPanel {
                     .addGap(48, 48, 48)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel95)
-                        .addComponent(jButton23)
+                        .addComponent(fig8_5)
                         .addComponent(jLabel96)
-                        .addComponent(jButton24))
+                        .addComponent(fig10))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -444,31 +508,31 @@ public class injectors extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel91)
-                        .addComponent(jButton25))
+                        .addComponent(fig8_4))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel92)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel93)
-                        .addComponent(jButton26))
+                        .addComponent(fig10_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel97)
                     .addGap(21, 21, 21)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel98)
-                        .addComponent(jButton27)
+                        .addComponent(fig8_6)
                         .addComponent(jLabel101)
-                        .addComponent(jButton28))
+                        .addComponent(fig11))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel102)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel103)
-                        .addComponent(jButton29))
+                        .addComponent(fig8_7))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel104)
-                        .addComponent(jButton30))
+                        .addComponent(fig11_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel105)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -481,20 +545,92 @@ public class injectors extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8ActionPerformed
+        if (evt.getSource() == fig8) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8ActionPerformed
 
+    private void fig8_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_1ActionPerformed
+        if (evt.getSource() == fig8_1) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_1ActionPerformed
+
+    private void fig8_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_2ActionPerformed
+        if (evt.getSource() == fig8_2) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_2ActionPerformed
+
+    private void fig9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig9ActionPerformed
+        if (evt.getSource() == fig9) {
+            new default_images("FIG 9", "/emct/images/figures/fig9.jpg", point);
+        }
+    }//GEN-LAST:event_fig9ActionPerformed
+
+    private void fig8_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_5ActionPerformed
+        if (evt.getSource() == fig8_5) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_5ActionPerformed
+
+    private void fig10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig10ActionPerformed
+        if (evt.getSource() == fig10) {
+            new default_images("FIG 10", "/emct/images/figures/fig10.jpg", point);
+        }
+    }//GEN-LAST:event_fig10ActionPerformed
+
+    private void fig8_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_4ActionPerformed
+        if (evt.getSource() == fig8_4) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_4ActionPerformed
+
+    private void fig10_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig10_1ActionPerformed
+        if (evt.getSource() == fig10_1) {
+            new default_images("FIG 10", "/emct/images/figures/fig10.jpg", point);
+        }
+    }//GEN-LAST:event_fig10_1ActionPerformed
+
+    private void fig8_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_6ActionPerformed
+        if (evt.getSource() == fig8_6) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_6ActionPerformed
+
+    private void fig11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig11ActionPerformed
+        if (evt.getSource() == fig11) {
+            new default_images("FIG 11", "/emct/images/figures/fig11.jpg", point);
+        }
+    }//GEN-LAST:event_fig11ActionPerformed
+
+    private void fig8_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig8_7ActionPerformed
+        if (evt.getSource() == fig8_7) {
+            new default_images("FIG 8", "/emct/images/figures/fig8.jpg", point);
+        }
+    }//GEN-LAST:event_fig8_7ActionPerformed
+
+    private void fig11_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig11_1ActionPerformed
+        if (evt.getSource() == fig11_1) {
+            new default_images("FIG 11", "/emct/images/figures/fig11.jpg", point);
+        }
+    }//GEN-LAST:event_fig11_1ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
+    private javax.swing.JButton fig10;
+    private javax.swing.JButton fig10_1;
+    private javax.swing.JButton fig11;
+    private javax.swing.JButton fig11_1;
+    private javax.swing.JButton fig8;
+    private javax.swing.JButton fig8_1;
+    private javax.swing.JButton fig8_2;
+    private javax.swing.JButton fig8_4;
+    private javax.swing.JButton fig8_5;
+    private javax.swing.JButton fig8_6;
+    private javax.swing.JButton fig8_7;
+    private javax.swing.JButton fig9;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;

@@ -5,6 +5,9 @@
  */
 package emct.frames.b_fuel_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class fuel_delivery extends javax.swing.JPanel {
     /**
      * Creates new form fuel_delivery
      */
-    public fuel_delivery() {
+    public fuel_delivery(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -36,10 +40,10 @@ public class fuel_delivery extends javax.swing.JPanel {
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
+        fig5 = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
+        fig5_1 = new javax.swing.JButton();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTable6 = new javax.swing.JTable();
         jLabel69 = new javax.swing.JLabel();
@@ -51,8 +55,8 @@ public class fuel_delivery extends javax.swing.JPanel {
         jLabel74 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
+        fig6 = new javax.swing.JButton();
+        fig7 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
@@ -74,10 +78,15 @@ public class fuel_delivery extends javax.swing.JPanel {
 
         jLabel73.setText("• Switch fuel pump OFF. ");
 
-        jButton13.setBackground(java.awt.Color.orange);
-        jButton13.setText("FIG 5");
-        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton13.setFocusable(false);
+        fig5.setBackground(java.awt.Color.orange);
+        fig5.setText("FIG 5");
+        fig5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig5.setFocusable(false);
+        fig5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig5ActionPerformed(evt);
+            }
+        });
 
         jLabel51.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel51.setForeground(new java.awt.Color(15, 89, 193));
@@ -85,10 +94,15 @@ public class fuel_delivery extends javax.swing.JPanel {
 
         jLabel63.setText("• Ensure ignition switched OFF.");
 
-        jButton15.setBackground(java.awt.Color.orange);
-        jButton15.setText("FIG 5");
-        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton15.setFocusable(false);
+        fig5_1.setBackground(java.awt.Color.orange);
+        fig5_1.setText("FIG 5");
+        fig5_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig5_1.setFocusable(false);
+        fig5_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig5_1ActionPerformed(evt);
+            }
+        });
 
         jScrollPane6.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -138,15 +152,25 @@ public class fuel_delivery extends javax.swing.JPanel {
 
         jLabel72.setText("• Slowly close gauge tap untilfuel pressure is as specified.");
 
-        jButton16.setBackground(java.awt.Color.orange);
-        jButton16.setText("FIG 6");
-        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton16.setFocusable(false);
+        fig6.setBackground(java.awt.Color.orange);
+        fig6.setText("FIG 6");
+        fig6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig6.setFocusable(false);
+        fig6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig6ActionPerformed(evt);
+            }
+        });
 
-        jButton17.setBackground(java.awt.Color.orange);
-        jButton17.setText("FIG 7");
-        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton17.setFocusable(false);
+        fig7.setBackground(java.awt.Color.orange);
+        fig7.setText("FIG 7");
+        fig7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig7.setFocusable(false);
+        fig7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -167,13 +191,13 @@ public class fuel_delivery extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel62)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton13)
+                                            .addComponent(fig5)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton16)
+                                            .addComponent(fig6)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel75)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton17))
+                                            .addComponent(fig7))
                                         .addComponent(jLabel51)))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(22, 22, 22)
@@ -193,7 +217,7 @@ public class fuel_delivery extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel65)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton15))
+                                            .addComponent(fig5_1))
                                         .addComponent(jLabel74)
                                         .addComponent(jLabel73)
                                         .addComponent(jLabel78))))
@@ -210,10 +234,10 @@ public class fuel_delivery extends javax.swing.JPanel {
                     .addGap(18, 18, 18)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel62)
-                        .addComponent(jButton13)
+                        .addComponent(fig5)
                         .addComponent(jLabel75)
-                        .addComponent(jButton16)
-                        .addComponent(jButton17))
+                        .addComponent(fig6)
+                        .addComponent(fig7))
                     .addGap(24, 24, 24)
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(58, 58, 58)
@@ -223,7 +247,7 @@ public class fuel_delivery extends javax.swing.JPanel {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel65)
-                        .addComponent(jButton15))
+                        .addComponent(fig5_1))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel66)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -256,12 +280,37 @@ public class fuel_delivery extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig5ActionPerformed
+        if (evt.getSource() == fig5) {
+            new default_images("FIG 5", "/emct/images/figures/fig5.jpg", point);
+        } 
+    }//GEN-LAST:event_fig5ActionPerformed
 
+    private void fig6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig6ActionPerformed
+        if (evt.getSource() == fig6) {
+            new default_images("FIG 6", "/emct/images/figures/fig6.jpg", point);
+        } 
+    }//GEN-LAST:event_fig6ActionPerformed
+
+    private void fig7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig7ActionPerformed
+        if (evt.getSource() == fig7) {
+            new default_images("FIG 7", "/emct/images/figures/fig7.jpg", point);
+        } 
+    }//GEN-LAST:event_fig7ActionPerformed
+
+    private void fig5_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig5_1ActionPerformed
+        if (evt.getSource() == fig5_1) {
+            new default_images("FIG 5", "/emct/images/figures/fig5.jpg", point);
+        } 
+    }//GEN-LAST:event_fig5_1ActionPerformed
+
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
+    private javax.swing.JButton fig5;
+    private javax.swing.JButton fig5_1;
+    private javax.swing.JButton fig6;
+    private javax.swing.JButton fig7;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;

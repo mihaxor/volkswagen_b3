@@ -5,6 +5,9 @@
  */
 package emct.frames.d_ignition_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class high_tension extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public high_tension() {
+    public high_tension(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -29,7 +33,7 @@ public class high_tension extends javax.swing.JPanel {
 
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        fig22 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
@@ -47,10 +51,15 @@ public class high_tension extends javax.swing.JPanel {
 
         jLabel90.setText("• Connect test spark plug to high-tension lead. ");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 22");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig22.setBackground(java.awt.Color.orange);
+        fig22.setText("FIG 22");
+        fig22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig22.setFocusable(false);
+        fig22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig22ActionPerformed(evt);
+            }
+        });
 
         jLabel92.setText("• Briefly crank engine. ");
 
@@ -90,7 +99,7 @@ public class high_tension extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))
+                                        .addComponent(fig22))
                                     .addComponent(jLabel108)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(32, 32, 32)
@@ -119,7 +128,7 @@ public class high_tension extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig22))
                 .addGap(34, 34, 34)
                 .addComponent(jLabel109)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -142,9 +151,15 @@ public class high_tension extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig22ActionPerformed
+        if (evt.getSource() == fig22) {
+            new default_images("FIG 22", "/emct/images/figures/fig22.jpg", point);
+        }
+    }//GEN-LAST:event_fig22ActionPerformed
 
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
+    private javax.swing.JButton fig22;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel110;

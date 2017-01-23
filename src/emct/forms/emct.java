@@ -91,7 +91,7 @@ public class emct extends javax.swing.JFrame implements language {
             service_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             service_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             service_sub3.setPreferredSize(setDim);
-            service_sub3.addActionListener(new EVENT(new throttle(), this, service_sub3));
+            service_sub3.addActionListener(new EVENT(new throttle(super.getLocation()), this, service_sub3));
 
             panel1.add(service_sub1);
             panel1.add(service_sub2);
@@ -118,7 +118,7 @@ public class emct extends javax.swing.JFrame implements language {
             fuel_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             fuel_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             fuel_sub1.setPreferredSize(setDim);
-            fuel_sub1.addActionListener(new EVENT(new fuel_presure(), this, fuel_sub1));
+            fuel_sub1.addActionListener(new EVENT(new fuel_presure(super.getLocation()), this, fuel_sub1));
 
             fuel_sub2 = new JButton(fuel_txt2);
             fuel_sub2.setFont(setFont);
@@ -129,7 +129,7 @@ public class emct extends javax.swing.JFrame implements language {
             fuel_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             fuel_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             fuel_sub2.setPreferredSize(setDim);
-            fuel_sub2.addActionListener(new EVENT(new fuel_delivery(), this, fuel_sub2));
+            fuel_sub2.addActionListener(new EVENT(new fuel_delivery(super.getLocation()), this, fuel_sub2));
 
             fuel_sub3 = new JButton(fuel_txt3);
             fuel_sub3.setFont(setFont);
@@ -140,7 +140,7 @@ public class emct extends javax.swing.JFrame implements language {
             fuel_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             fuel_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             fuel_sub3.setPreferredSize(setDim);
-            fuel_sub3.addActionListener(new EVENT(new injectors(), this, fuel_sub3));
+            fuel_sub3.addActionListener(new EVENT(new injectors(super.getLocation()), this, fuel_sub3));
 
             fuel_sub4 = new JButton(fuel_txt4);
             fuel_sub4.setFont(setFont);
@@ -151,7 +151,7 @@ public class emct extends javax.swing.JFrame implements language {
             fuel_sub4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             fuel_sub4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             fuel_sub4.setPreferredSize(setDim);
-            fuel_sub4.addActionListener(new EVENT(new cold_start(), this, fuel_sub4));
+            fuel_sub4.addActionListener(new EVENT(new cold_start(super.getLocation()), this, fuel_sub4));
 
             fuel_sub5 = new JButton(fuel_txt5);
             fuel_sub5.setFont(setFont);
@@ -162,7 +162,7 @@ public class emct extends javax.swing.JFrame implements language {
             fuel_sub5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             fuel_sub5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             fuel_sub5.setPreferredSize(setDim);
-            fuel_sub5.addActionListener(new EVENT(new fuel_pump(), this, fuel_sub5));
+            fuel_sub5.addActionListener(new EVENT(new fuel_pump(super.getLocation()), this, fuel_sub5));
 
             panel2.add(fuel_sub1);
             panel2.add(fuel_sub2);
@@ -193,7 +193,7 @@ public class emct extends javax.swing.JFrame implements language {
             intake_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             intake_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             intake_sub1.setPreferredSize(setDim);
-            intake_sub1.addActionListener(new EVENT(new throttle_position(), this, intake_sub1));
+            intake_sub1.addActionListener(new EVENT(new throttle_position(super.getLocation()), this, intake_sub1));
 
             intake_sub2 = new JButton(intake_txt2);
             intake_sub2.setFont(setFont);
@@ -204,7 +204,7 @@ public class emct extends javax.swing.JFrame implements language {
             intake_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             intake_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             intake_sub2.setPreferredSize(setDim);
-            intake_sub2.addActionListener(new EVENT(new volume_air(), this, intake_sub2));
+            intake_sub2.addActionListener(new EVENT(new volume_air(super.getLocation()), this, intake_sub2));
 
             intake_sub3 = new JButton(intake_txt3);
             intake_sub3.setFont(setFont);
@@ -215,7 +215,7 @@ public class emct extends javax.swing.JFrame implements language {
             intake_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             intake_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             intake_sub3.setPreferredSize(setDim);
-            intake_sub3.addActionListener(new EVENT(new intake_air(), this, intake_sub3));
+            intake_sub3.addActionListener(new EVENT(new intake_air(super.getLocation()), this, intake_sub3));
 
             intake_sub4 = new JButton(intake_txt4);
             intake_sub4.setFont(setFont);
@@ -226,7 +226,7 @@ public class emct extends javax.swing.JFrame implements language {
             intake_sub4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             intake_sub4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             intake_sub4.setPreferredSize(setDim);
-            intake_sub4.addActionListener(new EVENT(new idle_air(), this, intake_sub4));
+            intake_sub4.addActionListener(new EVENT(new idle_air(super.getLocation()), this, intake_sub4));
 
             panel3.add(intake_sub1);
             panel3.add(intake_sub2);
@@ -255,7 +255,7 @@ public class emct extends javax.swing.JFrame implements language {
             ignition_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             ignition_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             ignition_sub1.setPreferredSize(setDim);
-            ignition_sub1.addActionListener(new EVENT(new high_tension(), this, ignition_sub1));
+            ignition_sub1.addActionListener(new EVENT(new high_tension(super.getLocation()), this, ignition_sub1));
 
             ignition_sub2 = new JButton(ignition_txt2);
             ignition_sub2.setFont(setFont);
@@ -266,7 +266,7 @@ public class emct extends javax.swing.JFrame implements language {
             ignition_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             ignition_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             ignition_sub2.setPreferredSize(setDim);
-            ignition_sub2.addActionListener(new EVENT(new ignition_timing(), this, ignition_sub2));
+            ignition_sub2.addActionListener(new EVENT(new ignition_timing(super.getLocation()), this, ignition_sub2));
 
             ignition_sub3 = new JButton(ignition_txt3);
             ignition_sub3.setFont(setFont);
@@ -277,7 +277,7 @@ public class emct extends javax.swing.JFrame implements language {
             ignition_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             ignition_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             ignition_sub3.setPreferredSize(setDim);
-            ignition_sub3.addActionListener(new EVENT(new ignition_coil(), this, ignition_sub3));
+            ignition_sub3.addActionListener(new EVENT(new ignition_coil(super.getLocation()), this, ignition_sub3));
 
             ignition_sub4 = new JButton(ignition_txt4);
             ignition_sub4.setFont(setFont);
@@ -288,7 +288,7 @@ public class emct extends javax.swing.JFrame implements language {
             ignition_sub4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             ignition_sub4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             ignition_sub4.setPreferredSize(setDim);
-            ignition_sub4.addActionListener(new EVENT(new ignition_amplifier(), this, ignition_sub4));
+            ignition_sub4.addActionListener(new EVENT(new ignition_amplifier(super.getLocation()), this, ignition_sub4));
 
             panel4.add(ignition_sub1);
             panel4.add(ignition_sub2);
@@ -319,7 +319,7 @@ public class emct extends javax.swing.JFrame implements language {
             engine_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             engine_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             engine_sub1.setPreferredSize(setDim);
-            engine_sub1.addActionListener(new EVENT(new engine_coolant(), this, engine_sub1));
+            engine_sub1.addActionListener(new EVENT(new engine_coolant(super.getLocation()), this, engine_sub1));
 
             engine_sub2 = new JButton(engine_txt2);
             engine_sub2.setFont(setFont);
@@ -330,7 +330,7 @@ public class emct extends javax.swing.JFrame implements language {
             engine_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             engine_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             engine_sub2.setPreferredSize(setDim);
-            engine_sub2.addActionListener(new EVENT(new crankshaft(), this, engine_sub2));
+            engine_sub2.addActionListener(new EVENT(new crankshaft(super.getLocation()), this, engine_sub2));
 
             engine_sub3 = new JButton(engine_txt3);
             engine_sub3.setFont(setFont);
@@ -368,7 +368,7 @@ public class emct extends javax.swing.JFrame implements language {
             emission_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             emission_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             emission_sub1.setPreferredSize(setDim);
-            emission_sub1.addActionListener(new EVENT(new co_adjustment(), this, emission_sub1));
+            emission_sub1.addActionListener(new EVENT(new co_adjustment(super.getLocation()), this, emission_sub1));
 
             emission_sub2 = new JButton(emission_txt2);
             emission_sub2.setFont(setFont);
@@ -379,7 +379,7 @@ public class emct extends javax.swing.JFrame implements language {
             emission_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             emission_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             emission_sub2.setPreferredSize(setDim);
-            emission_sub2.addActionListener(new EVENT(new heated_oxygen(), this, emission_sub2));
+            emission_sub2.addActionListener(new EVENT(new heated_oxygen(super.getLocation()), this, emission_sub2));
 
             emission_sub3 = new JButton(emission_txt3);
             emission_sub3.setFont(setFont);
@@ -390,7 +390,7 @@ public class emct extends javax.swing.JFrame implements language {
             emission_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             emission_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             emission_sub3.setPreferredSize(setDim);
-            emission_sub3.addActionListener(new EVENT(new oxygen_sensor(), this, emission_sub3));
+            emission_sub3.addActionListener(new EVENT(new oxygen_sensor(super.getLocation()), this, emission_sub3));
 
             panel6.add(emission_sub1);
             panel6.add(emission_sub2);
@@ -419,7 +419,7 @@ public class emct extends javax.swing.JFrame implements language {
             control_sub1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             control_sub1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             control_sub1.setPreferredSize(setDim);
-            control_sub1.addActionListener(new EVENT(new engine_control_relay() , this, control_sub1));
+            control_sub1.addActionListener(new EVENT(new engine_control_relay(super.getLocation()), this, control_sub1));
 
             control_sub2 = new JButton(control_txt2);
             control_sub2.setFont(setFont);
@@ -430,7 +430,7 @@ public class emct extends javax.swing.JFrame implements language {
             control_sub2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             control_sub2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             control_sub2.setPreferredSize(setDim);
-            control_sub2.addActionListener(new EVENT(new fuel_pump_relay(), this, control_sub2));
+            control_sub2.addActionListener(new EVENT(new fuel_pump_relay(super.getLocation()), this, control_sub2));
 
             control_sub3 = new JButton(control_txt3);
             control_sub3.setFont(setFont);
@@ -441,7 +441,7 @@ public class emct extends javax.swing.JFrame implements language {
             control_sub3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             control_sub3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
             control_sub3.setPreferredSize(setDim);
-            control_sub3.addActionListener(new EVENT(new engine_control_module(), this, control_sub3));
+            control_sub3.addActionListener(new EVENT(new engine_control_module(super.getLocation()), this, control_sub3));
 
             panel7.add(control_sub1);
             panel7.add(control_sub2);

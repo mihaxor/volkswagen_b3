@@ -5,6 +5,9 @@
  */
 package emct.frames.b_fuel_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class fuel_presure extends javax.swing.JPanel {
     /**
      * Creates new form fuel_presure
      */
-    public fuel_presure() {
+    public fuel_presure(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -29,7 +33,7 @@ public class fuel_presure extends javax.swing.JPanel {
 
         jLabel41 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jButton12 = new javax.swing.JButton();
+        fig5_1 = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -42,7 +46,7 @@ public class fuel_presure extends javax.swing.JPanel {
         jLabel46 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        fig5 = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
@@ -51,10 +55,15 @@ public class fuel_presure extends javax.swing.JPanel {
 
         jLabel41.setText("• Connect pressure gauge to fuel supply pipe.");
 
-        jButton12.setBackground(java.awt.Color.orange);
-        jButton12.setText("FIG 5");
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton12.setFocusable(false);
+        fig5_1.setBackground(java.awt.Color.orange);
+        fig5_1.setText("FIG 5");
+        fig5_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig5_1.setFocusable(false);
+        fig5_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig5_1ActionPerformed(evt);
+            }
+        });
 
         jLabel38.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(15, 89, 193));
@@ -109,10 +118,15 @@ public class fuel_presure extends javax.swing.JPanel {
 
         jLabel40.setText("• Remove cold start injector fuel supply pipe.");
 
-        jButton5.setBackground(java.awt.Color.orange);
-        jButton5.setText("FIG 5");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setFocusable(false);
+        fig5.setBackground(java.awt.Color.orange);
+        fig5.setText("FIG 5");
+        fig5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig5.setFocusable(false);
+        fig5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig5ActionPerformed(evt);
+            }
+        });
 
         jLabel37.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(15, 89, 193));
@@ -137,7 +151,7 @@ public class fuel_presure extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel38)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton5))
+                                .addComponent(fig5))
                             .addComponent(jLabel37)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(22, 22, 22)
@@ -151,7 +165,7 @@ public class fuel_presure extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel42)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton12))
+                                .addComponent(fig5_1))
                             .addComponent(jLabel40)
                             .addComponent(jLabel39)
                             .addComponent(jLabel41)
@@ -168,7 +182,7 @@ public class fuel_presure extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel38)
-                    .addComponent(jButton5))
+                    .addComponent(fig5))
                 .addGap(24, 24, 24)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -180,7 +194,7 @@ public class fuel_presure extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
-                    .addComponent(jButton12))
+                    .addComponent(fig5_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel43)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -203,10 +217,22 @@ public class fuel_presure extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig5ActionPerformed
+        if (evt.getSource() == fig5) {
+            new default_images("FIG 5", "/emct/images/figures/fig5.jpg", point);
+        }
+    }//GEN-LAST:event_fig5ActionPerformed
 
+    private void fig5_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig5_1ActionPerformed
+        if (evt.getSource() == fig5_1) {
+            new default_images("FIG 5", "/emct/images/figures/fig5.jpg", point);
+        }
+    }//GEN-LAST:event_fig5_1ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton fig5;
+    private javax.swing.JButton fig5_1;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;

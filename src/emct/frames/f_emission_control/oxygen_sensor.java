@@ -5,6 +5,9 @@
  */
 package emct.frames.f_emission_control;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class oxygen_sensor extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public oxygen_sensor() {
+    public oxygen_sensor(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -33,10 +37,10 @@ public class oxygen_sensor extends javax.swing.JPanel {
         jLabel85 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
+        fig34 = new javax.swing.JButton();
+        fig34_1 = new javax.swing.JButton();
         jLabel82 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        fig34_2 = new javax.swing.JButton();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
         jScrollPane11 = new javax.swing.JScrollPane();
@@ -46,7 +50,7 @@ public class oxygen_sensor extends javax.swing.JPanel {
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
-        jButton24 = new javax.swing.JButton();
+        fig34_3 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(226, 224, 211));
 
@@ -64,24 +68,39 @@ public class oxygen_sensor extends javax.swing.JPanel {
 
         jLabel87.setText("• Check resistance between H02S terminals");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 34");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig34.setBackground(java.awt.Color.orange);
+        fig34.setText("FIG 34");
+        fig34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig34.setFocusable(false);
+        fig34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig34ActionPerformed(evt);
+            }
+        });
 
-        jButton22.setBackground(java.awt.Color.orange);
-        jButton22.setText("FIG 34");
-        jButton22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton22.setFocusable(false);
+        fig34_1.setBackground(java.awt.Color.orange);
+        fig34_1.setText("FIG 34");
+        fig34_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig34_1.setFocusable(false);
+        fig34_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig34_1ActionPerformed(evt);
+            }
+        });
 
         jLabel82.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel82.setForeground(new java.awt.Color(15, 89, 193));
         jLabel82.setText("Checking supply voltage -");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 34");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig34_2.setBackground(java.awt.Color.orange);
+        fig34_2.setText("FIG 34");
+        fig34_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig34_2.setFocusable(false);
+        fig34_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig34_2ActionPerformed(evt);
+            }
+        });
 
         jScrollPane10.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -151,10 +170,15 @@ public class oxygen_sensor extends javax.swing.JPanel {
 
         jLabel95.setText("• Check voltage between harness multi-plug terminals");
 
-        jButton24.setBackground(java.awt.Color.orange);
-        jButton24.setText("FIG 34");
-        jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton24.setFocusable(false);
+        fig34_3.setBackground(java.awt.Color.orange);
+        fig34_3.setText("FIG 34");
+        fig34_3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig34_3.setFocusable(false);
+        fig34_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig34_3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -171,19 +195,19 @@ public class oxygen_sensor extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))))
+                                        .addComponent(fig34))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(31, 31, 31)
                                 .addComponent(jLabel82)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton23))
+                                .addComponent(fig34_2))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(50, 50, 50)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel95)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton24))
+                                        .addComponent(fig34_3))
                                     .addComponent(jLabel94)
                                     .addComponent(jLabel93)
                                     .addComponent(jLabel92)
@@ -195,7 +219,7 @@ public class oxygen_sensor extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel87)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton22))
+                                        .addComponent(fig34_1))
                                     .addComponent(jLabel86))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -214,7 +238,7 @@ public class oxygen_sensor extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig34))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -224,11 +248,11 @@ public class oxygen_sensor extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel87)
-                    .addComponent(jButton22))
+                    .addComponent(fig34_1))
                 .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel82)
-                    .addComponent(jButton23))
+                    .addComponent(fig34_2))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -242,19 +266,43 @@ public class oxygen_sensor extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
-                    .addComponent(jButton24))
+                    .addComponent(fig34_3))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(106, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig34ActionPerformed
+        if (evt.getSource() == fig34) {
+            new default_images("FIG 34", "/emct/images/figures/fig34.jpg", point);
+        }
+    }//GEN-LAST:event_fig34ActionPerformed
 
+    private void fig34_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig34_1ActionPerformed
+        if (evt.getSource() == fig34_1) {
+            new default_images("FIG 34", "/emct/images/figures/fig34.jpg", point);
+        }
+    }//GEN-LAST:event_fig34_1ActionPerformed
+
+    private void fig34_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig34_2ActionPerformed
+        if (evt.getSource() == fig34_2) {
+            new default_images("FIG 34", "/emct/images/figures/fig34.jpg", point);
+        }
+    }//GEN-LAST:event_fig34_2ActionPerformed
+
+    private void fig34_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig34_3ActionPerformed
+        if (evt.getSource() == fig34_3) {
+            new default_images("FIG 34", "/emct/images/figures/fig34.jpg", point);
+        }
+    }//GEN-LAST:event_fig34_3ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
+    private javax.swing.JButton fig34;
+    private javax.swing.JButton fig34_1;
+    private javax.swing.JButton fig34_2;
+    private javax.swing.JButton fig34_3;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;

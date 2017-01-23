@@ -5,6 +5,9 @@
  */
 package emct.frames.g_control_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class fuel_pump_relay extends javax.swing.JPanel {
     /**
      * Creates new form idle_speed
      */
-    public fuel_pump_relay() {
+    public fuel_pump_relay(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -27,7 +31,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        fig38 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel12 = new javax.swing.JLabel();
@@ -37,7 +41,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        fig37 = new javax.swing.JButton();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
@@ -52,9 +56,14 @@ public class fuel_pump_relay extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(226, 224, 211));
 
-        jButton1.setBackground(java.awt.Color.orange);
-        jButton1.setText("FIG 38");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig38.setBackground(java.awt.Color.orange);
+        fig38.setText("FIG 38");
+        fig38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig38ActionPerformed(evt);
+            }
+        });
 
         jLabel14.setText("• Check voltage between relay base terminal and earth.");
 
@@ -79,9 +88,14 @@ public class fuel_pump_relay extends javax.swing.JPanel {
 
         jLabel13.setText("• Remove relay.");
 
-        jButton5.setBackground(java.awt.Color.orange);
-        jButton5.setText("FIG 37");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig37.setBackground(java.awt.Color.orange);
+        fig37.setText("FIG 37");
+        fig37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig37ActionPerformed(evt);
+            }
+        });
 
         jScrollPane10.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -178,7 +192,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton5))
+                                        .addComponent(fig37))
                                     .addComponent(jLabel3)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
@@ -190,8 +204,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
                                             .addComponent(jLabel5)
                                             .addComponent(jLabel16)
                                             .addComponent(jLabel17)
-                                            .addComponent(jLabel18))
-                                        .addGap(243, 243, 243))
+                                            .addComponent(jLabel18)))
                                     .addComponent(jLabel1))))
                         .addGap(194, 194, 194))
                     .addGroup(layout.createSequentialGroup()
@@ -200,23 +213,24 @@ public class fuel_pump_relay extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane10)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
-                        .addGap(411, 411, 411))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel21))
-                        .addGap(457, 457, 457))
-                    .addComponent(jScrollPane10))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fig38))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel12)
+                                    .addComponent(jLabel13)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel20)
+                                    .addComponent(jLabel21))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -227,7 +241,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jButton5))
+                    .addComponent(fig37))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -245,7 +259,7 @@ public class fuel_pump_relay extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jButton1))
+                    .addComponent(fig38))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -265,10 +279,22 @@ public class fuel_pump_relay extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig37ActionPerformed
+        if (evt.getSource() == fig37) {
+            new default_images("FIG 37", "/emct/images/figures/fig37.jpg", point);
+        }
+    }//GEN-LAST:event_fig37ActionPerformed
 
+    private void fig38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig38ActionPerformed
+        if (evt.getSource() == fig38) {
+            new default_images("FIG 38", "/emct/images/figures/fig38.jpg", point);
+        }
+    }//GEN-LAST:event_fig38ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton fig37;
+    private javax.swing.JButton fig38;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;

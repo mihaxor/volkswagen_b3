@@ -35,11 +35,11 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel136" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton32" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig12" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jLabel109" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton43" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig13" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -52,7 +52,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton44" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig12_1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jLabel141" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel142" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -60,7 +60,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton45" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig13_1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -70,11 +70,11 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton46" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig12_2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton47" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fig14" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jLabel113" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
@@ -92,7 +92,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel112" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton48" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fig14_1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jLabel111" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel117" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -103,7 +103,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel116" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton49" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fig12_3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
@@ -124,9 +124,9 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel109" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton32" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig12" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel136" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton43" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig13" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jScrollPane12" min="-2" pref="93" max="-2" attributes="0"/>
@@ -141,12 +141,12 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton44" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig12_1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton45" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig13_1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
@@ -157,9 +157,9 @@
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel144" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton46" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig12_2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton47" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig14" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jScrollPane13" min="-2" pref="93" max="-2" attributes="0"/>
@@ -170,14 +170,14 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel112" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton48" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig14_1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel115" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel116" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton49" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fig12_3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel117" min="-2" max="-2" attributes="0"/>
@@ -201,7 +201,7 @@
         <Property name="text" type="java.lang.String" value="&#x2022; Ensure ignition switched OFF. "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton49">
+    <Component class="javax.swing.JButton" name="fig12_3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -212,13 +212,16 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig12_3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel138">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x2022; Disconnect engine coolant temperature (ECT) sensor multi-plug. "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton46">
+    <Component class="javax.swing.JButton" name="fig12_2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -229,6 +232,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig12_2ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane13">
       <Properties>
@@ -273,7 +279,7 @@
         <Property name="text" type="java.lang.String" value="&#x2022; Do not disconnect multi-plug. Remove cold start injector. "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton48">
+    <Component class="javax.swing.JButton" name="fig14_1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -284,6 +290,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig14_1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel119">
       <Properties>
@@ -399,7 +408,7 @@
         <Property name="text" type="java.lang.String" value="NOTE: Disconnect injector harness multi-plug before cranking tests,to prevent engine from starting. "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton32">
+    <Component class="javax.swing.JButton" name="fig12">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -410,6 +419,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel137">
       <Properties>
@@ -418,7 +430,7 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator7">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton43">
+    <Component class="javax.swing.JButton" name="fig13">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -429,6 +441,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel141">
       <Properties>
@@ -440,7 +455,7 @@
         <Property name="text" type="java.lang.String" value="&#x2022; Connect LEO test lamp between cold start injector harness multi-plug terminals "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton47">
+    <Component class="javax.swing.JButton" name="fig14">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -451,6 +466,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel142">
       <Properties>
@@ -494,7 +512,7 @@
         <Property name="text" type="java.lang.String" value="&#x2022; Connect resistor between ECT sensor harness multi-plug terminals "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton45">
+    <Component class="javax.swing.JButton" name="fig13_1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -505,8 +523,11 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig13_1ActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton44">
+    <Component class="javax.swing.JButton" name="fig12_1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="c8" id="orange" palette="1" red="ff" type="palette"/>
@@ -517,6 +538,9 @@
         </Property>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fig12_1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

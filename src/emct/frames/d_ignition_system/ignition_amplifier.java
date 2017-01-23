@@ -5,6 +5,9 @@
  */
 package emct.frames.d_ignition_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class ignition_amplifier extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public ignition_amplifier() {
+    public ignition_amplifier(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -29,13 +33,13 @@ public class ignition_amplifier extends javax.swing.JPanel {
 
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        fig27 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        fig27_1 = new javax.swing.JButton();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
         jLabel80 = new javax.swing.JLabel();
@@ -48,7 +52,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
         jLabel111 = new javax.swing.JLabel();
         jLabel112 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
-        jButton24 = new javax.swing.JButton();
+        fig28 = new javax.swing.JButton();
         jScrollPane11 = new javax.swing.JScrollPane();
         jTable11 = new javax.swing.JTable();
         jLabel113 = new javax.swing.JLabel();
@@ -58,7 +62,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
         jLabel100 = new javax.swing.JLabel();
         jLabel101 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
-        jButton25 = new javax.swing.JButton();
+        fig29 = new javax.swing.JButton();
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable12 = new javax.swing.JTable();
         jLabel114 = new javax.swing.JLabel();
@@ -77,10 +81,15 @@ public class ignition_amplifier extends javax.swing.JPanel {
 
         jLabel90.setText("• Ensure ignition switched OFF.");
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 27");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig27.setBackground(java.awt.Color.orange);
+        fig27.setText("FIG 27");
+        fig27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig27.setFocusable(false);
+        fig27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig27ActionPerformed(evt);
+            }
+        });
 
         jLabel92.setText("• Switch ignition ON.");
 
@@ -94,10 +103,15 @@ public class ignition_amplifier extends javax.swing.JPanel {
         jLabel95.setForeground(new java.awt.Color(15, 89, 193));
         jLabel95.setText("Checking supply voltage -");
 
-        jButton23.setBackground(java.awt.Color.orange);
-        jButton23.setText("FIG 27");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setFocusable(false);
+        fig27_1.setBackground(java.awt.Color.orange);
+        fig27_1.setText("FIG 27");
+        fig27_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig27_1.setFocusable(false);
+        fig27_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig27_1ActionPerformed(evt);
+            }
+        });
 
         jScrollPane9.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -178,10 +192,15 @@ public class ignition_amplifier extends javax.swing.JPanel {
         jLabel96.setForeground(new java.awt.Color(15, 89, 193));
         jLabel96.setText("Checking signal -");
 
-        jButton24.setBackground(java.awt.Color.orange);
-        jButton24.setText("FIG 28");
-        jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton24.setFocusable(false);
+        fig28.setBackground(java.awt.Color.orange);
+        fig28.setText("FIG 28");
+        fig28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig28.setFocusable(false);
+        fig28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig28ActionPerformed(evt);
+            }
+        });
 
         jScrollPane11.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -229,10 +248,15 @@ public class ignition_amplifier extends javax.swing.JPanel {
         jLabel102.setForeground(new java.awt.Color(15, 89, 193));
         jLabel102.setText("Checking operation -");
 
-        jButton25.setBackground(java.awt.Color.orange);
-        jButton25.setText("FIG 29");
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton25.setFocusable(false);
+        fig29.setBackground(java.awt.Color.orange);
+        fig29.setText("FIG 29");
+        fig29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig29.setFocusable(false);
+        fig29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig29ActionPerformed(evt);
+            }
+        });
 
         jScrollPane12.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -311,7 +335,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))
+                                        .addComponent(fig27))
                                     .addComponent(jLabel111)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(15, 15, 15)
@@ -329,7 +353,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                                         .addGap(17, 17, 17)
                                         .addComponent(jLabel95)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton23))
+                                        .addComponent(fig27_1))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(28, 28, 28)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -363,12 +387,12 @@ public class ignition_amplifier extends javax.swing.JPanel {
                         .addGap(24, 24, 24)
                         .addComponent(jLabel102)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton25))
+                        .addComponent(fig29))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addComponent(jLabel96)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton24))
+                        .addComponent(fig28))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -388,7 +412,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig27))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -402,7 +426,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
-                    .addComponent(jButton23))
+                    .addComponent(fig27_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -418,7 +442,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel96)
-                    .addComponent(jButton24))
+                    .addComponent(fig28))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -436,7 +460,7 @@ public class ignition_amplifier extends javax.swing.JPanel {
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel102)
-                    .addComponent(jButton25))
+                    .addComponent(fig29))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -462,12 +486,36 @@ public class ignition_amplifier extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig27ActionPerformed
+        if (evt.getSource() == fig27) {
+            new default_images("FIG 27", "/emct/images/figures/fig27.jpg", point);
+        }
+    }//GEN-LAST:event_fig27ActionPerformed
 
+    private void fig27_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig27_1ActionPerformed
+        if (evt.getSource() == fig27_1) {
+            new default_images("FIG 27", "/emct/images/figures/fig27.jpg", point);
+        }
+    }//GEN-LAST:event_fig27_1ActionPerformed
+
+    private void fig28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig28ActionPerformed
+        if (evt.getSource() == fig28) {
+            new default_images("FIG 28", "/emct/images/figures/fig28.jpg", point);
+        }
+    }//GEN-LAST:event_fig28ActionPerformed
+
+    private void fig29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig29ActionPerformed
+        if (evt.getSource() == fig29) {
+            new default_images("FIG 29", "/emct/images/figures/fig29.jpg", point);
+        }
+    }//GEN-LAST:event_fig29ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
+    private javax.swing.JButton fig27;
+    private javax.swing.JButton fig27_1;
+    private javax.swing.JButton fig28;
+    private javax.swing.JButton fig29;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;

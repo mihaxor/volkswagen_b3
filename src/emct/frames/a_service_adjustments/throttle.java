@@ -5,6 +5,9 @@
  */
 package emct.frames.a_service_adjustments;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class throttle extends javax.swing.JPanel {
     /**
      * Creates new form throttle_position
      */
-    public throttle() {
+    public throttle(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -30,13 +34,13 @@ public class throttle extends javax.swing.JPanel {
         jLabel52 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
+        fig4_2 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel60 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        fig4 = new javax.swing.JButton();
+        fig4_1 = new javax.swing.JButton();
         jLabel56 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
@@ -55,9 +59,14 @@ public class throttle extends javax.swing.JPanel {
         jLabel35.setForeground(new java.awt.Color(15, 89, 193));
         jLabel35.setText("Adjustment -");
 
-        jButton11.setBackground(java.awt.Color.orange);
-        jButton11.setText("FIG 4");
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4_2.setBackground(java.awt.Color.orange);
+        fig4_2.setText("FIG 4");
+        fig4_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig4_2ActionPerformed(evt);
+            }
+        });
 
         jLabel60.setText(" • Check idle speed and throttle position (TP) sensor adjustment. ");
 
@@ -65,13 +74,23 @@ public class throttle extends javax.swing.JPanel {
 
         jLabel55.setText("• Turn throttle lever stop screw");
 
-        jButton14.setBackground(java.awt.Color.orange);
-        jButton14.setText("FIG 4");
-        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4.setBackground(java.awt.Color.orange);
+        fig4.setText("FIG 4");
+        fig4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig4ActionPerformed(evt);
+            }
+        });
 
-        jButton9.setBackground(java.awt.Color.orange);
-        jButton9.setText("FIG 4");
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4_1.setBackground(java.awt.Color.orange);
+        fig4_1.setText("FIG 4");
+        fig4_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig4_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig4_1ActionPerformed(evt);
+            }
+        });
 
         jLabel56.setText("• Ensure throttle valve is closed.");
 
@@ -107,16 +126,16 @@ public class throttle extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14))
+                        .addComponent(fig4))
                     .addComponent(jLabel34)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel55)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton9)
+                        .addComponent(fig4_1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel36)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton11))
+                        .addComponent(fig4_2))
                     .addComponent(jLabel54))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -132,7 +151,7 @@ public class throttle extends javax.swing.JPanel {
                 .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel35)
-                    .addComponent(jButton14))
+                    .addComponent(fig4))
                 .addGap(26, 26, 26)
                 .addComponent(jLabel52)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -142,9 +161,9 @@ public class throttle extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel55)
-                    .addComponent(jButton9)
+                    .addComponent(fig4_1)
                     .addComponent(jLabel36)
-                    .addComponent(jButton11))
+                    .addComponent(fig4_2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel56)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -163,11 +182,29 @@ public class throttle extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig4ActionPerformed
+        if (evt.getSource() == fig4) {
+            new default_images("FIG 4", "/emct/images/figures/fig4.jpg", point);
+        }
+    }//GEN-LAST:event_fig4ActionPerformed
 
+    private void fig4_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig4_1ActionPerformed
+        if (evt.getSource() == fig4_1) {
+            new default_images("FIG 4", "/emct/images/figures/fig4.jpg", point);
+        } 
+    }//GEN-LAST:event_fig4_1ActionPerformed
+
+    private void fig4_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig4_2ActionPerformed
+        if (evt.getSource() == fig4_2) {
+            new default_images("FIG 4", "/emct/images/figures/fig4.jpg", point);
+        } 
+    }//GEN-LAST:event_fig4_2ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton fig4;
+    private javax.swing.JButton fig4_1;
+    private javax.swing.JButton fig4_2;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;

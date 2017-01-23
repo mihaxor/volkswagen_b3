@@ -5,6 +5,9 @@
  */
 package emct.frames.g_control_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class engine_control_module extends javax.swing.JPanel {
     /**
      * Creates new form idle_speed
      */
-    public engine_control_module() {
+    public engine_control_module(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -27,7 +31,7 @@ public class engine_control_module extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        fig39 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel12 = new javax.swing.JLabel();
@@ -45,7 +49,7 @@ public class engine_control_module extends javax.swing.JPanel {
         jTable11 = new javax.swing.JTable();
         jLabel17 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        fig39_1 = new javax.swing.JButton();
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable12 = new javax.swing.JTable();
         jLabel18 = new javax.swing.JLabel();
@@ -54,7 +58,7 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        fig39_2 = new javax.swing.JButton();
         jScrollPane13 = new javax.swing.JScrollPane();
         jTable13 = new javax.swing.JTable();
         jLabel24 = new javax.swing.JLabel();
@@ -63,7 +67,7 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        fig40 = new javax.swing.JButton();
         jScrollPane14 = new javax.swing.JScrollPane();
         jTable14 = new javax.swing.JTable();
         jLabel30 = new javax.swing.JLabel();
@@ -76,7 +80,7 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        fig40_1 = new javax.swing.JButton();
         jScrollPane15 = new javax.swing.JScrollPane();
         jTable15 = new javax.swing.JTable();
         jLabel40 = new javax.swing.JLabel();
@@ -87,9 +91,14 @@ public class engine_control_module extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(226, 224, 211));
 
-        jButton1.setBackground(java.awt.Color.orange);
-        jButton1.setText("FIG 39");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39.setBackground(java.awt.Color.orange);
+        fig39.setText("FIG 39");
+        fig39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig39ActionPerformed(evt);
+            }
+        });
 
         jLabel14.setText("• Check voltage between breakout box terminal and earth.");
 
@@ -159,9 +168,14 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel7.setForeground(new java.awt.Color(15, 89, 193));
         jLabel7.setText("Checking earth connection - Passat 1990-93 -");
 
-        jButton2.setBackground(java.awt.Color.orange);
-        jButton2.setText("FIG 39");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39_1.setBackground(java.awt.Color.orange);
+        fig39_1.setText("FIG 39");
+        fig39_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig39_1ActionPerformed(evt);
+            }
+        });
 
         jScrollPane12.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -207,9 +221,14 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel23.setForeground(new java.awt.Color(15, 89, 193));
         jLabel23.setText("Checking earth connection - Passat 1994-95 -");
 
-        jButton3.setBackground(java.awt.Color.orange);
-        jButton3.setText("FIG 39");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39_2.setBackground(java.awt.Color.orange);
+        fig39_2.setText("FIG 39");
+        fig39_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig39_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig39_2ActionPerformed(evt);
+            }
+        });
 
         jScrollPane13.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -254,9 +273,14 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel29.setForeground(new java.awt.Color(15, 89, 193));
         jLabel29.setText("Checking supply voltage - Golf/Vento & Corrado -");
 
-        jButton4.setBackground(java.awt.Color.orange);
-        jButton4.setText("FIG 40");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig40.setBackground(java.awt.Color.orange);
+        fig40.setText("FIG 40");
+        fig40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig40ActionPerformed(evt);
+            }
+        });
 
         jScrollPane14.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -312,9 +336,14 @@ public class engine_control_module extends javax.swing.JPanel {
         jLabel39.setForeground(new java.awt.Color(15, 89, 193));
         jLabel39.setText("Checking earth connection - Golf/Vento & Corrado -");
 
-        jButton5.setBackground(java.awt.Color.orange);
-        jButton5.setText("FIG 40");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig40_1.setBackground(java.awt.Color.orange);
+        fig40_1.setText("FIG 40");
+        fig40_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig40_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig40_1ActionPerformed(evt);
+            }
+        });
 
         jScrollPane15.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -371,14 +400,14 @@ public class engine_control_module extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel6)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton1))))
+                                        .addComponent(fig39))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(42, 42, 42)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton2))
+                                        .addComponent(fig39_1))
                                     .addComponent(jLabel17)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(64, 64, 64)
@@ -403,7 +432,7 @@ public class engine_control_module extends javax.swing.JPanel {
                                 .addGap(36, 36, 36)
                                 .addComponent(jLabel23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3))
+                                .addComponent(fig39_2))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(61, 61, 61)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -427,7 +456,7 @@ public class engine_control_module extends javax.swing.JPanel {
                                         .addGap(34, 34, 34)
                                         .addComponent(jLabel29)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton4))
+                                        .addComponent(fig40))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(36, 36, 36)
                                         .addComponent(jLabel30))
@@ -446,7 +475,7 @@ public class engine_control_module extends javax.swing.JPanel {
                                         .addGap(30, 30, 30)
                                         .addComponent(jLabel39)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton5))
+                                        .addComponent(fig40_1))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(55, 55, 55)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -474,7 +503,7 @@ public class engine_control_module extends javax.swing.JPanel {
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jButton1))
+                    .addComponent(fig39))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -498,7 +527,7 @@ public class engine_control_module extends javax.swing.JPanel {
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jButton2))
+                    .addComponent(fig39_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -514,7 +543,7 @@ public class engine_control_module extends javax.swing.JPanel {
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(jButton3))
+                    .addComponent(fig39_2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -530,7 +559,7 @@ public class engine_control_module extends javax.swing.JPanel {
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
-                    .addComponent(jButton4))
+                    .addComponent(fig40))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -554,7 +583,7 @@ public class engine_control_module extends javax.swing.JPanel {
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
-                    .addComponent(jButton5))
+                    .addComponent(fig40_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -578,13 +607,43 @@ public class engine_control_module extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig39ActionPerformed
+        if (evt.getSource() == fig39) {
+            new default_images("FIG 39", "/emct/images/figures/fig39.jpg", point);
+        }
+    }//GEN-LAST:event_fig39ActionPerformed
 
+    private void fig39_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig39_1ActionPerformed
+        if (evt.getSource() == fig39_1) {
+            new default_images("FIG 39", "/emct/images/figures/fig39.jpg", point);
+        }
+    }//GEN-LAST:event_fig39_1ActionPerformed
+
+    private void fig39_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig39_2ActionPerformed
+        if (evt.getSource() == fig39_2) {
+            new default_images("FIG 39", "/emct/images/figures/fig39.jpg", point);
+        }
+    }//GEN-LAST:event_fig39_2ActionPerformed
+
+    private void fig40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig40ActionPerformed
+        if (evt.getSource() == fig40) {
+            new default_images("FIG 40", "/emct/images/figures/fig40.jpg", point);
+        }
+    }//GEN-LAST:event_fig40ActionPerformed
+
+    private void fig40_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig40_1ActionPerformed
+        if (evt.getSource() == fig40_1) {
+            new default_images("FIG 40", "/emct/images/figures/fig40.jpg", point);
+        }
+    }//GEN-LAST:event_fig40_1ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton fig39;
+    private javax.swing.JButton fig39_1;
+    private javax.swing.JButton fig39_2;
+    private javax.swing.JButton fig40;
+    private javax.swing.JButton fig40_1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

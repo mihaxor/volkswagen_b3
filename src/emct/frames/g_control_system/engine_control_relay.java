@@ -5,6 +5,9 @@
  */
 package emct.frames.g_control_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class engine_control_relay extends javax.swing.JPanel {
     /**
      * Creates new form idle_speed
      */
-    public engine_control_relay() {
+    public engine_control_relay(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -36,11 +40,11 @@ public class engine_control_relay extends javax.swing.JPanel {
         jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        fig35 = new javax.swing.JButton();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        fig36 = new javax.swing.JButton();
         jScrollPane11 = new javax.swing.JScrollPane();
         jTable11 = new javax.swing.JTable();
         jLabel14 = new javax.swing.JLabel();
@@ -54,7 +58,7 @@ public class engine_control_relay extends javax.swing.JPanel {
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable12 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        fig36_1 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -83,9 +87,14 @@ public class engine_control_relay extends javax.swing.JPanel {
 
         jLabel13.setText("• Check resistance between relay terminals.");
 
-        jButton5.setBackground(java.awt.Color.orange);
-        jButton5.setText("FIG 35");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig35.setBackground(java.awt.Color.orange);
+        fig35.setText("FIG 35");
+        fig35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig35ActionPerformed(evt);
+            }
+        });
 
         jScrollPane10.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -123,9 +132,14 @@ public class engine_control_relay extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(15, 89, 193));
         jLabel5.setText("Checking supply voltage -");
 
-        jButton6.setBackground(java.awt.Color.orange);
-        jButton6.setText("FIG 36");
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig36.setBackground(java.awt.Color.orange);
+        fig36.setText("FIG 36");
+        fig36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig36ActionPerformed(evt);
+            }
+        });
 
         jScrollPane11.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -206,9 +220,14 @@ public class engine_control_relay extends javax.swing.JPanel {
         jLabel6.setForeground(new java.awt.Color(15, 89, 193));
         jLabel6.setText("Checking earth connection -");
 
-        jButton7.setBackground(java.awt.Color.orange);
-        jButton7.setText("FIG 36");
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig36_1.setBackground(java.awt.Color.orange);
+        fig36_1.setText("FIG 36");
+        fig36_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig36_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig36_1ActionPerformed(evt);
+            }
+        });
 
         jLabel22.setText("• Ensure ignition switched OFF.");
 
@@ -230,11 +249,11 @@ public class engine_control_relay extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6))
+                                .addComponent(fig36))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton7))))
+                                .addComponent(fig36_1))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,7 +301,7 @@ public class engine_control_relay extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton5))
+                                        .addComponent(fig35))
                                     .addComponent(jLabel3))))
                         .addGap(0, 194, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -295,7 +314,7 @@ public class engine_control_relay extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jButton5))
+                    .addComponent(fig35))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -313,7 +332,7 @@ public class engine_control_relay extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jButton6))
+                    .addComponent(fig36))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -335,7 +354,7 @@ public class engine_control_relay extends javax.swing.JPanel {
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jButton7))
+                    .addComponent(fig36_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -351,11 +370,29 @@ public class engine_control_relay extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig35ActionPerformed
+        if (evt.getSource() == fig35) {
+            new default_images("FIG 35", "/emct/images/figures/fig35.jpg", point);
+        }
+    }//GEN-LAST:event_fig35ActionPerformed
 
+    private void fig36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig36ActionPerformed
+        if (evt.getSource() == fig36) {
+            new default_images("FIG 36", "/emct/images/figures/fig36.jpg", point);
+        }
+    }//GEN-LAST:event_fig36ActionPerformed
+
+    private void fig36_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig36_1ActionPerformed
+        if (evt.getSource() == fig36_1) {
+            new default_images("FIG 36", "/emct/images/figures/fig36.jpg", point);
+        }
+    }//GEN-LAST:event_fig36_1ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton fig35;
+    private javax.swing.JButton fig36;
+    private javax.swing.JButton fig36_1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

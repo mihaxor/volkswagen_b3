@@ -5,6 +5,9 @@
  */
 package emct.frames.c_intake_system;
 
+import emct.forms.default_images;
+import java.awt.Point;
+
 /**
  *
  * @author Catalin Glavan
@@ -14,7 +17,8 @@ public class volume_air extends javax.swing.JPanel {
     /**
      * Creates new form injectors
      */
-    public volume_air() {
+    public volume_air(Point setPoint) {
+        this.point = setPoint;
         initComponents();
     }
 
@@ -27,54 +31,54 @@ public class volume_air extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton30 = new javax.swing.JButton();
+        fig19_1 = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
         jLabel100 = new javax.swing.JLabel();
         jLabel101 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
-        jButton28 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        fig19 = new javax.swing.JButton();
+        fig18 = new javax.swing.JButton();
         jLabel86 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel92 = new javax.swing.JLabel();
-        jButton25 = new javax.swing.JButton();
+        fig18_4 = new javax.swing.JButton();
         jLabel88 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
+        fig18_3 = new javax.swing.JButton();
+        fig18_5 = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
         jLabel80 = new javax.swing.JLabel();
-        jButton29 = new javax.swing.JButton();
+        fig18_6 = new javax.swing.JButton();
         jLabel104 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
-        jButton31 = new javax.swing.JButton();
+        fig18_1 = new javax.swing.JButton();
         jLabel108 = new javax.swing.JLabel();
-        jButton32 = new javax.swing.JButton();
+        fig18_2 = new javax.swing.JButton();
         jLabel99 = new javax.swing.JLabel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable10 = new javax.swing.JTable();
         jLabel109 = new javax.swing.JLabel();
-        jButton33 = new javax.swing.JButton();
+        fig18_7 = new javax.swing.JButton();
         jLabel110 = new javax.swing.JLabel();
-        jButton34 = new javax.swing.JButton();
+        fig19_2 = new javax.swing.JButton();
         jScrollPane11 = new javax.swing.JScrollPane();
         jTable11 = new javax.swing.JTable();
         jLabel105 = new javax.swing.JLabel();
         jLabel106 = new javax.swing.JLabel();
         jLabel107 = new javax.swing.JLabel();
         jLabel111 = new javax.swing.JLabel();
-        jButton35 = new javax.swing.JButton();
-        jButton36 = new javax.swing.JButton();
+        fig18_9 = new javax.swing.JButton();
+        fig19_3 = new javax.swing.JButton();
         jLabel112 = new javax.swing.JLabel();
-        jButton37 = new javax.swing.JButton();
+        fig18_8 = new javax.swing.JButton();
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable12 = new javax.swing.JTable();
         jLabel113 = new javax.swing.JLabel();
@@ -88,10 +92,15 @@ public class volume_air extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(226, 224, 211));
 
-        jButton30.setBackground(java.awt.Color.orange);
-        jButton30.setText("FIG 19");
-        jButton30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton30.setFocusable(false);
+        fig19_1.setBackground(java.awt.Color.orange);
+        fig19_1.setText("FIG 19");
+        fig19_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig19_1.setFocusable(false);
+        fig19_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig19_1ActionPerformed(evt);
+            }
+        });
 
         jLabel91.setText("• Disconnect intake air trunking from VAF sensor");
 
@@ -105,15 +114,25 @@ public class volume_air extends javax.swing.JPanel {
 
         jLabel89.setText("• Clean off any gummy deposits with solvent. if necessary.");
 
-        jButton28.setBackground(java.awt.Color.orange);
-        jButton28.setText("FIG 19");
-        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton28.setFocusable(false);
+        fig19.setBackground(java.awt.Color.orange);
+        fig19.setText("FIG 19");
+        fig19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig19.setFocusable(false);
+        fig19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig19ActionPerformed(evt);
+            }
+        });
 
-        jButton21.setBackground(java.awt.Color.orange);
-        jButton21.setText("FIG 18");
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setFocusable(false);
+        fig18.setBackground(java.awt.Color.orange);
+        fig18.setText("FIG 18");
+        fig18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18.setFocusable(false);
+        fig18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18ActionPerformed(evt);
+            }
+        });
 
         jLabel86.setText("• Disconnect intake air trunking from VAF sensor");
 
@@ -127,10 +146,15 @@ public class volume_air extends javax.swing.JPanel {
 
         jLabel92.setText("• Disconnect VAF sensor multi-plug");
 
-        jButton25.setBackground(java.awt.Color.orange);
-        jButton25.setText("FIG 18");
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton25.setFocusable(false);
+        fig18_4.setBackground(java.awt.Color.orange);
+        fig18_4.setText("FIG 18");
+        fig18_4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_4.setFocusable(false);
+        fig18_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_4ActionPerformed(evt);
+            }
+        });
 
         jLabel88.setText("• Check for smooth operation. ");
 
@@ -140,15 +164,25 @@ public class volume_air extends javax.swing.JPanel {
 
         jLabel93.setText("• Operate sensor flap over full extent of travel.");
 
-        jButton26.setBackground(java.awt.Color.orange);
-        jButton26.setText("FIG 18");
-        jButton26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton26.setFocusable(false);
+        fig18_3.setBackground(java.awt.Color.orange);
+        fig18_3.setText("FIG 18");
+        fig18_3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_3.setFocusable(false);
+        fig18_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_3ActionPerformed(evt);
+            }
+        });
 
-        jButton27.setBackground(java.awt.Color.orange);
-        jButton27.setText("FIG 18");
-        jButton27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton27.setFocusable(false);
+        fig18_5.setBackground(java.awt.Color.orange);
+        fig18_5.setText("FIG 18");
+        fig18_5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_5.setFocusable(false);
+        fig18_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_5ActionPerformed(evt);
+            }
+        });
 
         jLabel85.setText("• Ensure ignition switched OFF. ");
 
@@ -188,10 +222,15 @@ public class volume_air extends javax.swing.JPanel {
         jLabel80.setForeground(new java.awt.Color(15, 89, 193));
         jLabel80.setText("Volume air flow (VAF) sensor ");
 
-        jButton29.setBackground(java.awt.Color.orange);
-        jButton29.setText("FIG 18");
-        jButton29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton29.setFocusable(false);
+        fig18_6.setBackground(java.awt.Color.orange);
+        fig18_6.setText("FIG 18");
+        fig18_6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_6.setFocusable(false);
+        fig18_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_6ActionPerformed(evt);
+            }
+        });
 
         jLabel104.setText("• Check resistance between harness multi-plug terminal and earth ");
 
@@ -199,19 +238,29 @@ public class volume_air extends javax.swing.JPanel {
 
         jLabel97.setText("• Check resistance between VAF sensor terminals .");
 
-        jButton31.setBackground(java.awt.Color.orange);
-        jButton31.setText("FIG 18");
-        jButton31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton31.setFocusable(false);
+        fig18_1.setBackground(java.awt.Color.orange);
+        fig18_1.setText("FIG 18");
+        fig18_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_1.setFocusable(false);
+        fig18_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_1ActionPerformed(evt);
+            }
+        });
 
         jLabel108.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel108.setForeground(new java.awt.Color(15, 89, 193));
         jLabel108.setText("Checking resistance - ");
 
-        jButton32.setBackground(java.awt.Color.orange);
-        jButton32.setText("FIG 18");
-        jButton32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton32.setFocusable(false);
+        fig18_2.setBackground(java.awt.Color.orange);
+        fig18_2.setText("FIG 18");
+        fig18_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_2.setFocusable(false);
+        fig18_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_2ActionPerformed(evt);
+            }
+        });
 
         jLabel99.setText("• Resistance change should be smooth.");
 
@@ -250,19 +299,29 @@ public class volume_air extends javax.swing.JPanel {
         jLabel109.setForeground(new java.awt.Color(15, 89, 193));
         jLabel109.setText("Checking supply voltage -");
 
-        jButton33.setBackground(java.awt.Color.orange);
-        jButton33.setText("FIG 18");
-        jButton33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton33.setFocusable(false);
+        fig18_7.setBackground(java.awt.Color.orange);
+        fig18_7.setText("FIG 18");
+        fig18_7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_7.setFocusable(false);
+        fig18_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_7ActionPerformed(evt);
+            }
+        });
 
         jLabel110.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel110.setForeground(new java.awt.Color(15, 89, 193));
         jLabel110.setText("&");
 
-        jButton34.setBackground(java.awt.Color.orange);
-        jButton34.setText("FIG 19");
-        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton34.setFocusable(false);
+        fig19_2.setBackground(java.awt.Color.orange);
+        fig19_2.setText("FIG 19");
+        fig19_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig19_2.setFocusable(false);
+        fig19_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig19_2ActionPerformed(evt);
+            }
+        });
 
         jScrollPane11.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -301,24 +360,39 @@ public class volume_air extends javax.swing.JPanel {
 
         jLabel111.setText("• Check voltage between harness multi-plug terminals ");
 
-        jButton35.setBackground(java.awt.Color.orange);
-        jButton35.setText("FIG 18");
-        jButton35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton35.setFocusable(false);
+        fig18_9.setBackground(java.awt.Color.orange);
+        fig18_9.setText("FIG 18");
+        fig18_9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_9.setFocusable(false);
+        fig18_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_9ActionPerformed(evt);
+            }
+        });
 
-        jButton36.setBackground(java.awt.Color.orange);
-        jButton36.setText("FIG 19");
-        jButton36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton36.setFocusable(false);
+        fig19_3.setBackground(java.awt.Color.orange);
+        fig19_3.setText("FIG 19");
+        fig19_3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig19_3.setFocusable(false);
+        fig19_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig19_3ActionPerformed(evt);
+            }
+        });
 
         jLabel112.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel112.setForeground(new java.awt.Color(15, 89, 193));
         jLabel112.setText("Checking signal -");
 
-        jButton37.setBackground(java.awt.Color.orange);
-        jButton37.setText("FIG 18");
-        jButton37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton37.setFocusable(false);
+        fig18_8.setBackground(java.awt.Color.orange);
+        fig18_8.setText("FIG 18");
+        fig18_8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        fig18_8.setFocusable(false);
+        fig18_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fig18_8ActionPerformed(evt);
+            }
+        });
 
         jScrollPane12.setBorder(javax.swing.BorderFactory.createTitledBorder("Technical Data"));
 
@@ -384,18 +458,18 @@ public class volume_air extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel86)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton31))))
+                                        .addComponent(fig18_1))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(16, 16, 16)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel81)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21))
+                                        .addComponent(fig18))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel108)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton32))
+                                        .addComponent(fig18_2))
                                     .addComponent(jLabel100)
                                     .addComponent(jLabel80))))
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -409,39 +483,39 @@ public class volume_air extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel92)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton26))
+                                        .addComponent(fig18_3))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel91)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton25))
+                                        .addComponent(fig18_4))
                                     .addComponent(jLabel97)
                                     .addComponent(jLabel93)
                                     .addComponent(jLabel99)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel98)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton27)
+                                        .addComponent(fig18_5)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel101)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton28))
+                                        .addComponent(fig19))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel103)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton29))
+                                        .addComponent(fig18_6))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel104)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton30))
+                                        .addComponent(fig19_1))
                                     .addComponent(jLabel102)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel109)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton33)
+                                        .addComponent(fig18_7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel110)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton34)))
+                                        .addComponent(fig19_2)))
                                 .addGap(0, 431, Short.MAX_VALUE))
                             .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.LEADING)
@@ -453,16 +527,16 @@ public class volume_air extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel112)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton37))
+                        .addComponent(fig18_8))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel106)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton35))
+                        .addComponent(fig18_9))
                     .addComponent(jLabel105)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel111)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton36))
+                        .addComponent(fig19_3))
                     .addComponent(jLabel107))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -492,13 +566,13 @@ public class volume_air extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
-                    .addComponent(jButton21))
+                    .addComponent(fig18))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel85)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel86)
-                    .addComponent(jButton31))
+                    .addComponent(fig18_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel87)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -508,7 +582,7 @@ public class volume_air extends javax.swing.JPanel {
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel108)
-                    .addComponent(jButton32))
+                    .addComponent(fig18_2))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -516,11 +590,11 @@ public class volume_air extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel91)
-                    .addComponent(jButton25))
+                    .addComponent(fig18_4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel92)
-                    .addComponent(jButton26))
+                    .addComponent(fig18_3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel93)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -529,9 +603,9 @@ public class volume_air extends javax.swing.JPanel {
                 .addComponent(jLabel99)
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton27)
+                    .addComponent(fig18_5)
                     .addComponent(jLabel101)
-                    .addComponent(jButton28)
+                    .addComponent(fig19)
                     .addComponent(jLabel98))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -540,16 +614,16 @@ public class volume_air extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel103)
-                    .addComponent(jButton29))
+                    .addComponent(fig18_6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel104)
-                    .addComponent(jButton30))
+                    .addComponent(fig19_1))
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton33)
+                    .addComponent(fig18_7)
                     .addComponent(jLabel110)
-                    .addComponent(jButton34)
+                    .addComponent(fig19_2)
                     .addComponent(jLabel109))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -558,16 +632,16 @@ public class volume_air extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel106)
-                    .addComponent(jButton35))
+                    .addComponent(fig18_9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel107)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel111)
-                    .addComponent(jButton36))
+                    .addComponent(fig19_3))
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton37)
+                    .addComponent(fig18_8)
                     .addComponent(jLabel112))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -593,22 +667,106 @@ public class volume_air extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fig18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18ActionPerformed
+        if (evt.getSource() == fig18) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18ActionPerformed
 
+    private void fig18_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_1ActionPerformed
+        if (evt.getSource() == fig18_1) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_1ActionPerformed
+
+    private void fig18_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_2ActionPerformed
+        if (evt.getSource() == fig18_2) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_2ActionPerformed
+
+    private void fig18_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_4ActionPerformed
+        if (evt.getSource() == fig18_4) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_4ActionPerformed
+
+    private void fig18_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_3ActionPerformed
+        if (evt.getSource() == fig18_3) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_3ActionPerformed
+
+    private void fig18_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_5ActionPerformed
+        if (evt.getSource() == fig18_5) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_5ActionPerformed
+
+    private void fig19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig19ActionPerformed
+        if (evt.getSource() == fig19) {
+            new default_images("FIG 19", "/emct/images/figures/fig19.jpg", point);
+        }
+    }//GEN-LAST:event_fig19ActionPerformed
+
+    private void fig18_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_6ActionPerformed
+        if (evt.getSource() == fig18_6) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_6ActionPerformed
+
+    private void fig19_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig19_1ActionPerformed
+        if (evt.getSource() == fig19_1) {
+            new default_images("FIG 19", "/emct/images/figures/fig19.jpg", point);
+        }
+    }//GEN-LAST:event_fig19_1ActionPerformed
+
+    private void fig18_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_7ActionPerformed
+        if (evt.getSource() == fig18_7) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_7ActionPerformed
+
+    private void fig19_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig19_2ActionPerformed
+        if (evt.getSource() == fig19_2) {
+            new default_images("FIG 19", "/emct/images/figures/fig19.jpg", point);
+        }
+    }//GEN-LAST:event_fig19_2ActionPerformed
+
+    private void fig18_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_9ActionPerformed
+        if (evt.getSource() == fig18_9) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_9ActionPerformed
+
+    private void fig19_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig19_3ActionPerformed
+        if (evt.getSource() == fig19_3) {
+            new default_images("FIG 19", "/emct/images/figures/fig19.jpg", point);
+        }
+    }//GEN-LAST:event_fig19_3ActionPerformed
+
+    private void fig18_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fig18_8ActionPerformed
+        if (evt.getSource() == fig18_8) {
+            new default_images("FIG 18", "/emct/images/figures/fig18.jpg", point);
+        }
+    }//GEN-LAST:event_fig18_8ActionPerformed
+
+    private Point point;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton35;
-    private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
+    private javax.swing.JButton fig18;
+    private javax.swing.JButton fig18_1;
+    private javax.swing.JButton fig18_2;
+    private javax.swing.JButton fig18_3;
+    private javax.swing.JButton fig18_4;
+    private javax.swing.JButton fig18_5;
+    private javax.swing.JButton fig18_6;
+    private javax.swing.JButton fig18_7;
+    private javax.swing.JButton fig18_8;
+    private javax.swing.JButton fig18_9;
+    private javax.swing.JButton fig19;
+    private javax.swing.JButton fig19_1;
+    private javax.swing.JButton fig19_2;
+    private javax.swing.JButton fig19_3;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
