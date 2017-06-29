@@ -1,6 +1,6 @@
-package emct.frames.a_service_adjustments;
+package emct.en.frames.a_service_adjustments;
 
-import emct.forms.default_images;
+import emct.en.forms.default_images;
 import java.awt.Point;
 
 /*

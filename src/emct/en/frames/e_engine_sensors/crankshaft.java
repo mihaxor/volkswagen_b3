@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package emct.frames.e_engine_sensors;
+package emct.en.frames.e_engine_sensors;
 
-import emct.forms.default_images;
+import emct.en.forms.default_images;
 import java.awt.Point;
 
 /**

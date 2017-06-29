@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package emct.frames.c_intake_system;
+package emct.en.frames.c_intake_system;
 
-import emct.forms.default_images;
+import emct.en.forms.default_images;
 import java.awt.Point;
 
 /**

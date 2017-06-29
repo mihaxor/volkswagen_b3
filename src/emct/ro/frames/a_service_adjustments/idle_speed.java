@@ -5,7 +5,7 @@
  */
 package emct.ro.frames.a_service_adjustments;
 
-import emct.forms.default_images;
+import emct.ro.forms.default_images;
 import java.awt.Point;
 
 /**

@@ -5,7 +5,7 @@
  */
 package emct.ro.frames.d_ignition_system;
 
-import emct.forms.default_images;
+import emct.ro.forms.default_images;
 import java.awt.Point;
 
 /**

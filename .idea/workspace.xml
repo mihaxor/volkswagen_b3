@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d51b7253-1b4d-4b61-8c63-e323fc61dd5d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/forms/emct.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/forms/emct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/co_level.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/co_level.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/idle_speed.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/idle_speed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/throttle.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/a_service_adjustments/throttle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/cold_start.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/cold_start.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_delivery.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_delivery.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_presure.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_presure.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_pump.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/fuel_pump.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/injectors.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/b_fuel_system/injectors.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/idle_air.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/idle_air.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/intake_air.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/intake_air.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/throttle_position.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/throttle_position.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/volume_air.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/c_intake_system/volume_air.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/high_tension.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/high_tension.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_amplifier.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_amplifier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_coil.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_coil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_timing.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/d_ignition_system/ignition_timing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/e_engine_sensors/crankshaft.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/e_engine_sensors/crankshaft.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/e_engine_sensors/engine_coolant.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/e_engine_sensors/engine_coolant.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/co_adjustment.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/co_adjustment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/heated_oxygen.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/heated_oxygen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/oxygen_sensor.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/f_emission_control/oxygen_sensor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/engine_control_module.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/engine_control_module.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/engine_control_relay.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/engine_control_relay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/fuel_pump_relay.class" afterPath="$PROJECT_DIR$/build/classes/emct/ro/frames/g_control_system/fuel_pump_relay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/forms/default_images.java" afterPath="$PROJECT_DIR$/src/emct/en/forms/default_images.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/forms/default_panel.java" afterPath="$PROJECT_DIR$/src/emct/en/forms/default_panel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/forms/emct.java" afterPath="$PROJECT_DIR$/src/emct/en/forms/emct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/forms/language.java" afterPath="$PROJECT_DIR$/src/emct/en/forms/language.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/co_level.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/co_level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/knock_sensor.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/knock_sensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/forms/emct.java" afterPath="$PROJECT_DIR$/src/emct/ro/forms/emct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ignition_coil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="259" column="63" lean-forward="false" selection-start-line="259" selection-start-column="63" selection-end-line="259" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#13719#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#initComponents#0;class#ignition_coil#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>e</find>
+      <find>em</find>
+      <find>emct</find>
+      <find>emct.</find>
+      <find>emct.f</find>
+      <find>emct.form</find>
+      <find>emct.en.formss</find>
+      <find>emct.frames</find>
+      <find>emct.forms</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>emct.en.frames</replace>
+      <replace>emct.en.forms</replace>
+      <replace>emct.ro.frames</replace>
+      <replace>emct.ro.forms</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Catalin Glavan\Desktop\vw_b3\src\emct\en</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/emct/en/forms/language.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/co_level.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java" />
+        <option value="$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/forms/emct.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vw_b3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vw_b3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.emct">
+    <configuration default="false" name="emct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="emct.en.forms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="emct.en.forms.emct" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="vw_b3" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="emct (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="emct.ro.forms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="emct.ro.forms.emct" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="vw_b3" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="vw_b3" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.emct" />
+      <item index="1" class="java.lang.String" itemvalue="Application.emct (1)" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.emct" />
+        <item index="1" class="java.lang.String" itemvalue="Application.emct (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d51b7253-1b4d-4b61-8c63-e323fc61dd5d" name="Default" comment="" />
+      <created>1498759168709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498759168709</updated>
+      <workItem from="1498759169903" duration="1718000" />
+      <workItem from="1498760905911" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1824000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="288" y="511" width="1255" height="442" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <marker date="1498760163334" expanded="false" signature="780:810" ph="/unchecked/" />
+            <marker date="1498760163334" expanded="false" signature="3286:3305" ph=" { " />
+            <marker date="1498760163334" expanded="false" signature="3330:3344" ph=" }" />
+            <marker date="1498760163334" expanded="false" signature="3925:3944" ph=" { " />
+            <marker date="1498760163334" expanded="false" signature="3969:3983" ph=" }" />
+            <marker date="1498760163334" expanded="false" signature="5015:5034" ph=" { " />
+            <marker date="1498760163334" expanded="false" signature="5061:5075" ph=" }" />
+            <marker date="1498760163334" expanded="false" signature="5393:5412" ph=" { " />
+            <marker date="1498760163334" expanded="false" signature="5439:5453" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1498760163398" expanded="false" signature="749:779" ph="/unchecked/" />
+            <marker date="1498760163398" expanded="false" signature="3045:3064" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="3092:3106" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="3563:3582" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="3610:3624" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="5185:5204" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="5232:5246" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="7926:7945" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="7971:7985" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="8412:8431" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="8457:8471" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="8990:9009" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="9035:9049" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="10123:10142" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="10170:10184" ph=" }" />
+            <marker date="1498760163398" expanded="false" signature="10544:10563" ph=" { " />
+            <marker date="1498760163398" expanded="false" signature="10591:10605" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="280" column="0" lean-forward="true" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1498760163386" expanded="false" signature="762:792" ph="/unchecked/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/forms/emct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="279" column="39" lean-forward="true" selection-start-line="279" selection-start-column="39" selection-end-line="279" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vw_b3.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/en/forms/emct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="259" column="63" lean-forward="false" selection-start-line="259" selection-start-column="63" selection-end-line="259" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#13719#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#initComponents#0;class#ignition_coil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>vw_b3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
