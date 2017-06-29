@@ -37,6 +37,7 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -50,12 +51,60 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class emct extends javax.swing.JFrame implements language {
 
-    public emct() {
+    public emct(String subMenuButton) {
         initComponents();
         super.setLocationRelativeTo(null);
         splitter.setDividerLocation(300);
         icon = new ImageIcon(getClass().getResource("/emct/images/vw_ico.png")).getImage();
         super.setIconImage(icon);
+        setDefault_panel(subMenuButton);
+    }
+
+    private void setDefault_panel(String subMenuButton) {
+
+        HashMap<String, JButton> submenuHashMap = new HashMap <>();
+        HashMap <String, Runnable> buttonHashMap = new HashMap <>();
+
+        if (subMenuButton != null) {
+            String[] split = subMenuButton.split(" ");
+
+            submenuHashMap.put("service", service);
+            submenuHashMap.put("fuel", fuel);
+            submenuHashMap.put("intake", intake);
+            submenuHashMap.put("ignition", ignition);
+            submenuHashMap.put("engine", engine);
+            submenuHashMap.put("emission", emission);
+            submenuHashMap.put("control", control);
+
+            buttonHashMap.put("service_sub1", () -> service_sub1.doClick());
+            buttonHashMap.put("service_sub2", () -> service_sub2.doClick());
+            buttonHashMap.put("service_sub3", () -> service_sub3.doClick());
+            buttonHashMap.put("fuel_sub1", () -> fuel_sub1.doClick());
+            buttonHashMap.put("fuel_sub2", () -> fuel_sub2.doClick());
+            buttonHashMap.put("fuel_sub3", () -> fuel_sub3.doClick());
+            buttonHashMap.put("fuel_sub4", () -> fuel_sub4.doClick());
+            buttonHashMap.put("fuel_sub5", () -> fuel_sub5.doClick());
+            buttonHashMap.put("intake_sub1", () -> intake_sub1.doClick());
+            buttonHashMap.put("intake_sub2", () -> intake_sub2.doClick());
+            buttonHashMap.put("intake_sub3", () -> intake_sub3.doClick());
+            buttonHashMap.put("intake_sub4", () -> intake_sub4.doClick());
+            buttonHashMap.put("ignition_sub1", () -> ignition_sub1.doClick());
+            buttonHashMap.put("ignition_sub2", () -> ignition_sub2.doClick());
+            buttonHashMap.put("ignition_sub3", () -> ignition_sub3.doClick());
+            buttonHashMap.put("ignition_sub4", () -> ignition_sub4.doClick());
+            buttonHashMap.put("engine_sub1", () -> engine_sub1.doClick());
+            buttonHashMap.put("engine_sub2", () -> engine_sub2.doClick());
+            buttonHashMap.put("engine_sub3", () -> engine_sub3.doClick());
+            buttonHashMap.put("emission_sub1", () -> emission_sub1.doClick());
+            buttonHashMap.put("emission_sub2", () -> emission_sub2.doClick());
+            buttonHashMap.put("emission_sub3", () -> emission_sub3.doClick());
+            buttonHashMap.put("control_sub1", () -> control_sub1.doClick());
+            buttonHashMap.put("control_sub2", () -> control_sub2.doClick());
+            buttonHashMap.put("control_sub3", () -> control_sub3.doClick());
+
+            submenuHashMap.get(split[0]).doClick();
+            buttonHashMap.get(split[1]).run();
+        }
     }
 
     private void submenu_service(String set) {
@@ -949,7 +998,7 @@ public class emct extends javax.swing.JFrame implements language {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new emct().setVisible(true);
+            new emct(null).setVisible(true);
         });
     }
 

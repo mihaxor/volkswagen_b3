@@ -5,6 +5,7 @@ package emct.en.forms;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 import emct.en.frames.a_service_adjustments.co_level;
 import emct.en.frames.a_service_adjustments.idle_speed;
 import emct.en.frames.a_service_adjustments.throttle;
@@ -30,6 +31,7 @@ import emct.en.frames.f_emission_control.oxygen_sensor;
 import emct.en.frames.g_control_system.engine_control_module;
 import emct.en.frames.g_control_system.engine_control_relay;
 import emct.en.frames.g_control_system.fuel_pump_relay;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -37,6 +39,7 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -45,17 +48,64 @@ import javax.swing.JPanel;
 import javax.swing.UnsupportedLookAndFeelException;
 
 /**
- *
  * @author Catalin Glavan
  */
 public class emct extends javax.swing.JFrame implements language {
 
-    public emct() {
+    public emct(String subMenuButton) {
         initComponents();
         super.setLocationRelativeTo(null);
         splitter.setDividerLocation(300);
         icon = new ImageIcon(getClass().getResource("/emct/images/vw_ico.png")).getImage();
         super.setIconImage(icon);
+        setDefault_panel(subMenuButton);
+    }
+
+    private void setDefault_panel(String subMenuButton) {
+
+            HashMap <String, JButton> submenuHashMap = new HashMap <>();
+            HashMap <String, Runnable> buttonHashMap = new HashMap <>();
+
+        if (subMenuButton != null) {
+            String[] split = subMenuButton.split(" ");
+
+            submenuHashMap.put("service", service);
+            submenuHashMap.put("fuel", fuel);
+            submenuHashMap.put("intake", intake);
+            submenuHashMap.put("ignition", ignition);
+            submenuHashMap.put("engine", engine);
+            submenuHashMap.put("emission", emission);
+            submenuHashMap.put("control", control);
+
+            buttonHashMap.put("service_sub1", () -> service_sub1.doClick());
+            buttonHashMap.put("service_sub2", () -> service_sub2.doClick());
+            buttonHashMap.put("service_sub3", () -> service_sub3.doClick());
+            buttonHashMap.put("fuel_sub1", () -> fuel_sub1.doClick());
+            buttonHashMap.put("fuel_sub2", () -> fuel_sub2.doClick());
+            buttonHashMap.put("fuel_sub3", () -> fuel_sub3.doClick());
+            buttonHashMap.put("fuel_sub4", () -> fuel_sub4.doClick());
+            buttonHashMap.put("fuel_sub5", () -> fuel_sub5.doClick());
+            buttonHashMap.put("intake_sub1", () -> intake_sub1.doClick());
+            buttonHashMap.put("intake_sub2", () -> intake_sub2.doClick());
+            buttonHashMap.put("intake_sub3", () -> intake_sub3.doClick());
+            buttonHashMap.put("intake_sub4", () -> intake_sub4.doClick());
+            buttonHashMap.put("ignition_sub1", () -> ignition_sub1.doClick());
+            buttonHashMap.put("ignition_sub2", () -> ignition_sub2.doClick());
+            buttonHashMap.put("ignition_sub3", () -> ignition_sub3.doClick());
+            buttonHashMap.put("ignition_sub4", () -> ignition_sub4.doClick());
+            buttonHashMap.put("engine_sub1", () -> engine_sub1.doClick());
+            buttonHashMap.put("engine_sub2", () -> engine_sub2.doClick());
+            buttonHashMap.put("engine_sub3", () -> engine_sub3.doClick());
+            buttonHashMap.put("emission_sub1", () -> emission_sub1.doClick());
+            buttonHashMap.put("emission_sub2", () -> emission_sub2.doClick());
+            buttonHashMap.put("emission_sub3", () -> emission_sub3.doClick());
+            buttonHashMap.put("control_sub1", () -> control_sub1.doClick());
+            buttonHashMap.put("control_sub2", () -> control_sub2.doClick());
+            buttonHashMap.put("control_sub3", () -> control_sub3.doClick());
+
+            submenuHashMap.get(split[0]).doClick();
+            buttonHashMap.get(split[1]).run();
+        }
     }
 
     private void submenu_service(String set) {
@@ -473,12 +523,12 @@ public class emct extends javax.swing.JFrame implements language {
     @Override
     public void buttonState(JButton button) {
         JButton[] iterateButtons = {service_sub1, service_sub2, service_sub3,
-            fuel_sub1, fuel_sub2, fuel_sub3, fuel_sub4, fuel_sub5,
-            intake_sub1, intake_sub2, intake_sub3, intake_sub4,
-            ignition_sub1, ignition_sub2, ignition_sub3, ignition_sub4,
-            engine_sub1, engine_sub2, engine_sub3,
-            emission_sub1, emission_sub2, emission_sub3,
-            control_sub1, control_sub2, control_sub3};
+                fuel_sub1, fuel_sub2, fuel_sub3, fuel_sub4, fuel_sub5,
+                intake_sub1, intake_sub2, intake_sub3, intake_sub4,
+                ignition_sub1, ignition_sub2, ignition_sub3, ignition_sub4,
+                engine_sub1, engine_sub2, engine_sub3,
+                emission_sub1, emission_sub2, emission_sub3,
+                control_sub1, control_sub2, control_sub3};
         for (JButton set : iterateButtons) {
             if (set != null) {
                 set.setBackground(setColor3);
@@ -725,15 +775,15 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panel_leftLayout = new javax.swing.GroupLayout(panel_left);
         panel_left.setLayout(panel_leftLayout);
         panel_leftLayout.setHorizontalGroup(
-            panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panel_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_leftLayout.setVerticalGroup(
-            panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_leftLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panel_leftLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         scroll_left.setViewportView(panel_left);
@@ -747,18 +797,18 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panel_rightLayout = new javax.swing.GroupLayout(panel_right);
         panel_right.setLayout(panel_rightLayout);
         panel_rightLayout.setHorizontalGroup(
-            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_rightLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
-                .addContainerGap())
+                panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panel_rightLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
+                                .addContainerGap())
         );
         panel_rightLayout.setVerticalGroup(
-            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_rightLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
-                .addContainerGap())
+                panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panel_rightLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
+                                .addContainerGap())
         );
 
         splitter.setRightComponent(panel_right);
@@ -766,28 +816,28 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 1228, Short.MAX_VALUE)
-                .addContainerGap())
+                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 1228, Short.MAX_VALUE)
+                                .addContainerGap())
         );
         panelLayout.setVerticalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelLayout.createSequentialGroup()
-                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
-                .addContainerGap())
+                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
+                                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -948,7 +998,7 @@ public class emct extends javax.swing.JFrame implements language {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new emct().setVisible(true);
+            new emct(null).setVisible(true);
         });
     }
 
@@ -985,7 +1035,7 @@ public class emct extends javax.swing.JFrame implements language {
     private static JButton control_sub3;
     private final Image icon;
 
-//<editor-fold defaultstate="collapsed" desc="Generated Variables">
+    //<editor-fold defaultstate="collapsed" desc="Generated Variables">
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BACK;
     private javax.swing.JButton control;
