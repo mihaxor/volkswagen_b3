@@ -576,7 +576,7 @@ public class emct extends javax.swing.JFrame implements language {
         panel_right = default_panel;
         scroll = new javax.swing.JScrollPane();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("ENGINE MANAGEMENT COMPONENT TESTING");
 
         splitter.setPreferredSize(new java.awt.Dimension(1142, 803));
@@ -768,6 +768,11 @@ public class emct extends javax.swing.JFrame implements language {
         BACK.setFocusable(false);
         BACK.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BACK.setPreferredSize(new java.awt.Dimension(157, 55));
+        BACK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BACKActionPerformed(evt);
+            }
+        });
         panel8.add(BACK);
 
         panel_menu.add(panel8);
@@ -775,15 +780,15 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panel_leftLayout = new javax.swing.GroupLayout(panel_left);
         panel_left.setLayout(panel_leftLayout);
         panel_leftLayout.setHorizontalGroup(
-                panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panel_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_leftLayout.setVerticalGroup(
-                panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panel_leftLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            panel_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_leftLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         scroll_left.setViewportView(panel_left);
@@ -797,18 +802,18 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panel_rightLayout = new javax.swing.GroupLayout(panel_right);
         panel_right.setLayout(panel_rightLayout);
         panel_rightLayout.setHorizontalGroup(
-                panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panel_rightLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
-                                .addContainerGap())
+            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_rightLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panel_rightLayout.setVerticalGroup(
-                panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panel_rightLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
-                                .addContainerGap())
+            panel_rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_rightLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         splitter.setRightComponent(panel_right);
@@ -816,28 +821,28 @@ public class emct extends javax.swing.JFrame implements language {
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
-                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 1228, Short.MAX_VALUE)
-                                .addContainerGap())
+            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 1228, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelLayout.setVerticalGroup(
-                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
-                                .addContainerGap())
+            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelLayout.createSequentialGroup()
+                .addComponent(splitter, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -987,6 +992,12 @@ public class emct extends javax.swing.JFrame implements language {
         System.out.println(splitter.getDividerLocation());
         System.out.println("---------------------");
     }//GEN-LAST:event_splitterPropertyChange
+
+    private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed
+        if(evt.getSource()==BACK){
+            super.dispose();
+        }
+    }//GEN-LAST:event_BACKActionPerformed
 
     public static void main(String args[]) {
         try {

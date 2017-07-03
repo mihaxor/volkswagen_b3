@@ -62,8 +62,8 @@ public class emct extends javax.swing.JFrame implements language {
 
     private void setDefault_panel(String subMenuButton) {
 
-        HashMap<String, JButton> submenuHashMap = new HashMap <>();
-        HashMap <String, Runnable> buttonHashMap = new HashMap <>();
+        HashMap<String, JButton> submenuHashMap = new HashMap<>();
+        HashMap<String, Runnable> buttonHashMap = new HashMap<>();
 
         if (subMenuButton != null) {
             String[] split = subMenuButton.split(" ");
@@ -575,7 +575,7 @@ public class emct extends javax.swing.JFrame implements language {
         panel_right = default_panel;
         scroll = new javax.swing.JScrollPane();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("MANAGEMENTUL MOTORULUI SI TESTAREA COMPONENTELOR");
         setAlwaysOnTop(true);
 
@@ -768,6 +768,11 @@ public class emct extends javax.swing.JFrame implements language {
         BACK.setFocusable(false);
         BACK.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BACK.setPreferredSize(new java.awt.Dimension(157, 55));
+        BACK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BACKActionPerformed(evt);
+            }
+        });
         panel8.add(BACK);
 
         panel_menu.add(panel8);
@@ -987,6 +992,12 @@ public class emct extends javax.swing.JFrame implements language {
         System.out.println(splitter.getDividerLocation());
         System.out.println("---------------------");
     }//GEN-LAST:event_splitterPropertyChange
+
+    private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed
+        if (evt.getSource() == BACK) {
+            super.dispose();
+        }
+    }//GEN-LAST:event_BACKActionPerformed
 
     public static void main(String args[]) {
         try {
