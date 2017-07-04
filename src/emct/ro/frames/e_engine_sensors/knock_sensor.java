@@ -43,7 +43,7 @@ public class knock_sensor extends javax.swing.JPanel {
 
         jLabel91.setText("• Fixeaza senzorul la cuplul specificat.");
 
-        jLabel90.setText("• Conecteaza senzorul de batere ( KS ).");
+        jLabel90.setText("• Conecteaza senzorul de bataie ( KS ).");
 
         jLabel86.setText("• Deconecteaza multi-mufa KS.");
 
@@ -57,9 +57,9 @@ public class knock_sensor extends javax.swing.JPanel {
 
         jLabel80.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel80.setForeground(new java.awt.Color(15, 89, 193));
-        jLabel80.setText("Senzorul de batere ( KS )");
+        jLabel80.setText("Senzorul de bataie ( KS )");
 
-        jLabel87.setText("• Deconecteaza senzorul de batere ( KS ).");
+        jLabel87.setText("• Deconecteaza senzorul de bataie ( KS ).");
 
         jScrollPane10.setBorder(null);
 

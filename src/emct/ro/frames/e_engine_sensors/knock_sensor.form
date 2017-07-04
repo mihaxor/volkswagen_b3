@@ -94,7 +94,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel90">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&#x2022; Conecteaza senzorul de batere ( KS )."/>
+        <Property name="text" type="java.lang.String" value="&#x2022; Conecteaza senzorul de bataie ( KS )."/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel86">
@@ -133,12 +133,12 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="c1" green="59" red="f" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Senzorul de batere ( KS )"/>
+        <Property name="text" type="java.lang.String" value="Senzorul de bataie ( KS )"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel87">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&#x2022; Deconecteaza senzorul de batere ( KS )."/>
+        <Property name="text" type="java.lang.String" value="&#x2022; Deconecteaza senzorul de bataie ( KS )."/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane10">

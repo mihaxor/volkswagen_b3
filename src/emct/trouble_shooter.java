@@ -2,10 +2,12 @@ package emct;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Image;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.UnsupportedLookAndFeelException;
 
 /*
@@ -29,6 +31,8 @@ public class trouble_shooter extends javax.swing.JFrame {
         initComponents();
         super.requestFocus();
         super.setLocationRelativeTo(null);
+        icon = new ImageIcon(getClass().getResource("/emct/images/vw_ico.png")).getImage();
+        super.setIconImage(icon);
     }
 
     /**
@@ -81,6 +85,8 @@ public class trouble_shooter extends javax.swing.JFrame {
         setTitle("TROUBLE SHOOTER");
         setPreferredSize(new java.awt.Dimension(1000, 800));
         getContentPane().setLayout(new java.awt.GridLayout(0, 1));
+
+        jscroll.getVerticalScrollBar().setUnitIncrement(16);
 
         panel_buttons.setLayout(new javax.swing.BoxLayout(panel_buttons, javax.swing.BoxLayout.PAGE_AXIS));
 
@@ -354,19 +360,19 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button2) {
             if (!button2.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
                     bundle.getString("key_electrical_connections"),
                     bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
                     bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
-                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_idle_air") + "." + "intake intake_sub4",
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_throttle_valve"),
+                    bundle.getString("key_engine_management"),
                     bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
@@ -391,21 +397,20 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button3) {
             if (!button3.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
                     bundle.getString("key_electrical_connections"),
                     bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
                     bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
                     bundle.getString("key_engine_management"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
-                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3",
+                    bundle.getString("key_knock_sensor")+ "." + "engine engine_sub3"
                 };
 
                 defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
@@ -428,20 +433,18 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button4) {
             if (!button4.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
                     bundle.getString("key_electrical_connections"),
                     bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
                     bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
                     bundle.getString("key_engine_management"),
+                    bundle.getString("key_idle_air") + "." + "intake intake_sub4",
+                    bundle.getString("key_throttle_valve"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -465,20 +468,18 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button5) {
             if (!button5.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_idle_air") + "." + "intake intake_sub4",
                     bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_electrical_connections"),
                     bundle.getString("key_engine_management"),
+                    bundle.getString("key_throttle_valve") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_intake_air") + "." + "intake intake_sub3",
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -539,20 +540,14 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button7) {
             if (!button7.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
-                    bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -576,21 +571,8 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button8) {
             if (!button8.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
-                    bundle.getString("key_air_intake_system"),
-                    bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
-                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute")
                 };
 
                 defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
@@ -613,21 +595,19 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button9) {
             if (!button9.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_electrical_connections"),
                     bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
-                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1 ",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_heated_oxygen") + "." + "emission emission_sub2",
+                    bundle.getString("key_engine_control") + "." + "control control_sub3",
+                    bundle.getString("key_intake_air") + "." + "intake intake_sub3"
                 };
 
                 defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
@@ -650,20 +630,17 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button10) {
             if (!button10.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_electrical_connections"),
                     bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors"),
+                    bundle.getString("key_intake_air") + "." + "intake intake_sub3",
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -687,20 +664,15 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button11) {
             if (!button11.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
                     bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
-                    bundle.getString("key_air_intake_system"),
                     bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_knock_sensor") + "." + "engine engine_sub3",
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -724,20 +696,10 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button12) {
             if (!button12.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
-                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_knock_sensor") + "." + "engine engine_sub3",
                     bundle.getString("key_engine_management"),
-                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -761,20 +723,17 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button13) {
             if (!button13.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_electrical_connections"),
                     bundle.getString("key_engine_management"),
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -798,21 +757,17 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button14) {
             if (!button14.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
-                    bundle.getString("key_air_intake_system"),
-                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_evaporative"),
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
-                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
-                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_engine_control") + "." + "control control_sub3",
+                    bundle.getString("key_intake_air") + "." + "intake intake_sub3"
                 };
 
                 defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
@@ -835,20 +790,18 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button15) {
             if (!button15.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_heated_oxygen") + "." + "emission emission_sub2",
+                    bundle.getString("key_evaporative"),
+                    bundle.getString("key_throttle_valve"),
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
                     bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
-                    bundle.getString("key_air_intake_system"),
                     bundle.getString("key_engine_management"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -872,20 +825,18 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button16) {
             if (!button16.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
-                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_heated_oxygen") + "." + "emission emission_sub2",
+                    bundle.getString("key_evaporative"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
+                    bundle.getString("key_engine_coolant") +"." + "engine engine_sub1",
+                    bundle.getString("key_fuel_filter"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
                     bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_management"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -897,7 +848,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                 refreshFrame();
             } else {
                 Component[] cs = panel16.getComponents();
-                panel6.remove(cs[1]);
+                panel16.remove(cs[1]);
                 button16.setBackground(Color.WHITE);
                 button16.setSelected(false);
                 refreshFrame();
@@ -909,20 +860,21 @@ public class trouble_shooter extends javax.swing.JFrame {
         if (evt.getSource() == button17) {
             if (!button17.isSelected()) {
                 String[] labels = {
-                    bundle.getString("key_immobilizer"),
-                    bundle.getString("key_inertia_fuel"),
-                    bundle.getString("key_electrical_connections"),
-                    bundle.getString("key_fuses_fuel"),
-                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
-                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
-                    bundle.getString("key_condition_position"),
                     bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_air_intake_filter"),
+                    bundle.getString("key_electrical_connections"),
                     bundle.getString("key_engine_management"),
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_engine_coolant") + "." + "engine engine_sub1",
+                    bundle.getString("key_throttle_position") + "." + "intake intake_sub1",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub2",
+                    bundle.getString("key_manifold_absolute"),
                     bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
                     bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
-                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
-                    bundle.getString("key_manifold_absolute"),
-                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_camshaft"),
+                    bundle.getString("key_oxygen"),
+                    bundle.getString("key_throttle_valve"),
+                    bundle.getString("key_vehicle"),
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
@@ -973,6 +925,7 @@ public class trouble_shooter extends javax.swing.JFrame {
     private final Color setColor2 = new Color(15, 89, 193);
     private final Color setColor3 = new Color(245, 185, 47);
     private panel_default defaultPanel;
+    private final Image icon;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton button1;

@@ -27,7 +27,6 @@ public class panel_default extends JPanel {
         panel.add(titleLabel);
 
         for (String label : labels) {
-            System.out.println(label);
 
             String[] splitLink = label.split("\\.");
             JLabel set = new JLabel(label);
