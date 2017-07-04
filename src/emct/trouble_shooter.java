@@ -452,7 +452,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                 button4.setBackground(setColor2);
                 refreshFrame();
             } else {
-                Component[] cs = panel3.getComponents();
+                Component[] cs = panel4.getComponents();
                 panel4.remove(cs[1]);
                 button4.setBackground(Color.WHITE);
                 button4.setSelected(false);
@@ -462,55 +462,484 @@ public class trouble_shooter extends javax.swing.JFrame {
     }//GEN-LAST:event_button4ActionPerformed
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button5) {
+            if (!button5.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel5.add(defaultPanel);
+
+                button5.setSelected(true);
+                button5.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel5.getComponents();
+                panel5.remove(cs[1]);
+                button5.setBackground(Color.WHITE);
+                button5.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button5ActionPerformed
 
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button6) {
+            if (!button6.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel6.add(defaultPanel);
+
+                button6.setSelected(true);
+                button6.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel6.getComponents();
+                panel6.remove(cs[1]);
+                button6.setBackground(Color.WHITE);
+                button6.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button6ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button7) {
+            if (!button7.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel7.add(defaultPanel);
+
+                button7.setSelected(true);
+                button7.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel7.getComponents();
+                panel7.remove(cs[1]);
+                button7.setBackground(Color.WHITE);
+                button7.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button7ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button8) {
+            if (!button8.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel8.add(defaultPanel);
+
+                button8.setSelected(true);
+                button8.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel8.getComponents();
+                panel8.remove(cs[1]);
+                button8.setBackground(Color.WHITE);
+                button8.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button8ActionPerformed
 
     private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button9) {
+            if (!button9.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel9.add(defaultPanel);
+
+                button9.setSelected(true);
+                button9.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel9.getComponents();
+                panel9.remove(cs[1]);
+                button9.setBackground(Color.WHITE);
+                button9.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button9ActionPerformed
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button10) {
+            if (!button10.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel10.add(defaultPanel);
+
+                button10.setSelected(true);
+                button10.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel10.getComponents();
+                panel10.remove(cs[1]);
+                button10.setBackground(Color.WHITE);
+                button10.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button11) {
+            if (!button11.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel11.add(defaultPanel);
+
+                button11.setSelected(true);
+                button11.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel11.getComponents();
+                panel11.remove(cs[1]);
+                button11.setBackground(Color.WHITE);
+                button11.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button12) {
+            if (!button12.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel12.add(defaultPanel);
+
+                button12.setSelected(true);
+                button12.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel12.getComponents();
+                panel12.remove(cs[1]);
+                button12.setBackground(Color.WHITE);
+                button12.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button12ActionPerformed
 
     private void button13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button13ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button13) {
+            if (!button13.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel13.add(defaultPanel);
+
+                button13.setSelected(true);
+                button13.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel13.getComponents();
+                panel13.remove(cs[1]);
+                button13.setBackground(Color.WHITE);
+                button13.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button13ActionPerformed
 
     private void button14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button14ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button14) {
+            if (!button14.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel14.add(defaultPanel);
+
+                button14.setSelected(true);
+                button14.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel14.getComponents();
+                panel14.remove(cs[1]);
+                button14.setBackground(Color.WHITE);
+                button14.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button14ActionPerformed
 
     private void button15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button15ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button15) {
+            if (!button15.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel15.add(defaultPanel);
+
+                button15.setSelected(true);
+                button15.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel15.getComponents();
+                panel15.remove(cs[1]);
+                button15.setBackground(Color.WHITE);
+                button15.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button15ActionPerformed
 
     private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button16) {
+            if (!button16.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel16.add(defaultPanel);
+
+                button16.setSelected(true);
+                button16.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel16.getComponents();
+                panel6.remove(cs[1]);
+                button16.setBackground(Color.WHITE);
+                button16.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button16ActionPerformed
 
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
-        // TODO add your handling code here:
+        if (evt.getSource() == button17) {
+            if (!button17.isSelected()) {
+                String[] labels = {
+                    bundle.getString("key_immobilizer"),
+                    bundle.getString("key_inertia_fuel"),
+                    bundle.getString("key_electrical_connections"),
+                    bundle.getString("key_fuses_fuel"),
+                    bundle.getString("key_ignition_system") + "." + "ignition ignition_sub1",
+                    bundle.getString("key_crankshaft") + "." + "engine engine_sub2",
+                    bundle.getString("key_condition_position"),
+                    bundle.getString("key_air_intake_system"),
+                    bundle.getString("key_engine_management"),
+                    bundle.getString("key_fuel_pressure") + "." + "fuel fuel_sub1",
+                    bundle.getString("key_injectors") + "." + "fuel fuel_sub3",
+                    bundle.getString("key_volume_air_flow") + "." + "intake intake_sub1",
+                    bundle.getString("key_manifold_absolute"),
+                    bundle.getString("key_engine_speed"),
+                    bundle.getString("key_engine_control") + "." + "control control_sub3"
+                };
+
+                defaultPanel = new panel_default(bundle.getString("key_component_check"), labels);
+                panel17.add(defaultPanel);
+
+                button17.setSelected(true);
+                button17.setBackground(setColor2);
+                refreshFrame();
+            } else {
+                Component[] cs = panel17.getComponents();
+                panel17.remove(cs[1]);
+                button17.setBackground(Color.WHITE);
+                button17.setSelected(false);
+                refreshFrame();
+            }
+        }
     }//GEN-LAST:event_button17ActionPerformed
 
     private void refreshFrame() {
