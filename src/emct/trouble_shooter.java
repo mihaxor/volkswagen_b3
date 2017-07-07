@@ -921,9 +921,7 @@ public class trouble_shooter extends javax.swing.JFrame {
     }
 
     private final ResourceBundle bundle;
-    private final Color setColor = new Color(255, 204, 0);
     private final Color setColor2 = new Color(15, 89, 193);
-    private final Color setColor3 = new Color(245, 185, 47);
     private panel_check defaultPanel;
     private final Image icon;
 

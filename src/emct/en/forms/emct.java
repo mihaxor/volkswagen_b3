@@ -989,8 +989,8 @@ public class emct extends javax.swing.JFrame implements language {
     }//GEN-LAST:event_controlItemStateChanged
 
     private void splitterPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_splitterPropertyChange
-        System.out.println(splitter.getDividerLocation());
-        System.out.println("---------------------");
+      //  System.out.println(splitter.getDividerLocation());
+      //  System.out.println("---------------------");
     }//GEN-LAST:event_splitterPropertyChange
 
     private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed

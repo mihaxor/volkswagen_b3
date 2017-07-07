@@ -9,7 +9,9 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
+import java.util.HashMap;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -20,7 +22,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -32,6 +33,7 @@ public class ecu extends JFrame {
 
     private final JPanel panel;
     private Image image;
+    private final Image icon;
     private final ResourceBundle rsBundle;
 
     public ecu(ResourceBundle bundle) {
@@ -39,6 +41,7 @@ public class ecu extends JFrame {
         this.rsBundle = bundle;
         super.setLayout(new BorderLayout());
         this.image = new ImageIcon(getClass().getResource("/emct/images/pins.png")).getImage();
+        icon = new ImageIcon(getClass().getResource("/emct/images/vw_ico.png")).getImage();
 
         panel = new JPanel() {
             @Override
@@ -54,7 +57,9 @@ public class ecu extends JFrame {
 
         JTable table = new JTable(new DefaultTableCheck(rsBundle));
         table.getColumn(rsBundle.getString("key_comp")).setCellRenderer(new ButtonRenderer());
-        table.getColumn(rsBundle.getString("key_comp")).setCellEditor(new ButtonEditor(new JCheckBox()));
+        table.getColumn(rsBundle.getString("key_comp")).setCellEditor(new ButtonEditor(new JCheckBox(), rsBundle, super.getLocation()));
+        table.getColumn(rsBundle.getString("key_wave")).setCellRenderer(new ButtonRenderer());
+        table.getColumn(rsBundle.getString("key_wave")).setCellEditor(new ButtonEditor(new JCheckBox(), rsBundle, super.getLocation()));
         JScrollPane scroll = new JScrollPane(table);
         table.setAutoCreateRowSorter(true);
         table.setAutoCreateColumnsFromModel(true);
@@ -74,6 +79,7 @@ public class ecu extends JFrame {
         super.setSize(1200, 700);
         super.setLocationRelativeTo(null);
         super.setVisible(true);
+        super.setIconImage(icon);
         super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
@@ -102,14 +108,14 @@ public class ecu extends JFrame {
                 {bundle.getString("key_injector_cold"), "03", bundle.getString("key_ig_on"), "11-14 V", "", ""},
                 {bundle.getString("key_injector_cold"), "03", bundle.getString("key_flap4"), bundle.getString("key_values_3_2"), "", ""},
                 {bundle.getString("key_crankshaft_sensor"), "11", bundle.getString("key_turned"), "0 V or 10-14 V", "", ""},
-                {bundle.getString("key_crankshaft_sensor"), "11", bundle.getString("key_status1"), "30 Hz", "5 V/20 ms", "WAVE"},
+                {bundle.getString("key_crankshaft_sensor"), "11", bundle.getString("key_status1"), "30 Hz", "5 V/20 ms", bundle.getString("key_wv") + "4"},
                 {bundle.getString("key_crankshaft_sensor"), "11", "3000 rpm", "100 Hz", "", ""},
                 {bundle.getString("key_crankshaft_sensor"), "13", bundle.getString("key_ig_on"), "0 V", "", ""},
                 {bundle.getString("key_crankshaft_sensor"), "30", bundle.getString("key_ig_off"), "0 V", "", ""},
                 {bundle.getString("key_crankshaft_sensor"), "30", bundle.getString("key_ig_on"), "10 V min.", "", ""},
                 {bundle.getString("key_datalink"), "32", "", bundle.getString("key_connected_pin"), "", ""},
-                {bundle.getString("key_ea"), "20", bundle.getString("key_ig_on"), "0 V","", ""},
-                {bundle.getString("key_ea2"), "29", bundle.getString("key_ig_on"), "0 V","", ""},
+                {bundle.getString("key_ea"), "20", bundle.getString("key_ig_on"), "0 V", "", ""},
+                {bundle.getString("key_ea2"), "29", bundle.getString("key_ig_on"), "0 V", "", ""},
                 {bundle.getString("key_relay"), "38", bundle.getString("key_ig_off"), "0 V", "", ""},
                 {bundle.getString("key_relay"), "38", bundle.getString("key_ig_on"), "11-14V", "", ""},
                 {bundle.getString("key_temp_sensor"), "13", bundle.getString("key_ig_on"), "0 V", "", ""},
@@ -117,23 +123,23 @@ public class ecu extends JFrame {
                 {bundle.getString("key_temp_sensor"), "14", bundle.getString("key_col_temp2"), "0.2 V", "", ""},
                 {bundle.getString("key_pump"), "07", bundle.getString("key_ig_on"), bundle.getString("key_values_3_2"), "", ""},
                 {bundle.getString("key_pump"), "07", bundle.getString("key_status2"), "0-1 V", "", ""},
-                {bundle.getString("key_heated"), "08", bundle.getString("key_flap3"), bundle.getString("key_values_8"), "0,2 V/1 sec.", "WAVE"},
+                {bundle.getString("key_heated"), "08", bundle.getString("key_flap3"), bundle.getString("key_values_8"), "0,2 V/1 sec.", bundle.getString("key_wv") + "21"},
                 {bundle.getString("key_oxy2"), "29", bundle.getString("key_status1"), "0 V", "", ""},
                 {bundle.getString("key_oxy"), "33", bundle.getString("key_status1"), "0 V", "", ""},
-                {bundle.getString("key_idleair"), "25", bundle.getString("key_status1"), "", "2 V/5 ms", "WAVE"},
+                {bundle.getString("key_idleair"), "25", bundle.getString("key_status1"), "", "2 V/5 ms", bundle.getString("key_wv") + "64"},
                 {bundle.getString("key_ignition_amp"), "27", bundle.getString("key_status2"), "10 Hz", "", ""},
-                {bundle.getString("key_ignition_amp"), "27", bundle.getString("key_status1"), "30 Hz", "2 V/10 ms", "WAVE"},
+                {bundle.getString("key_ignition_amp"), "27", bundle.getString("key_status1"), "30 Hz", "2 V/10 ms", bundle.getString("key_wv") + "32"},
                 {bundle.getString("key_ignition_amp"), "27", "3000 rpm", "100 Hz", "", ""},
                 {bundle.getString("key_ign2"), "26", bundle.getString("key_status2"), "10 V", "", ""},
                 {bundle.getString("key_ign"), "36", bundle.getString("key_ig_off"), "0 V", "", ""},
                 {bundle.getString("key_ign"), "36", bundle.getString("key_ig_on"), "11- 14 V", "", ""},
                 {bundle.getString("key_inj"), "02", bundle.getString("key_ig_on"), bundle.getString("key_values_2"), "", ""},
-                {bundle.getString("key_inj"), "02", bundle.getString("key_flap3"), "2,3 ms", "10 V/2 ms", "WAVE"},
+                {bundle.getString("key_inj"), "02", bundle.getString("key_flap3"), "2,3 ms", "10 V/2 ms", bundle.getString("key_wv") + "35"},
                 {bundle.getString("key_instrument"), "10", "", bundle.getString("key_connected_pin"), "", ""},
                 {bundle.getString("key_instrument2"), "24", "", bundle.getString("key_connected_pin"), "", ""},
                 {bundle.getString("key_iat"), "13", bundle.getString("key_ig_on"), "0 V", "", ""},
                 {bundle.getString("key_iat"), "15", bundle.getString("key_temp"), "1,4 V", "", ""},
-                {bundle.getString("key_ks"), "16", bundle.getString("key_status4"), "", "50 mV/1 ms", "WAVE"},
+                {bundle.getString("key_ks"), "16", bundle.getString("key_status4"), "", "50 mV/1 ms", bundle.getString("key_wv") + "38"},
                 {bundle.getString("key_ks"), "17", bundle.getString("key_status3"), "0 V", "", ""},
                 {bundle.getString("key_ks2"), "34", bundle.getString("key_status3"), "0 V", "", ""},
                 {bundle.getString("key_spare"), "06", "", bundle.getString("key_connected_pin"), "", ""},
@@ -192,14 +198,48 @@ public class ecu extends JFrame {
         protected JButton button;
         private String label;
         private boolean isPushed;
+        private HashMap<String, String> hashMapPanels = new HashMap<>();
+        private HashMap<String, String> hashMapWaves = new HashMap<>();
+        private final Point point;
+        private final ResourceBundle bundle;
 
-        public ButtonEditor(JCheckBox checkBox) {
+        public ButtonEditor(JCheckBox checkBox, ResourceBundle bundle, Point point) {
             super(checkBox);
+
+            this.point = point;
+            this.bundle = bundle;
+
             button = new JButton();
             button.setOpaque(true);
             button.addActionListener((ActionEvent e) -> {
                 fireEditingStopped();
             });
+
+            hashMapPanels.put(bundle.getString("key_co_ad"), "emission emission_sub1");
+            hashMapPanels.put(bundle.getString("key_injector_cold"), "fuel fuel_sub4");
+            hashMapPanels.put(bundle.getString("key_crankshaft_sensor"), "engine engine_sub2");
+            hashMapPanels.put(bundle.getString("key_relay"), "control control_sub1");
+            hashMapPanels.put(bundle.getString("key_temp_sensor"), "engine engine_sub1");
+            hashMapPanels.put(bundle.getString("key_pump"), "control control_sub2");
+            hashMapPanels.put(bundle.getString("key_heated"), "emission emission_sub2");
+            hashMapPanels.put(bundle.getString("key_heated2"), "emission emission_sub2");
+            hashMapPanels.put(bundle.getString("key_heated3"), "emission emission_sub2");
+            hashMapPanels.put(bundle.getString("key_idleair"), "intake intake_sub4");
+            hashMapPanels.put(bundle.getString("key_ignition_amp"), "ignition ignition_sub4");
+            hashMapPanels.put(bundle.getString("key_inj"), "fuel fuel_sub3");
+            hashMapPanels.put(bundle.getString("key_iat"), "intake intake_sub3");
+            hashMapPanels.put(bundle.getString("key_ks"), "engine engine_sub3");
+            hashMapPanels.put(bundle.getString("key_ks2"), "engine engine_sub3");
+            hashMapPanels.put(bundle.getString("key_tp"), "intake intake_sub1");
+            hashMapPanels.put(bundle.getString("key_vaf"), "intake intake_sub2");
+
+            hashMapWaves.put("4", "/emct/images/waves/wave4.png");
+            hashMapWaves.put("21", "/emct/images/waves/wave21.png");
+            hashMapWaves.put("32", "/emct/images/waves/wave32.png");
+            hashMapWaves.put("35", "/emct/images/waves/wave35.png");
+            hashMapWaves.put("38", "/emct/images/waves/wave38.png");
+            hashMapWaves.put("64", "/emct/images/waves/wave64.png");
+
         }
 
         @Override
@@ -220,10 +260,24 @@ public class ecu extends JFrame {
 
         @Override
         public Object getCellEditorValue() {
-            if (isPushed && button.getText().contains("<html>")) {
-                JOptionPane.showMessageDialog(button, label + ": Ouch!");
+
+            try {
+                if (isPushed) {
+                    String checkPanel = hashMapPanels.get(button.getText());
+                    String checkWave = hashMapWaves.get(button.getText().split(" ")[2]);
+                    if (checkPanel != null) {
+                        new emct.en.forms.emct(checkPanel).setVisible(true);
+                    }
+                    if (checkWave != null) {
+                        System.out.println(checkWave);
+                        System.out.println("/emct/images/figures/fig1.jpg");
+                        new emct.en.forms.default_images(bundle.getString("key_wave") + " " + button.getText().split(" ")[2], checkWave, point);
+                    }
+                }
+                isPushed = false;
+            } catch (Exception e) {
+              //  e.printStackTrace();
             }
-            isPushed = false;
             return label;
         }
 
