@@ -85,11 +85,23 @@ public class ecu extends JFrame {
 
     class DefaultTableCheck extends javax.swing.table.DefaultTableModel {
 
-        private final Object[][] data;
-        private final String[] cols;
+        private Object[][] data = null;
+        private String[] cols = null;
 
         public DefaultTableCheck(ResourceBundle bundle) {
 
+            initColsData(bundle);
+
+            for (Object c : cols) {
+                this.addColumn(c);
+            }
+
+            for (Object[] r : data) {
+                this.addRow(r);
+            }
+        }
+
+        private void initColsData(ResourceBundle bundle) {
             this.cols = new String[]{
                 bundle.getString("key_comp"),
                 bundle.getString("key_ecm"),
@@ -152,14 +164,6 @@ public class ecu extends JFrame {
                 {bundle.getString("key_vaf"), "19", bundle.getString("key_flap3"), "0,8 V", "", ""},
                 {bundle.getString("key_vaf"), "28", bundle.getString("key_ig_on"), "5 V", "", ""}
             };
-
-            for (Object c : cols) {
-                this.addColumn(c);
-            }
-
-            for (Object[] r : data) {
-                addRow(r);
-            }
         }
 
         @Override
@@ -198,8 +202,8 @@ public class ecu extends JFrame {
         protected JButton button;
         private String label;
         private boolean isPushed;
-        private HashMap<String, String> hashMapPanels = new HashMap<>();
-        private HashMap<String, String> hashMapWaves = new HashMap<>();
+        private final HashMap<String, String> hashMapPanels = new HashMap<>();
+        private final HashMap<String, String> hashMapWaves = new HashMap<>();
         private final Point point;
         private final ResourceBundle bundle;
 
@@ -215,6 +219,10 @@ public class ecu extends JFrame {
                 fireEditingStopped();
             });
 
+            initHashMaps();
+        }
+
+        private void initHashMaps() {
             hashMapPanels.put(bundle.getString("key_co_ad"), "emission emission_sub1");
             hashMapPanels.put(bundle.getString("key_injector_cold"), "fuel fuel_sub4");
             hashMapPanels.put(bundle.getString("key_crankshaft_sensor"), "engine engine_sub2");
@@ -239,7 +247,6 @@ public class ecu extends JFrame {
             hashMapWaves.put("35", "/emct/images/waves/wave35.png");
             hashMapWaves.put("38", "/emct/images/waves/wave38.png");
             hashMapWaves.put("64", "/emct/images/waves/wave64.png");
-
         }
 
         @Override
@@ -271,12 +278,12 @@ public class ecu extends JFrame {
                     if (checkWave != null) {
                         System.out.println(checkWave);
                         System.out.println("/emct/images/figures/fig1.jpg");
-                        new emct.en.forms.default_images(bundle.getString("key_wave") + " " + button.getText().split(" ")[2], checkWave, point);
+                        new emct.default_images(bundle.getString("key_wave") + " " + button.getText().split(" ")[2], checkWave, point);
                     }
                 }
                 isPushed = false;
             } catch (Exception e) {
-              //  e.printStackTrace();
+                //  e.printStackTrace();
             }
             return label;
         }
@@ -296,7 +303,7 @@ public class ecu extends JFrame {
             java.awt.EventQueue.invokeLater(() -> {
                 final Locale RO = new Locale("ro", "Romania");
                 final Locale EN = new Locale("en", "US");
-                ResourceBundle bundle1 = ResourceBundle.getBundle("emct/trouble_shooter_en", EN);
+                ResourceBundle bundle1 = ResourceBundle.getBundle("emct/language_en", EN);
                 new ecu(bundle1);
             });
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {

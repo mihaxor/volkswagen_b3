@@ -5,7 +5,7 @@
  */
 package emct.ro.frames.e_engine_sensors;
 
-import emct.ro.forms.default_images;
+import emct.default_images;
 import java.awt.Point;
 
 /**

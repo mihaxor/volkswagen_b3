@@ -81,7 +81,7 @@ public class trouble_shooter extends javax.swing.JFrame {
         panel17 = new javax.swing.JPanel();
         button17 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle(bundle.getString("key_torouble_title"));
         setPreferredSize(new java.awt.Dimension(1000, 800));
         getContentPane().setLayout(new java.awt.GridLayout(0, 1));
@@ -910,7 +910,7 @@ public class trouble_shooter extends javax.swing.JFrame {
             java.awt.EventQueue.invokeLater(() -> {
                 final Locale RO = new Locale("ro", "Romania");
                 final Locale EN = new Locale("en", "US");
-                ResourceBundle bundle1 = ResourceBundle.getBundle("emct/trouble_shooter_en", EN);
+                ResourceBundle bundle1 = ResourceBundle.getBundle("emct/language_en", EN);
                 new trouble_shooter(bundle1).setVisible(true);
             });
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {

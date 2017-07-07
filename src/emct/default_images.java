@@ -1,4 +1,4 @@
-package emct.ro.forms;
+package emct;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -17,7 +17,7 @@ public class default_images extends JFrame {
     private final String file_path;
     private final String frame_title;
     private final Image icon;
-    private Point pointLocation;
+    private final Point pointLocation;
 
     public default_images(String title, String path, Point point) {
 

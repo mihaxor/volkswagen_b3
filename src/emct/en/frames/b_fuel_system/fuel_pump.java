@@ -5,7 +5,7 @@
  */
 package emct.en.frames.b_fuel_system;
 
-import emct.en.forms.default_images;
+import emct.default_images;
 import java.awt.Point;
 
 /**

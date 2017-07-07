@@ -5,7 +5,7 @@
  */
 package emct.ro.frames.c_intake_system;
 
-import emct.ro.forms.default_images;
+import emct.default_images;
 import java.awt.Point;
 
 /**

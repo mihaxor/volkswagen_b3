@@ -5,6 +5,7 @@ package emct.ro.forms;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import emct.default_panel;
 import emct.ro.frames.a_service_adjustments.co_level;
 import emct.ro.frames.a_service_adjustments.idle_speed;
 import emct.ro.frames.a_service_adjustments.throttle;
@@ -1013,7 +1014,7 @@ public class emct extends javax.swing.JFrame implements language {
         });
     }
 
-    private final default_panel default_panel = new default_panel();
+    private final default_panel default_panel = new default_panel(true);
     private final Font setFont = new Font("Dialog", Font.BOLD, 11);
     private final Color setColor = new Color(255, 204, 0);
     private final Color setColor2 = new Color(15, 89, 193);

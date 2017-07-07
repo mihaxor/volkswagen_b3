@@ -1,4 +1,4 @@
-package emct.ro.forms;
+package emct;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,10 +15,10 @@ public class default_panel extends JPanel {
     private Image mainImage = null;
     private final Image scaledImage = null;
 
-    public default_panel() {
+    public default_panel(boolean menu) {
 
         super.setPreferredSize(new Dimension(1541, 991));
-        mainImage = new ImageIcon(getClass().getResource("/emct/images/default_panel.jpg")).getImage();
+        mainImage = (menu) ? new ImageIcon(getClass().getResource("/emct/images/default_panel.jpg")).getImage() : new ImageIcon(getClass().getResource("/emct/images/default_panel3.jpg")).getImage();
         mainImage = mainImage.getScaledInstance(super.getPreferredSize().width, super.getPreferredSize().height, Image.SCALE_DEFAULT);
     }
 
@@ -42,7 +42,7 @@ public class default_panel extends JPanel {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new default_panel());
+        frame.getContentPane().add(new default_panel(true));
         frame.pack();
         frame.setVisible(true);
     }

@@ -5,7 +5,7 @@
  */
 package emct.en.frames.g_control_system;
 
-import emct.en.forms.default_images;
+import emct.default_images;
 import java.awt.Point;
 
 /**

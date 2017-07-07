@@ -5,7 +5,7 @@
  */
 package emct.en.frames.f_emission_control;
 
-import emct.en.forms.default_images;
+import emct.default_images;
 import java.awt.Point;
 
 /**
