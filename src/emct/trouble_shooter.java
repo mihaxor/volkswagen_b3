@@ -82,7 +82,7 @@ public class trouble_shooter extends javax.swing.JFrame {
         button17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle(bundle.getString("key_torouble_title"));
+        setTitle(bundle.getString("key_trouble_title"));
         setPreferredSize(new java.awt.Dimension(1000, 800));
         getContentPane().setLayout(new java.awt.GridLayout(0, 1));
 

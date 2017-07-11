@@ -20,6 +20,7 @@ import javax.swing.ImageIcon;
 import javax.swing.UnsupportedLookAndFeelException;
 import java.awt.event.ItemEvent;
 import java.util.HashMap;
+import javax.swing.JComboBox;
 
 /**
  *
@@ -29,13 +30,18 @@ public class menu extends javax.swing.JFrame {
 
     /**
      * Creates new form menu
+     *
+     *
      */
     public menu() {
-        this.bundle = langCheck("default");
+
+        //this.bundle = langCheck("English");
+        this.bundle = lang.getSelectedItem().toString().contains("English") ? langCheck("English") : langCheck("Romania");
         initComponents();
         super.setSize(950, 650);
         super.setResizable(false);
         super.setLocationRelativeTo(null);
+
         icon = new ImageIcon(getClass().getResource("/emct/images/vw_ico.png")).getImage();
         super.setIconImage(icon);
 
@@ -62,7 +68,6 @@ public class menu extends javax.swing.JFrame {
         north = new javax.swing.JPanel();
         default_panel = new default_panel(false);
         flag = new javax.swing.JLabel();
-        lang = new javax.swing.JComboBox<>();
         south = new javax.swing.JPanel();
         exit = new javax.swing.JButton();
         trB = new javax.swing.JButton();
@@ -78,7 +83,6 @@ public class menu extends javax.swing.JFrame {
         north.setLayout(new javax.swing.BoxLayout(north, javax.swing.BoxLayout.LINE_AXIS));
         north.add(flag);
 
-        lang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"English", "Romania"}));
         lang.setFont(setFont);
         lang.addItemListener(this::langItemPerformed);
         north.add(lang);
@@ -150,8 +154,16 @@ public class menu extends javax.swing.JFrame {
     }
 
     private void langItemPerformed(java.awt.event.ItemEvent evt) {
-        if (evt.getStateChange() == ItemEvent.SELECTED) {
-            this.bundle = langCheck(lang.getSelectedItem().toString());
+        if (evt.getStateChange() == ItemEvent.SELECTED && count != 2) {
+            count++;
+            super.dispose();
+            Runnable object = count != 2 ? () -> {
+                new menu().setVisible(true);
+            } : () -> {
+                count = 0;
+            };
+            object.run();
+            System.out.println(count);
         }
     }
 
@@ -163,9 +175,9 @@ public class menu extends javax.swing.JFrame {
         final Locale EN = new Locale("en", "English");
         final HashMap<String, ResourceBundle> langHash = new HashMap<>();
 
-        langHash.put("default", ResourceBundle.getBundle("emct/language_en", EN));
         langHash.put("English", ResourceBundle.getBundle("emct/language_en", EN));
-        //    langHash.put("Romania", ResourceBundle.getBundle("emct/trouble_shooter_ro", RO));
+        langHash.put("Romania", ResourceBundle.getBundle("emct/language_ro", RO));
+        langHash.put("default", ResourceBundle.getBundle("emct/language_en", EN));
 
         result = langHash.get(lang);
 
@@ -176,13 +188,15 @@ public class menu extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        try {
 
+        try {
             javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
             java.awt.EventQueue.invokeLater(() -> {
                 final Locale EN = new Locale("en", "English");
                 final Locale RO = new Locale("ro", "Romania");
                 ResourceBundle bundle1 = ResourceBundle.getBundle("emct/language_en", EN);
+                lang = new JComboBox<>();
+                lang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"English", "Romania"}));
                 new menu().setVisible(true);
             });
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
@@ -191,12 +205,13 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
+    private int count = 0;
     private javax.swing.JButton exit;
     private javax.swing.JButton trB;
     private javax.swing.JButton emctB;
     private javax.swing.JButton ecuB;
     private javax.swing.JLabel flag;
-    private javax.swing.JComboBox<String> lang;
+    private static javax.swing.JComboBox<String> lang;
     private javax.swing.JPanel north;
     private javax.swing.JPanel south;
     private javax.swing.JPanel buttons;
@@ -205,6 +220,6 @@ public class menu extends javax.swing.JFrame {
     private Font setFont;
     private ResourceBundle bundle;
     private Image icon;
-    
+
     // End of variables declaration
 }

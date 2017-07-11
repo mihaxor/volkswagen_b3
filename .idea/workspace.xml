@@ -2,68 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d51b7253-1b4d-4b61-8c63-e323fc61dd5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/emct/ro/forms/default_images.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/emct/ro/forms/default_panel.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/emct/en/forms/default_images.java" afterPath="$PROJECT_DIR$/src/emct/default_images.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/emct/en/forms/default_panel.java" afterPath="$PROJECT_DIR$/src/emct/default_panel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/emct/trouble_shooter_en.properties" afterPath="$PROJECT_DIR$/src/emct/language_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ecu.java" afterPath="$PROJECT_DIR$/src/emct/ecu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/forms/emct.java" afterPath="$PROJECT_DIR$/src/emct/en/forms/emct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/co_level.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/co_level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/idle_speed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/a_service_adjustments/throttle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/cold_start.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_delivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_presure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/fuel_pump.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/b_fuel_system/injectors.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/idle_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/intake_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/throttle_position.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/c_intake_system/volume_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/high_tension.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_amplifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_coil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/d_ignition_system/ignition_timing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/crankshaft.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/e_engine_sensors/engine_coolant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/co_adjustment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/heated_oxygen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/f_emission_control/oxygen_sensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_module.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/engine_control_relay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java" afterPath="$PROJECT_DIR$/src/emct/en/frames/g_control_system/fuel_pump_relay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/forms/emct.java" afterPath="$PROJECT_DIR$/src/emct/ro/forms/emct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.form" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/co_level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/idle_speed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/a_service_adjustments/throttle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/cold_start.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_delivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_presure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/fuel_pump.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/b_fuel_system/injectors.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/idle_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/intake_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/throttle_position.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/c_intake_system/volume_air.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/high_tension.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_amplifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_coil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/d_ignition_system/ignition_timing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/crankshaft.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/e_engine_sensors/engine_coolant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/co_adjustment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/heated_oxygen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/f_emission_control/oxygen_sensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_module.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/engine_control_relay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java" afterPath="$PROJECT_DIR$/src/emct/ro/frames/g_control_system/fuel_pump_relay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/trouble_shooter.form" afterPath="$PROJECT_DIR$/src/emct/trouble_shooter.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/emct/trouble_shooter.java" afterPath="$PROJECT_DIR$/src/emct/trouble_shooter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,11 +14,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ecu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emct/ecu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="4155">
               <caret line="305" column="72" lean-forward="false" selection-start-line="305" selection-start-column="72" selection-end-line="305" selection-end-column="72" />
               <folding />
             </state>
@@ -89,7 +28,7 @@
       <file leaf-file-name="menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emct/menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1350">
               <caret line="184" column="72" lean-forward="false" selection-start-line="184" selection-start-column="72" selection-end-line="184" selection-end-column="72" />
               <folding />
             </state>
@@ -99,8 +38,8 @@
       <file leaf-file-name="trouble_shooter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/emct/trouble_shooter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="905" column="41" lean-forward="true" selection-start-line="905" selection-start-column="41" selection-end-line="905" selection-end-column="41" />
+            <state relative-caret-position="327">
+              <caret line="889" column="52" lean-forward="false" selection-start-line="889" selection-start-column="52" selection-end-line="889" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -233,9 +172,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,28 +202,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="emct" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vw_b3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vw_b3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emct" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,15 +676,16 @@
       <workItem from="1498806425437" duration="164000" />
       <workItem from="1499431626703" duration="246000" />
       <workItem from="1499437206707" duration="47000" />
+      <workItem from="1499670418613" duration="106000" />
+      <workItem from="1499671498719" duration="601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5130000" />
+    <option name="totallyTimeSpent" value="5837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -775,12 +693,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="288" y="511" width="1255" height="442" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="392" y="578" width="1255" height="442" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26222494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2683374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -792,6 +709,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -950,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,9 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/emct/ecu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="4155">
           <caret line="305" column="72" lean-forward="false" selection-start-line="305" selection-start-column="72" selection-end-line="305" selection-end-column="72" />
           <folding />
         </state>
@@ -1149,7 +1063,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/emct/menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="1350">
           <caret line="184" column="72" lean-forward="false" selection-start-line="184" selection-start-column="72" selection-end-line="184" selection-end-column="72" />
           <folding />
         </state>
@@ -1157,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/emct/trouble_shooter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="905" column="41" lean-forward="true" selection-start-line="905" selection-start-column="41" selection-end-line="905" selection-end-column="41" />
+        <state relative-caret-position="327">
+          <caret line="889" column="52" lean-forward="false" selection-start-line="889" selection-start-column="52" selection-end-line="889" selection-end-column="52" />
           <folding />
         </state>
       </provider>
