@@ -133,8 +133,8 @@ public class ecu extends JFrame {
                 {bundle.getString("key_temp_sensor"), "13", bundle.getString("key_ig_on"), "0 V", "", ""},
                 {bundle.getString("key_temp_sensor"), "14", bundle.getString("key_col_temp"), "1 V", "", ""},
                 {bundle.getString("key_temp_sensor"), "14", bundle.getString("key_col_temp2"), "0.2 V", "", ""},
-                {bundle.getString("key_pump"), "07", bundle.getString("key_ig_on"), bundle.getString("key_values_3_2"), "", ""},
-                {bundle.getString("key_pump"), "07", bundle.getString("key_status2"), "0-1 V", "", ""},
+                {bundle.getString("key_inj"), "07", bundle.getString("key_ig_on"), bundle.getString("key_values_3_2"), "", ""},
+                {bundle.getString("key_inj"), "07", bundle.getString("key_status2"), "0-1 V", "", ""},
                 {bundle.getString("key_heated"), "08", bundle.getString("key_flap3"), bundle.getString("key_values_8"), "0,2 V/1 sec.", bundle.getString("key_wv") + "21"},
                 {bundle.getString("key_oxy2"), "29", bundle.getString("key_status1"), "0 V", "", ""},
                 {bundle.getString("key_oxy"), "33", bundle.getString("key_status1"), "0 V", "", ""},
@@ -145,8 +145,8 @@ public class ecu extends JFrame {
                 {bundle.getString("key_ign2"), "26", bundle.getString("key_status2"), "10 V", "", ""},
                 {bundle.getString("key_ign"), "36", bundle.getString("key_ig_off"), "0 V", "", ""},
                 {bundle.getString("key_ign"), "36", bundle.getString("key_ig_on"), "11- 14 V", "", ""},
-                {bundle.getString("key_inj"), "02", bundle.getString("key_ig_on"), bundle.getString("key_values_2"), "", ""},
-                {bundle.getString("key_inj"), "02", bundle.getString("key_flap3"), "2,3 ms", "10 V/2 ms", bundle.getString("key_wv") + "35"},
+                {bundle.getString("key_pump"), "02", bundle.getString("key_ig_on"), bundle.getString("key_values_2"), "", ""},
+                {bundle.getString("key_pump"), "02", bundle.getString("key_flap3"), "2,3 ms", "10 V/2 ms", bundle.getString("key_wv") + "35"},
                 {bundle.getString("key_instrument"), "10", "", bundle.getString("key_connected_pin"), "", ""},
                 {bundle.getString("key_instrument2"), "24", "", bundle.getString("key_connected_pin"), "", ""},
                 {bundle.getString("key_iat"), "13", bundle.getString("key_ig_on"), "0 V", "", ""},
@@ -273,7 +273,12 @@ public class ecu extends JFrame {
                     String checkPanel = hashMapPanels.get(button.getText());
                     String checkWave = hashMapWaves.get(button.getText().split(" ")[2]);
                     if (checkPanel != null) {
-                        new emct.en.forms.emct(checkPanel).setVisible(true);
+                        if (bundle.getBaseBundleName().contains("_en")) {
+                            new emct.en.forms.emct(checkPanel).setVisible(true);
+                        }
+                        if (bundle.getBaseBundleName().contains("_ro")) {
+                            new emct.ro.forms.emct(checkPanel).setVisible(true);
+                        }
                     }
                     if (checkWave != null) {
                         System.out.println(checkWave);
@@ -283,7 +288,7 @@ public class ecu extends JFrame {
                 }
                 isPushed = false;
             } catch (Exception e) {
-                //  e.printStackTrace();
+                e.printStackTrace();
             }
             return label;
         }

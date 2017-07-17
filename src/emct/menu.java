@@ -46,7 +46,8 @@ public class menu extends javax.swing.JFrame {
         super.setIconImage(icon);
 
         try {
-            ImageIcon img = new ImageIcon(getClass().getResource("/emct/images/en.png"));
+            String checkFlag = lang.getSelectedItem().toString().contains("English") ? "en.png" : "ro.png";
+            ImageIcon img = new ImageIcon(getClass().getResource("/emct/images/" + checkFlag));
             Image imgSet = img.getImage();
             Image newimg = imgSet.getScaledInstance(40, 20, java.awt.Image.SCALE_SMOOTH);
             img = new ImageIcon(newimg);

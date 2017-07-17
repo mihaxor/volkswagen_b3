@@ -340,7 +340,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel1.add(defaultPanel);
 
                 button1.setSelected(true);
@@ -377,7 +377,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel2.add(defaultPanel);
 
                 button2.setSelected(true);
@@ -413,7 +413,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_knock_sensor")+ "." + "engine engine_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel3.add(defaultPanel);
 
                 button3.setSelected(true);
@@ -448,7 +448,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel4.add(defaultPanel);
 
                 button4.setSelected(true);
@@ -483,7 +483,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel5.add(defaultPanel);
 
                 button5.setSelected(true);
@@ -520,7 +520,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel6.add(defaultPanel);
 
                 button6.setSelected(true);
@@ -551,7 +551,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel7.add(defaultPanel);
 
                 button7.setSelected(true);
@@ -575,7 +575,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_manifold_absolute")
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel8.add(defaultPanel);
 
                 button8.setSelected(true);
@@ -610,7 +610,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_intake_air") + "." + "intake intake_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel9.add(defaultPanel);
 
                 button9.setSelected(true);
@@ -644,7 +644,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel10.add(defaultPanel);
 
                 button10.setSelected(true);
@@ -676,7 +676,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel11.add(defaultPanel);
 
                 button11.setSelected(true);
@@ -703,7 +703,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel12.add(defaultPanel);
 
                 button12.setSelected(true);
@@ -737,7 +737,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel13.add(defaultPanel);
 
                 button13.setSelected(true);
@@ -770,7 +770,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_intake_air") + "." + "intake intake_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel14.add(defaultPanel);
 
                 button14.setSelected(true);
@@ -805,7 +805,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel15.add(defaultPanel);
 
                 button15.setSelected(true);
@@ -840,7 +840,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel16.add(defaultPanel);
 
                 button16.setSelected(true);
@@ -878,7 +878,7 @@ public class trouble_shooter extends javax.swing.JFrame {
                     bundle.getString("key_engine_control") + "." + "control control_sub3"
                 };
 
-                defaultPanel = new panel_check(bundle.getString("key_component_check"), labels);
+                defaultPanel = new panel_check(bundle, bundle.getString("key_component_check"), labels);
                 panel17.add(defaultPanel);
 
                 button17.setSelected(true);

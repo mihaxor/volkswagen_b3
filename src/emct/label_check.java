@@ -12,7 +12,7 @@ public class label_check extends JLabel {
 
     private final Color setColor = new Color(15, 89, 193);
 
-    public label_check(String label) {
+    public label_check(String label, String lang) {
 
         String[] splitLink = label.split("\\.");
         super.setText(label);
@@ -21,7 +21,7 @@ public class label_check extends JLabel {
         if (splitLink.length > 1) {
             super.setForeground(setColor);
             super.setCursor(new Cursor(Cursor.HAND_CURSOR));
-            super.addMouseListener(new MouseAdapterImpl(this, splitLink, setColor));
+            super.addMouseListener(new MouseAdapterImpl(this, splitLink, setColor, lang));
         }
     }
 
@@ -30,16 +30,23 @@ public class label_check extends JLabel {
         private final String[] splitLink;
         private final JLabel label;
         private final Color setColor;
+        private final String lang;
 
-        public MouseAdapterImpl(JLabel label, String[] splitLink, Color color) {
+        public MouseAdapterImpl(JLabel label, String[] splitLink, Color color, String lang) {
             this.splitLink = splitLink;
             this.label = label;
             this.setColor = color;
+            this.lang = lang;
         }
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            new emct.en.forms.emct(splitLink[1]).setVisible(true);
+            if (lang.contains("_en")) {
+                new emct.en.forms.emct(splitLink[1]).setVisible(true);
+            }
+            if (lang.contains("_ro")) {
+                new emct.ro.forms.emct(splitLink[1]).setVisible(true);
+            }
         }
 
         @Override
