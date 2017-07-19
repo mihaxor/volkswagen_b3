@@ -241,12 +241,12 @@ public class ecu extends JFrame {
             hashMapPanels.put(bundle.getString("key_tp"), "intake intake_sub1");
             hashMapPanels.put(bundle.getString("key_vaf"), "intake intake_sub2");
 
-            hashMapWaves.put("4", "/emct/images/waves/wave4.png");
-            hashMapWaves.put("21", "/emct/images/waves/wave21.png");
-            hashMapWaves.put("32", "/emct/images/waves/wave32.png");
-            hashMapWaves.put("35", "/emct/images/waves/wave35.png");
-            hashMapWaves.put("38", "/emct/images/waves/wave38.png");
-            hashMapWaves.put("64", "/emct/images/waves/wave64.png");
+            hashMapWaves.put("4", "/emct/images/waves/wave4.jpg");
+            hashMapWaves.put("21", "/emct/images/waves/wave21.jpg");
+            hashMapWaves.put("32", "/emct/images/waves/wave32.jpg");
+            hashMapWaves.put("35", "/emct/images/waves/wave35.jpg");
+            hashMapWaves.put("38", "/emct/images/waves/wave38.jpg");
+            hashMapWaves.put("64", "/emct/images/waves/wave64.jpg");
         }
 
         @Override
