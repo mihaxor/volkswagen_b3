@@ -4,7 +4,7 @@ This is a Java-based desktop application for managing various functionalities of
 
 <img src="/overview/menu.png" style="width:500px;height:320px"/>
 <img src="/overview/engine_management.png" style="width:500px;height:250px"/>
-<img src="/overview/engine_management_crankshaft.png" style="width:500px;height:163px"/>
+<img src="/overview/engine_management_crankshaft.png" style="width:500px;height:250px"/>
 <img src="/overview/ECU.png" style="width:500px;height:250px"/>
 
 ## Features
