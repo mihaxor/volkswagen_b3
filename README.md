@@ -1,6 +1,19 @@
 # Volkswagen B3 Car Application Manual Service
 
-This is a Java-based desktop application for managing various functionalities of a Volkswagen B3 vehicle. The application uses Swing for the GUI and supports multiple languages (English and Romanian).
+This is a Java-based desktop application for managing various functionalities of a Volkswagen B3 car vehicle. The application uses Swing for the GUI and supports multiple languages (English and Romanian).
+
+[//]: # (![menu.png]&#40;/overview/menu.png&#41;)
+
+[//]: # (![engine.png]&#40;/overview/engine_management.png&#41;)
+
+[//]: # (![engine2.png]&#40;/overview/engine_management_crankshaft.png&#41;)
+
+[//]: # (![ecu.png]&#40;/overview/ecu.png&#41;)
+
+<img src="/overview/menu.png" alt="drawing" style="width:475px;height:325px"/>
+<img src="/overview/engine_management.png" alt="drawing" style="width:600px;height:325px"/>
+
+
 
 ## Features
 
@@ -8,7 +21,7 @@ This is a Java-based desktop application for managing various functionalities of
 - Trouble shooter
 - EMCT forms
 - ECU forms
-- Exit button to close the application
+- Guidelines and diagrams
 
 ## Prerequisites
 
