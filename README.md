@@ -1,4 +1,4 @@
-# Volkswagen B3 Car Application Manual Services
+# Volkswagen B3 Car Application Manual Service
 
 This is a Java-based desktop application for managing various functionalities of a Volkswagen B3 vehicle. The application uses Swing for the GUI and supports multiple languages (English and Romanian).
 
