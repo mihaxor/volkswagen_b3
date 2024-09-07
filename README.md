@@ -2,18 +2,10 @@
 
 This is a Java-based desktop application for managing various functionalities of a Volkswagen B3 car vehicle. The application uses Swing for the GUI and supports multiple languages (English and Romanian).
 
-[//]: # (![menu.png]&#40;/overview/menu.png&#41;)
-
-[//]: # (![engine.png]&#40;/overview/engine_management.png&#41;)
-
-[//]: # (![engine2.png]&#40;/overview/engine_management_crankshaft.png&#41;)
-
-[//]: # (![ecu.png]&#40;/overview/ecu.png&#41;)
-
-<img src="/overview/menu.png" alt="drawing" style="width:280px;height:200px"/>
-<img src="/overview/engine_management.png" alt="drawing" style="width:350px;height:200px"/>
-<img src="/overview/engine_management_crankshaft.png" alt="drawing" style="width:300px;height:163px"/>
-<img src="/overview/ecu.png" alt="drawing" style="width:300px;height:163px"/>
+<img src="/overview/menu.png" style="width:280px;height:200px"/>
+<img src="/overview/engine_management.png" style="width:350px;height:200px"/>
+<img src="/overview/engine_management_crankshaft.png" style="width:300px;height:163px"/>
+<img src="/overview/ECU.png"  style="width:300px;height:163px"/>
 
 
 ## Features
